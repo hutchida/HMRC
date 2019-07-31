@@ -210,13 +210,13 @@ def HTMLExport(new_len, del_len, change_len, df_new, df_del, df_final, filters, 
     html += r'<p><b>' + new_len + '</b> new paras have been added, <a href="#new">see here</a></p>' 
     html += r'<p><b>' + del_len + '</b> paras have been deleted, <a href="#del">see here</a></p>'
     html += r'<p><b>' + change_len + '</b> changes have been found, <a href="#change">see here</a></p>'
-    html += r'</div><div style="max-width: 800px;"><h1 id="new">ADDITIONS</h1><p>' + new_len + ' new paras have been added recently and are displayed below, (<a href="#home">scroll to top</a>)</p>'
+    html += r'</div><div style="max-width: 800px;"><h1 id="new">ADDITIONS</h1><p>' + new_len + ' new paras have been added and are displayed below, (<a href="#home">scroll to top</a>)</p>'
     #html += df_new.style.render()
     html += df_new.to_html(na_rep = " ",index = False,  classes="table table-bordered text-left table-striped table-hover")
-    html += r'</div><div style="max-width: 800px;"><h1 id="del">DELETIONS</h1><p>' + del_len + ' paras have been deleted recently and are displayed below, (<a href="#home">scroll to top</a>)</p>'
+    html += r'</div><div style="max-width: 800px;"><h1 id="del">DELETIONS</h1><p>' + del_len + ' paras have been deleted and are displayed below, (<a href="#home">scroll to top</a>)</p>'
     #html += df_del.style.render()
     html += df_del.to_html(na_rep = " ",index = False,  classes="table table-bordered text-left table-striped table-hover")
-    html += r'</div><div style="max-width: 800px;"><h1 id="change">CHANGES</h1><p>' + change_len + ' changes have been made recently and are displayed below, (<a href="#home">scroll to top</a>)</p>'
+    html += r'</div><div style="max-width: 800px;"><h1 id="change">CHANGES</h1><p>' + change_len + ' changes have been made and are displayed below, (<a href="#home">scroll to top</a>)</p>'
     #html += df_final.style.apply(highlight_diff, axis=None).render()
     html += df_final.to_html(na_rep = " ",index = False,  classes="table table-bordered text-left table-striped table-hover")
     html += '</div></div>'
@@ -410,52 +410,20 @@ def Comparison(logpath, source, maindir):
     df2['Relevant'] = df2.apply(Relevant, axis=1)    
     df1 = df1[df1['Relevant'] == True]
     df2 = df2[df2['Relevant'] == True]    
-    df = pd.concat([df1, df2], axis='columns', keys=['Previous', 'Current'])
-    df_final = df.swaplevel(axis='columns')[df1.columns[0:]]
-    df_final['Changed'] = df_final.apply(f, axis=1)
-    df_final = df_final[df_final['Changed'] == 'yes']
-
-    change_len = str(len(df_final.index))
-
-    print('Number of relevant paras after cross referencing with list of PSL HRMC references: ', change_len)
-
-
-    del df_final['Filename']
-    del df_final['Key']
-    del df_final['LMD']
-    del df_final['Changed']
-    del df_final['Relevant']
-    del df_final['ChapterNumber']
-    df_final.insert(0, 'ChapterNum', df1['ChapterNumber'])
-
-
-    #Exporting useful dataframes to csv
-    print("Exporting useful dataframes to csv in dated folder...")
-    df_new.to_csv(outputdir + source + "_additions_relevance.csv", sep=',',index=False)
-    df_del.to_csv(outputdir + source + "_deletions_relevance.csv", sep=',',index=False)
-    df_final.to_csv(outputdir + "\\" + source + "_changes_relevance.csv", sep=',',index=False)
-             
-    HTMLExport(new_len, del_len, change_len, df_new, df_del, df_final, 'RELEVANT CHAPTERS ONLY', outputdir + 'relevance.html')
-
 
     #ParaShift filter   
 
     df1 = df1.reset_index(drop=True)
     df2 = df2.reset_index(drop=True)
-    dftemp = df2 #make copy of df2
-    dftemp = dftemp.drop(dftemp.index[0]) #drop the first row, effectively shifting the rows up one    
-    dftemp = dftemp.reset_index(drop=True) 
     df3 = pd.DataFrame()
-    
-    dftemp.to_csv(outputdir + "dftemp.csv", sep=',')
-    df1.to_csv(outputdir + "df1.csv", sep=',')
-    df2.to_csv(outputdir + "df2.csv", sep=',')
-    df_final['ParaShifted'] = ''
-    print(df_final.head(3))
+    #df1.to_csv(outputdir + "df1.csv", sep=',')
+    #df2.to_csv(outputdir + "df2.csv", sep=',') 
+
     i=0
-    for index, row in dftemp.iterrows(): 
+    for index, row in df1.iterrows(): 
         ParaDf1 = df1.Para.iloc[i]
-        ParaDf2 = df2.Para.iloc[i+1]
+        try: ParaDf2 = df2.Para.iloc[i+1] #Index error will be thrown when the loop reaches the last row and there is no row plus one to access, at which point exit the loop
+        except IndexError: continue
 
         if ParaDf1 == ParaDf2:
             row = {"ParaShifted": 'True'}
@@ -474,15 +442,48 @@ def Comparison(logpath, source, maindir):
         if ParaDf1 == 'Capitalised amounts':
             print(ParaDf1, ParaDf2, row)
             
-        #df3 = df3.append(row, ignore_index=True) 
-        df_final.iloc[i, 3] = 'False' #df.columns.get_loc('ParaShifted')
+        df3 = df3.append(row, ignore_index=True) 
+        #df_final.iloc[i, 3] = 'False' #df.columns.get_loc('ParaShifted')
         i=i+1
-    #Add one more row to the end    
-    #row = {"ParaShifted": 'False'}
-    #df3 = df3.append(row, ignore_index=True) 
+    row = {"ParaShifted": 'False'} #Add one more row to the end    
+    df3 = df3.append(row, ignore_index=True) 
+
+    df = pd.concat([df1, df2], axis='columns', keys=['Previous', 'Current'])
+    df_final = df.swaplevel(axis='columns')[df1.columns[0:]]
+    df3 = df3.reset_index(drop=True)
+    df_final = df_final.reset_index(drop=True)
+    df_final['ParaShifted'] = df3['ParaShifted']  
+    df_final['Changed'] = df_final.apply(f, axis=1)
+    df_final = df_final[df_final['Changed'] == 'yes']
+    df_final_parashift = df_final
+    del df_final_parashift['ChapterNumber']
+    df_final_parashift.insert(0, 'ChapterNum', df1['ChapterNumber'])
     
-    #print(df3)
-    print(str(len(df1)), str(len(df2)), str(len(df_final)))
+    change_len = str(len(df_final.index))
+
+    print('Number of relevant paras after cross referencing with list of PSL HRMC references: ', change_len)
+
+
+    del df_final['Filename']
+    del df_final['Key']
+    del df_final['LMD']
+    del df_final['Changed']
+    del df_final['Relevant']
+    #del df_final['ChapterNumber']
+    #del df_final['ParaShifted']
+    #df_final.insert(0, 'ChapterNum', df1['ChapterNumber'])
+
+    df_final_parashift.to_csv(outputdir + "df_final_parashift.csv", sep=',')
+
+    #Exporting useful dataframes to csv
+    print("Exporting useful dataframes to csv in dated folder...")
+    df_new.to_csv(outputdir + source + "_additions_relevance.csv", sep=',',index=False)
+    df_del.to_csv(outputdir + source + "_deletions_relevance.csv", sep=',',index=False)
+    df_final.to_csv(outputdir + "\\" + source + "_changes_relevance.csv", sep=',',index=False)
+             
+    HTMLExport(new_len, del_len, change_len, df_new, df_del, df_final, 'RELEVANT CHAPTERS ONLY', outputdir + 'relevance.html')
+
+    #print(str(len(df1)), str(len(df2)), str(len(df_final)))
 
     #df3 = df3.reset_index(drop=True)
     #df_final = df_final.reset_index(drop=True)
@@ -491,7 +492,7 @@ def Comparison(logpath, source, maindir):
     #print(df_final)   
     #df_final.insert(5, 'ParaShifted', df3['ParaShifted'])
     # Filter the data by new column that indicates changes
-    df_final = df_final[df_final['ParaShifted'] == 'False']
+    df_final_parashift = df_final_parashift[df_final_parashift['ParaShifted'] == 'False']
     
     #del df_final['Filename']
     #del df_final['Key']
@@ -501,19 +502,7 @@ def Comparison(logpath, source, maindir):
     #del df_final['ChapterNumber']
     #del df_final['ParaShifted']    
     #df_final.insert(0, 'ChapterNum', df2['ChapterNumber'])
-    change_len = str(len(df_final.index))
-    print('Number of relevant paras after the para shift analysis: ', change_len)
-
-
-    #Exporting useful dataframes to csv
-    df_new.to_csv(outputdir + source + "_additions_parashift.csv", sep=',',index=False)
-    df_del.to_csv(outputdir + source + "_deletions_parashift.csv", sep=',',index=False)
-    df_final.to_csv(outputdir + "\\" + source + "_changes_parashift.csv", sep=',',index=False)
-            
-    #no filters    
-    HTMLExport(new_len, del_len, change_len, df_new, df_del, df_final, 'RELEVANT CHAPTERS ONLY + PARA SHIFT ANALYSIS APPLIED', outputdir + 'parashift.html')
-
-    wait = input("PAUSED...when ready press enter")
+    #wait = input("PAUSED...when ready press enter")
 
     #compare previous and current character lengths of the paras and return difference
     def CharacterCountDiff(x):        
@@ -534,7 +523,7 @@ def Comparison(logpath, source, maindir):
 
 
     #print("Adding new column to show the character count difference between paragraphs...")
-    df_final['CharacterCountDifference'] = df_final.apply(CharacterCountDiff, axis=1)
+    df_final_parashift['CharacterCountDifference'] = df_final_parashift.apply(CharacterCountDiff, axis=1)
 
     def levenshtein_distance(x):
         counter = {"+": 0, "-": 0}
@@ -549,18 +538,45 @@ def Comparison(logpath, source, maindir):
         return distance
     
     #print("Adding new column to show the Levenshtein Distance between paragraphs...")
-    df_final['LevenshteinDistance'] = df_final.apply(levenshtein_distance, axis=1)
+    df_final_parashift['LevenshteinDistance'] = df_final_parashift.apply(levenshtein_distance, axis=1)
 
     
+    def levchar_algorithm(x):
+        charcountdiff = int(x['CharacterCountDifference'])
+        levdist = int(x['LevenshteinDistance'])
+        print(str(charcountdiff), str(levdist))
+        if charcountdiff < 10:
+            if levdist > charcountdiff + 10:
+                return True
+            else: 
+                return False
+        else: return True
+    
+    #print("Adding new column to show the Levenshtein Distance between paragraphs...")
+    df_final_parashift['AboveLevCharThreshold'] = df_final_parashift.apply(levchar_algorithm, axis=1)
+
+    
+    change_len = str(len(df_final_parashift.index))
+    print('Number of relevant paras after the para shift analysis: ', change_len)
+
+
+    #Exporting useful dataframes to csv
+    df_new.to_csv(outputdir + source + "_additions_parashift.csv", sep=',',index=False)
+    df_del.to_csv(outputdir + source + "_deletions_parashift.csv", sep=',',index=False)
+    df_final_parashift.to_csv(outputdir + "\\" + source + "_changes_parashift.csv", sep=',',index=False)
+            
+    #Relevant chapters and Para Shift filters    
+    HTMLExport(new_len, del_len, change_len, df_new, df_del, df_final_parashift, 'RELEVANT CHAPTERS ONLY + PARA SHIFT ANALYSIS APPLIED', outputdir + 'parashift.html')
+
 
     #clean up the df before print it out
-    del df_final['Relevant']
-    del df_final['ChapterNumber']
+    #del df_final['Relevant']
+    #del df_final['ChapterNumber']
     
     
     #keep just one Chapter Number
     #df_final['ChapterNum'] = df1['ChapterNumber']
-    df_final.insert(0, 'ChapterNum', df1['ChapterNumber'])
+    #df_final.insert(0, 'ChapterNum', df1['ChapterNumber'])
     
     #reorder columns by list of columnTitles
     #columnsTitles = ['ChapterNum', 'Title', 'Para', 'CharacterCountDifference', 'LevenshteinDistance', 'ParaShifted']
@@ -570,21 +586,31 @@ def Comparison(logpath, source, maindir):
     #df_final=df_final.drop(['index'],axis=1)
     #df_final.set_index('ChapterNum', inplace=True)
     
-    df_final = df_final.reset_index(drop=True)
-    df_new = df_new.reset_index(drop=True)
-    df_del = df_del.reset_index(drop=True)
+    #df_final = df_final.reset_index(drop=True)
+    #df_new = df_new.reset_index(drop=True)
+    #df_del = df_del.reset_index(drop=True)
     #print(df_final.style.apply(highlight_diff, axis=None).render())
  
 
     
     #grabbing the dates the reports were run, hardcoded for now
-    df1_date = str(datetime.date.fromtimestamp(os.path.getmtime(lognew)))
-    df2_date = str(datetime.date.fromtimestamp(os.path.getmtime(logold)))
+    #df1_date = str(datetime.date.fromtimestamp(os.path.getmtime(lognew)))
+    #df2_date = str(datetime.date.fromtimestamp(os.path.getmtime(logold)))
+    df_final_levchar = df_final_parashift[df_final_parashift['AboveLevCharThreshold'] == True]
 
-    
-    HTMLExport(new_len, del_len, change_len, df_new, df_del, df_final, 'RELEVANT DOCS ONLY', outputdir + 'relevance.html')
-    HTMLExport(new_len, del_len, change_len, df_new, df_del, df_final, 'RELEVANT DOCS ONLY + PARASHIFT ANALYSIS', outputdir + 'parashift.html')
-    HTMLExport(new_len, del_len, change_len, df_new, df_del, df_final, 'RELEVANT DOCS ONLY + PARASHIFT ANALYSIS + LEVENSHTEIN DISTANCE & CHAR COUNT DIFFERENCE THRESHOLD', outputdir + 'levchar.html')
+    change_len = str(len(df_final_levchar.index))
+    print('Number of relevant paras after the Levenshtein Distance & Character Count Difference analysis: ', change_len)
+
+
+    #Exporting useful dataframes to csv
+    df_new.to_csv(outputdir + source + "_additions_levchar.csv", sep=',',index=False)
+    df_del.to_csv(outputdir + source + "_deletions_levchar.csv", sep=',',index=False)
+    df_final_levchar.to_csv(outputdir + "\\" + source + "_changes_levchar.csv", sep=',',index=False)
+            
+    #Relevant chapters and Para Shift filters    
+    HTMLExport(new_len, del_len, change_len, df_new, df_del, df_final_levchar, 'RELEVANT DOCS ONLY + PARASHIFT ANALYSIS + LEVENSHTEIN DISTANCE & CHAR COUNT DIFFERENCE THRESHOLD', outputdir + 'levchar.html')
+
+    #wait = input("PAUSED...when ready press enter")
 
 def Diff(logpath, start, xmldir1, xmldir2):
     
