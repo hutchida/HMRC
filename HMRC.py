@@ -400,16 +400,42 @@ def Comparison(logpath, source, maindir):
         else:
             return False
         
+
+    #Check whether chapter acronym appears on the source list of hmrc
+    def RelevantSource(x):
+        source = re.search(r'\D+', x.ChapterNumber).group()
+        if any(dfreferencesourceonly.Source == source) == True:
+            return True
+        else:
+            return False
+        
     dfreference = pd.read_csv(maindir + 'hmrc-patterns-locations-28252019.csv', encoding ='utf-8')
-    
+    dfreferencesourceonly = pd.DataFrame()
+    #Extract source info only from the pattern locations
+    search = []    
+    for values in dfreference.Pattern:
+        search.append(re.search(r'\D+', values).group())
+
+    dfreferencesourceonly['Source'] = search
+    dfreferencesourceonly.drop_duplicates(inplace=True)
+    dfreferencesourceonly.to_csv(outputdir + "dfreferencesourceonly.csv", sep=',')
+
+
+
     print('Number of HMRC links in use on PSL: ', str(len(dfreference)))
 
     #print("Adding new column to show whether a change is relevant, then filtering out irrelevant rows...")
 
     df1['Relevant'] = df1.apply(Relevant, axis=1)
     df2['Relevant'] = df2.apply(Relevant, axis=1)    
+    df_del['Relevant'] = df_del.apply(Relevant, axis=1)
+    df_new['RelevantSource'] = df_new.apply(RelevantSource, axis=1)    
     df1 = df1[df1['Relevant'] == True]
-    df2 = df2[df2['Relevant'] == True]    
+    df2 = df2[df2['Relevant'] == True]      
+    df_del = df_del[df_del['Relevant'] == True]
+    df_new = df_new[df_new['RelevantSource'] == True]    
+    del_len = str(len(df_del.index))    
+    new_len = str(len(df_new.index))
 
     #ParaShift filter   
 
