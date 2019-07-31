@@ -187,7 +187,7 @@ def Snapshot(date, logdate, logname, xmldir, logpath):
    
     
 
-def HTMLExport(new_len, del_len, change_len, df_new, df_del, df_final, filters, exportfilepath):
+def HTMLExport(notes, new_len, del_len, change_len, df_new, df_del, df_final, filters, exportfilepath):
     #build html
     css = """<head>            
             <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -206,19 +206,17 @@ def HTMLExport(new_len, del_len, change_len, df_new, df_del, df_final, filters, 
     html += menu + '<hr />'
     html += '<p>This is a comparison between the HMRC data sets for July and August 2018.</p>' 
     html += '<p>Filters: <b>' + filters + '</b></p>' 
+    html += '<p>Notes: ' + notes + '</p>'
     html += '<div style="max-width: 800px;">' 
+    html += r'<p><b>' + change_len + '</b> changes have been found, <a href="#change">see here</a></p>'
     html += r'<p><b>' + new_len + '</b> new paras have been added, <a href="#new">see here</a></p>' 
     html += r'<p><b>' + del_len + '</b> paras have been deleted, <a href="#del">see here</a></p>'
-    html += r'<p><b>' + change_len + '</b> changes have been found, <a href="#change">see here</a></p>'
+    html += r'</div><div style="max-width: 800px;"><h1 id="change">CHANGES</h1><p>' + change_len + ' changes have been made and are displayed below, (<a href="#home">scroll to top</a>)</p>'
+    html += df_final.to_html(na_rep = " ",index = False,  classes="table table-bordered text-left table-striped table-hover")
     html += r'</div><div style="max-width: 800px;"><h1 id="new">ADDITIONS</h1><p>' + new_len + ' new paras have been added and are displayed below, (<a href="#home">scroll to top</a>)</p>'
-    #html += df_new.style.render()
     html += df_new.to_html(na_rep = " ",index = False,  classes="table table-bordered text-left table-striped table-hover")
     html += r'</div><div style="max-width: 800px;"><h1 id="del">DELETIONS</h1><p>' + del_len + ' paras have been deleted and are displayed below, (<a href="#home">scroll to top</a>)</p>'
-    #html += df_del.style.render()
     html += df_del.to_html(na_rep = " ",index = False,  classes="table table-bordered text-left table-striped table-hover")
-    html += r'</div><div style="max-width: 800px;"><h1 id="change">CHANGES</h1><p>' + change_len + ' changes have been made and are displayed below, (<a href="#home">scroll to top</a>)</p>'
-    #html += df_final.style.apply(highlight_diff, axis=None).render()
-    html += df_final.to_html(na_rep = " ",index = False,  classes="table table-bordered text-left table-striped table-hover")
     html += '</div></div>'
 
     #write to html
@@ -227,7 +225,34 @@ def HTMLExport(new_len, del_len, change_len, df_new, df_del, df_final, filters, 
         f.write(html)
         f.close()
         pass
-    
+
+def HTMLTablePage(df, message, title, exportfilepath):
+    css = """<head>            
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+            <style>td {
+                word-wrap: break-word;
+                min-width: 160px;
+                max-width: 160px;
+                }</style>
+            </head>"""
+    menu = '<p><a href="index.html">No Filter</a> | <a href="relevance.html">+ Relevance Filter</a> | <a href="parashift.html">+ Para Shift Filter</a> | <a href="levchar.html">+ Levenshtein Distance & Character Count Difference Filter</a></p>'
+
+    bootstrap = '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">'
+    html = '<div class="container">'
+    html += bootstrap + r'<link rel="stylesheet" type="text/css" media="screen" />'+ '\n' + css
+    html += '<h1 id="home">' + title + '</h1>' 
+    html += menu + '<hr />'
+    html += '<p>' + message + '</p>' 
+    html += '<div style="max-width: 800px;">' 
+    html += df.to_html(na_rep = " ",index = False,  classes="table table-bordered text-left table-striped table-hover")
+    html += '</div></div>'
+
+    #write to html
+    print("Exported HTML to...", exportfilepath)
+    with open(exportfilepath,'w', encoding='utf-8') as f:
+        f.write(html)
+        f.close()
+        pass
     
 def Comparison(logpath, source, maindir):   
     logslist = sorted(glob.iglob(os.path.join(logpath, '*.csv')), key=os.path.getmtime, reverse=True) 
@@ -388,8 +413,9 @@ def Comparison(logpath, source, maindir):
     df_del.to_csv(outputdir + source + "_deletions_nofilter.csv", sep=',',index=False)
     df_final.to_csv(outputdir + "\\" + source + "_changes_nofilter.csv", sep=',',index=False)
             
+    notes = ''        
     #no filters    
-    HTMLExport(new_len, del_len, change_len, df_new, df_del, df_final, 'NO FILTER APPLIED', outputdir + 'index.html')
+    HTMLExport(notes, new_len, del_len, change_len, df_new, df_del, df_final, 'NO FILTER APPLIED', outputdir + 'index.html')
 
 
 
@@ -420,7 +446,7 @@ def Comparison(logpath, source, maindir):
     dfreferencesourceonly.drop_duplicates(inplace=True)
     dfreferencesourceonly.to_csv(outputdir + "dfreferencesourceonly.csv", sep=',')
 
-
+    HTMLTablePage(dfreference, 'Number of HMRC links in use on PSL: ' + str(len(dfreference)), 'HMRC LINKS', outputdir + 'hmrclinks.html')
 
     print('Number of HMRC links in use on PSL: ', str(len(dfreference)))
 
@@ -507,7 +533,8 @@ def Comparison(logpath, source, maindir):
     df_del.to_csv(outputdir + source + "_deletions_relevance.csv", sep=',',index=False)
     df_final.to_csv(outputdir + "\\" + source + "_changes_relevance.csv", sep=',',index=False)
              
-    HTMLExport(new_len, del_len, change_len, df_new, df_del, df_final, 'RELEVANT CHAPTERS ONLY', outputdir + 'relevance.html')
+    notes = 'The deleted list and the change list have been cross referenced with a list of HMRC links. Whereas the additions list has been cross-referenced with a list of chapter acronymns pulled from the same list of HMRC links found on PSL. This should give us an idea of what new paras are of interest to us. <a href="hmrclinks.html">View list of HMRC links</a>.'
+    HTMLExport(notes, new_len, del_len, change_len, df_new, df_del, df_final, 'RELEVANT CHAPTERS ONLY', outputdir + 'relevance.html')
 
     #print(str(len(df1)), str(len(df2)), str(len(df_final)))
 
@@ -590,9 +617,10 @@ def Comparison(logpath, source, maindir):
     df_new.to_csv(outputdir + source + "_additions_parashift.csv", sep=',',index=False)
     df_del.to_csv(outputdir + source + "_deletions_parashift.csv", sep=',',index=False)
     df_final_parashift.to_csv(outputdir + "\\" + source + "_changes_parashift.csv", sep=',',index=False)
-            
+    
+    notes = 'The Para Shift Analysis is a comparison between para lists to see if there are any matches a few rows down. For example, it is common for an inconsequential para to be inserted into a chapter, while the rest of the content of that chapter remains the same. This detects any shifts that have happened and are throwing out the original comparison between paras.'
     #Relevant chapters and Para Shift filters    
-    HTMLExport(new_len, del_len, change_len, df_new, df_del, df_final_parashift, 'RELEVANT CHAPTERS ONLY + PARA SHIFT ANALYSIS APPLIED', outputdir + 'parashift.html')
+    HTMLExport(notes, new_len, del_len, change_len, df_new, df_del, df_final_parashift, 'RELEVANT CHAPTERS ONLY + PARA SHIFT ANALYSIS APPLIED', outputdir + 'parashift.html')
 
 
     #clean up the df before print it out
@@ -633,8 +661,9 @@ def Comparison(logpath, source, maindir):
     df_del.to_csv(outputdir + source + "_deletions_levchar.csv", sep=',',index=False)
     df_final_levchar.to_csv(outputdir + "\\" + source + "_changes_levchar.csv", sep=',',index=False)
             
-    #Relevant chapters and Para Shift filters    
-    HTMLExport(new_len, del_len, change_len, df_new, df_del, df_final_levchar, 'RELEVANT DOCS ONLY + PARASHIFT ANALYSIS + LEVENSHTEIN DISTANCE & CHAR COUNT DIFFERENCE THRESHOLD', outputdir + 'levchar.html')
+    #Character Count Diff and Levenshtein Distance
+    notes = 'This filter takes into account the difference in character count between the paras, then depending on that count, uses the Levenshtein Distance to give more context to the change. For example, the character count difference between two paras may be minimal, but upon investigation by eye you could see that the whole para was rewritten, it just so happens that the character count is almost the same as the para that has been overwritten. In order to give context, the Levenshtein Distance tells you how many edits are needed to transform the original para to the new para. So if the character count difference is very small, we check if the Levenshtein Distance is greater than the Character Count Difference + 10. If it is greater than we can conclude it is a significant change and it should remain in the list for us to view, else remove from the list.'
+    HTMLExport(notes, new_len, del_len, change_len, df_new, df_del, df_final_levchar, 'RELEVANT DOCS ONLY + PARASHIFT ANALYSIS + LEVENSHTEIN DISTANCE & CHAR COUNT DIFFERENCE THRESHOLD', outputdir + 'levchar.html')
 
     #wait = input("PAUSED...when ready press enter")
 
@@ -718,7 +747,8 @@ xmldir2 = '\\\\lngoxfdatp16vb\\Fabrication\\Build\\0Y04\\Data\\'
 logpath = "C:\\Users\\Hutchida\\Documents\\HMRC\\logs\\"
 source = "HMRC"
 maindir = "C:\\Users\\Hutchida\\Documents\\HMRC\\"
-outputdir = maindir + "\\output\\"
+#outputdir = maindir + "\\output\\"
+outputdir = "www\\"
 
 start = datetime.datetime.now() 
 

@@ -1,0 +1,63 @@
+ChapterNumber,Title,Para,Relevant
+CG58045,CG58045 Example,"In year 0 a taxpayer acquires all the shares in T Ltd for £100,000.",True
+CG58045,CG58045 Example,In year 10 the taxpayer sells the shares in T Ltd at arm’s length to P Ltd.,True
+CG58045,CG58045 Example,The consideration is ,True
+CG58045,CG58045 Example,"cash £500,000, plus",True
+CG58045,CG58045 Example,"80,000 shares in P Ltd at market value of £2.25 each (total £180,000), plus",True
+CG58045,CG58045 Example,"the right to two payments of deferred consideration, the amount depending on future profits of T Ltd, to be satisfied only by an issue of shares in P Ltd.",True
+CG58045,CG58045 Example,"The market value of the right to deferred consideration at the time of disposal is agreed by Shares and Assets Valuation at £300,000.",True
+CG58045,CG58045 Example,"In year 11 shares in P Ltd to the value of £202,940 (73,000 shares at £2.78 each) are issued to the taxpayer in part satisfaction of the right to deferred consideration. The market value of the remainder of the right in year 11 is agreed by Shares and Assets Valuation at £90,000.",True
+CG58045,CG58045 Example,"In year 12 shares in P Ltd to the value of £118,440 (47,000 shares at £2.52 each) are issued in full satisfaction of the remainder of the right to deferred consideration.",True
+CG58045,CG58045 Example,P Ltd is a company whose shares are quoted on the Stock Exchange. All of the conditions are satisfied and the earn-out right is treated as a security by TCGA92/S138A.,True
+CG58045,CG58045 Example,COMPUTATIONS,True
+CG58045,CG58045 Example,A) IMMEDIATE CHARGEABLE GAIN,True
+CG58045,CG58045 Example,B) COST OF SHARES IN P LTD,True
+CG58045,CG58045 Example,C) COST OF NOTIONAL SECURITY = RIGHT TO DEFERRED CONSIDERATION,True
+CG58045,CG58045 Example,D) COMPUTATIONS WHEN DEFERRED CONSIDERATION RECEIVED,True
+CG58045,CG58045 Example,E) SHARES IN P LTD,True
+CG58045,CG58045 Example,EXPLANATION,True
+CG58045,CG58045 Example,The statutory reasons for the method of computation are;,True
+CG58045,CG58045 Example,CASH RECEIVED,True
+CG58045,CG58045 Example,The cash received is treated as a part-disposal of the old holding of T Ltd shares under TCGA92/S128 (3). The apportionment of the base cost of the old holding is made on the basis of market value at the date of disposal (TCGA92/S128 (4) and TCGA92/S129).,True
+CG58045,CG58045 Example,COST OF SHARES IN P LTD,True
+CG58045,CG58045 Example,The vendor has acquired shares in P Ltd and a `notional security’ under the terms of TCGA92/S138A. These are treated as two classes of shares. Together they form the `new holding’ under TCGA92/S127 as applied by TCGA92/S135 (3).,True
+CG58045,CG58045 Example,If the shares in P Ltd are not quoted the apportionment should be made by reference to market values at the date of a disposal of all or part of the new holding.,True
+CG58045,CG58045 Example,RIGHT TO DEFERRED UNASCERTAINABLE CONSIDERATION,True
+CG58045,CG58045 Example,The part satisfaction of the right to deferred consideration is a part disposal of the right. But because of TCGA92/S138A it is treated as a conversion of securities within TCGA92/S132. TCGA92/S127 applies with the necessary adaptations to the part disposal and part of the base cost of the `notional security’ is transferred to the holding of shares in P Ltd.,True
+CG58045,CG58045 Example,The procedure for obtaining valuations of the right to deferred unascertainable consideration is described at CG14950.,True
+CG58045,CG58045 Example,SHARES IN P LTD,True
+CG58045,CG58045 Example,The shares in P Ltd which are acquired go into the Section 104 holding of shares of the same class. The base cost and indexed pool of expenditure is calculated in accordance with B and C above.,True
+IHTM11260,IHTM11260 Exemptions: Conditional Exemption,"Land of outstanding scenic, historic or scientific interest",True
+IHTM11260,IHTM11260 Exemptions: Conditional Exemption,Buildings of outstanding historic or architectural interest,True
+IHTM11260,IHTM11260 Exemptions: Conditional Exemption,"Their essential amenity land, and",True
+IHTM11260,IHTM11260 Exemptions: Conditional Exemption,Objects historically associated with them.,True
+IHTM11260,IHTM11260 Exemptions: Conditional Exemption,The exemption has to be claimed and the required undertakings given by the appropriate person. The Heritage Team is primarily responsible for administering the exemption.,True
+PAYE130025,PAYE130025 Allowances,Enter the calculated coding allowance under Concessional Relief on the Allowances screen,True
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031030    The principal charge,True
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031040    Agreement to transfer,True
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031050    Conditional and unconditional agreements,True
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031060    Consideration: money or money's worth,True
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031070    Calculation of the tax,True
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031080    Unit trusts,True
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031090    Chargeable securities - general,True
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,"STSM031100    Chargeable securities - stocks, shares and loan capital",True
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,"STSM031110    Chargeable securities - interests, dividends and other rights",True
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031120    Chargeable securities - options to acquire and rights to allotment or subscription,True
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031130    Chargeable securities - units under a unit trust scheme,True
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031140    Instalment arrangements,True
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031150    Relationship with stamp duty,True
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031160    Reliefs and exemptions,True
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031170    Interaction with stamp duty and exemptions,True
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,"HMRC may decline to provide an advance assurance in certain circumstances, see [The advance assurance service is a non-statutory service offered by HMRC on a discretionary basis, where we may offer an opinion as to whether a prospective investment would be a qualifying investment.",True
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,"In general, companies seeking an investment from a VCT should not need an advance assurance from HMRC. VCTs should be able to rely upon their professional advisers to determine if a prospective investment is qualifying or not.",True
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,"[The advance assurance service is a non-statutory service offered by HMRC on a discretionary basis, where we may offer an opinion as to whether a prospective investment would be a qualifying investment.",True
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,"In general, companies seeking an investment from a VCT should not need an advance assurance from HMRC. VCTs should be able to rely upon their professional advisers to determine if a prospective investment is qualifying or not.",True
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,](https://www.gov.uk/hmrc-internal-manuals/venture-capital-schemes-manual/vcm54360) specifies the circumstances when HMRC will not withdraw approval from a VCT should it make a non-qualifying investment. ,True
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,"HMRC will expect a VCT to take all reasonable steps to ensure an investment would be qualifying; for example, acting on professional advice specifying the technical basis upon which the proposed investment would meet each requirement in Chapter 4 of Part 6 ITA 2007. Provided that the VCT has taken such steps HMRC will not withdraw approval from the VCT if the investment subsequently turns out to be non-qualifying. HMRC will accept that the breach was outside the control of the VCT.",True
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,"If there are genuine doubts about whether a proposed investment is qualifying, the company may seek an advance assurance from HMRC. The company must explain how it meets each condition, and draw attention in its application to each point of doubt with a full technical explanation as to why it believes the requirement is met.",True
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,The rules of confidentiality apply. Requests will be dealt with only if they come from the company’s secretary or directors or a person authorised by them to negotiate with HMRC on their behalf. Any other parties making enquiries about a company must address those enquiries to the company itself.,True
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,An advance assurance is given in respect of a particular issue of shares or securities. An assurance given in respect of one issue should not necessarily be regarded as providing assurance in respect of a different issue.,True
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,HMRC will not routinely provide an opinion on whether a company is a knowledge-intensive company. A company’s knowledge-intensive status will be considered only where the proposed investment would otherwise breach the rules for a qualifying holding.,True
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,"An advance assurance will not cover the status of the VCT itself, that is, whether the investment would enable the VCT to meet the conditions for approval under section 274 ITA 2007. Those conditions depend upon the VCT’s other investments. ",True
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,"HMRC may decline to provide an advance assurance in certain circumstances, see](http://hmrc-internal-manuals/venture-capital-schemes-manual/vcm55400) for more details.",True
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,Requests for an advance assurance should be made to the Small Company Enterprise Centre whose address and contact details are at VCM2070.,True
