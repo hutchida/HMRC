@@ -436,6 +436,34 @@ def Comparison(logpath, source, maindir):
             return False
         
     dfreference = pd.read_csv(maindir + 'hmrc-patterns-locations-28252019.csv', encoding ='utf-8')
+
+    #Create lookup table of references for each chapter
+    dfrelevantChapters = pd.DataFrame()
+    relevantChapters = []
+    for chapter in dfreference.Pattern:
+        relevantChapters.append(chapter)
+    dfrelevantChapters['Chapter'] = relevantChapters
+    dfrelevantChapters.drop_duplicates(inplace=True)
+    DocInfo = []
+    i=0
+    for index, row in dfrelevantChapters.iterrows():
+        Pattern = dfrelevantChapters.Chapter.iloc[i]
+        patternCount = len(dfreference[dfreference.Pattern.isin([Pattern])]) #Count number of entries for each chapter number/pattern
+        DocList = []
+        for x in range(0,patternCount):
+            DocTitle = str(dfreference.loc[dfreference['Pattern'] == Pattern, 'DocTitle'].iloc[x])
+            DocID = str(dfreference.loc[dfreference['Pattern'] == Pattern, 'DocID'].iloc[x])
+            PA = str(dfreference.loc[dfreference['Pattern'] == Pattern, 'PA'].iloc[x])
+            Count = str(dfreference.loc[dfreference['Pattern'] == Pattern, 'Count'].iloc[x])
+            DocList += [DocID]
+        DocInfo += [DocList]
+        i=i+1
+    
+    dfrelevantChapters['DocInfo'] = DocInfo
+    dfrelevantChapters = dfrelevantChapters.reset_index()#(drop=True)
+    #dfrelevantChapters.to_csv(outputdir + "dfrelevantChapters.csv", sep=',')
+
+
     dfreferencesourceonly = pd.DataFrame()
     #Extract source info only from the pattern locations
     search = []    
@@ -451,6 +479,9 @@ def Comparison(logpath, source, maindir):
     print('Number of HMRC links in use on PSL: ', str(len(dfreference)))
 
     #print("Adding new column to show whether a change is relevant, then filtering out irrelevant rows...")
+
+
+
 
     df1['Relevant'] = df1.apply(Relevant, axis=1)
     df2['Relevant'] = df2.apply(Relevant, axis=1)    
@@ -491,9 +522,7 @@ def Comparison(logpath, source, maindir):
                     row = {"ParaShifted": 'True'}
                 else:
                     row = {"ParaShifted": 'False'}
-        if ParaDf1 == 'Capitalised amounts':
-            print(ParaDf1, ParaDf2, row)
-            
+        
         df3 = df3.append(row, ignore_index=True) 
         #df_final.iloc[i, 3] = 'False' #df.columns.get_loc('ParaShifted')
         i=i+1
@@ -597,7 +626,6 @@ def Comparison(logpath, source, maindir):
     def levchar_algorithm(x):
         charcountdiff = int(x['CharacterCountDifference'])
         levdist = int(x['LevenshteinDistance'])
-        print(str(charcountdiff), str(levdist))
         if charcountdiff < 10:
             if levdist > charcountdiff + 10:
                 return True
@@ -609,6 +637,9 @@ def Comparison(logpath, source, maindir):
     df_final_parashift['AboveLevCharThreshold'] = df_final_parashift.apply(levchar_algorithm, axis=1)
 
     
+    #print("Adding new column to show the Levenshtein Distance between paragraphs...")
+    
+
     change_len = str(len(df_final_parashift.index))
     print('Number of relevant paras after the para shift analysis: ', change_len)
 
@@ -645,6 +676,20 @@ def Comparison(logpath, source, maindir):
     #df_del = df_del.reset_index(drop=True)
     #print(df_final.style.apply(highlight_diff, axis=None).render())
  
+
+    def DocInfoGenerator(df, ColName):
+        DocInfoList = []
+        i=0
+        for index, row in df.iterrows():
+            ChapterNum = df[ColName].iloc[i]
+            print(ChapterNum)
+            DocInfo = str(dfrelevantChapters.loc[dfrelevantChapters['Chapter'] == ChapterNum, 'DocInfo'].iloc[0])
+            DocInfoList.append(DocInfo)
+            i=i+1
+        return DocInfoList
+
+    df_final_parashift['Found In'] = DocInfoGenerator(df_final_parashift, 'ChapterNum')
+    df_del['Found In'] = DocInfoGenerator(df_del, 'ChapterNumber')
 
     
     #grabbing the dates the reports were run, hardcoded for now
