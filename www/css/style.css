@@ -1,0 +1,137 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700");
+
+body {
+    padding: 5px;
+  color: blue;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type=text] {
+    width: 20em
+}
+
+p {
+    margin: 1em 0 0;
+}
+
+th {
+    background-color: #69ab96;
+    color: #f5f5f0;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;} 
+
+table, th, td, p, sup {
+   border: 0px solid black;
+   font-family: 'Lato', sans-serif;
+   font-weight: 400;
+   text-align: left;
+   padding: 5px;
+   font-size: 14px;
+   border-spacing: 5px;
+   vertical-align: top;
+   text-align: left;
+}
+
+td {
+   word-wrap: break-word;
+   }
+
+tr:hover {background-color: #F8E0F7;}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'Lato', sans-serif;
+   font-weight: 400;
+   }
+sup {
+    font-size: 10px;
+}
+img { 
+    max-width: 100%; 
+    display:block; 
+    height: auto;
+}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 16%;
+    height: 0px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 5px 10px;
+    margin-right: 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 13px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #E9FFEE;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    position:absolute;
+    top: 15%;
+    left: 20%;
+    float: left;
+    padding: 0px 12px;
+    width: 100%;
+    border-left: none;
+    text-align: center;
+}
+.tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+.wrap
+{    
+    width: 50%;
+    margin: 10px;
+    
+}
+
+h2, img {
+    display: inline;
+    float: none;
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+#body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+.footer {
+    position: floating;
+    left: 0;
+    bottom: 10%;
+    width: 100%;
+}
+

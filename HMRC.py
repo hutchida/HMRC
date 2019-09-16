@@ -203,6 +203,7 @@ def HTMLExport(notes, new_len, del_len, change_len, df_new, df_del, df_final, fi
                 }</style>
             </head>"""
     menu = '<p><a href="index.html">No Filter</a> | <a href="relevance.html">+ Relevance Filter</a> | <a href="parashift.html">+ Para Shift Filter</a> | <a href="levchar.html">+ Levenshtein Distance & Character Count Difference Filter</a></p>'
+    pd.set_option('display.max_colwidth', -1) #stop the dataframe from truncating cell contents. This needs to be set if you want html links to work in cell contents
 
     bootstrap = '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">'
     html = '<div class="container">'
@@ -223,7 +224,7 @@ def HTMLExport(notes, new_len, del_len, change_len, df_new, df_del, df_final, fi
     html += r'</div><div style="max-width: 800px;"><h1 id="del">DELETIONS</h1><p>' + del_len + ' paras have been deleted and are displayed below, (<a href="#home">scroll to top</a>)</p>'
     html += df_del.to_html(na_rep = " ",index = False,  classes="table table-bordered text-left table-striped table-hover")
     html += '</div></div>'
-
+    html = html.replace('&lt;', '<').replace('&gt;','>')
     #write to html
     print("Exported HTML to...", exportfilepath)
     with open(exportfilepath,'w', encoding='utf-8') as f:
@@ -795,9 +796,8 @@ def CharacterCountDiff(prev, curr):
     #print(CharCount) 
     return CharCount
 
-def LevDistComparison(logpath, xmldir1, xmldir2):
+def LevDistComparison(logpath, xmldir1, xmldir2, NSMAP):
     print("Opening up docs on the change list to calculate Levenshtein Distance...")
-    NSMAP = {'lnvxe': 'http://www.lexis-nexis.com/lnvxe', 'lnv': 'http://www.lexis-nexis.com/lnv', 'lnvni': 'http://www.lexis-nexis.com/lnvni', 'lnclx': 'http://www.lexis-nexis.com/lnclx', 'lncle': 'http://www.lexis-nexis.com/lncle', 'lndel': 'http://www.lexis-nexis.com/lndel', 'lngntxt': 'http://www.lexis-nexis.com/lngntxt', 'lndocmeta': 'http://www.lexis-nexis.com/lndocmeta', 'lnlit': 'http://www.lexis-nexis.com/lnlit', 'lnci': 'http://www.lexis-nexis.com/lnci', 'nitf': 'urn:nitf:iptc.org.20010418.NITF', 'lnvx': 'http://www.lexis-nexis.com/lnvx', 'ci': 'http://www.lexis-nexis.com/ci', 'glp': 'http://www.lexis-nexis.com/glp', 'case': 'http://www.lexis-nexis.com/glp/case', 'jrnl': 'http://www.lexis-nexis.com/glp/jrnl', 'comm': 'http://www.lexis-nexis.com/glp/comm', 'cttr': 'http://www.lexis-nexis.com/glp/cttr', 'dict': 'http://www.lexis-nexis.com/glp/dict', 'dig': 'http://www.lexis-nexis.com/glp/dig', 'docinfo': 'http://www.lexis-nexis.com/glp/docinfo', 'frm': 'http://www.lexis-nexis.com/glp/frm', 'in': 'http://www.lexis-nexis.com/glp/in', 'leg': 'http://www.lexis-nexis.com/glp/leg', 'xhtml': 'http://www.w3c.org/1999/xhtml'}
 
     df = pd.DataFrame()
     dfchange = pd.read_csv(logpath+'change.csv')
@@ -834,9 +834,10 @@ def LevDistComparison(logpath, xmldir1, xmldir2):
                     for individualtext in newtexts: newtext+=individualtext
 
                     levdisttemp = levenshtein_distance(oldtext, newtext)
-                    print(levdisttemp, levdisttotal)
-                    print(oldtext+'\n')
-                    print(newtext)
+                    if levdisttemp > levdisttotal:
+                        print(levdisttemp, levdisttotal)
+                        print(oldtext+'\n')
+                        print(newtext)
                     #print(str(text1.text)+'\n')
                     #print(str(texts2[g].text))
                     if levdisttemp > 0:
@@ -852,105 +853,100 @@ def LevDistComparison(logpath, xmldir1, xmldir2):
         print(row)
         df = df.append(row, ignore_index=True) 
         df.to_csv(outputdir + "df-text4.csv", sep=',', index=False)
-    i+=1
+        i+=1
 
     #wait = input("PAUSED...when ready press enter")
 
-def Diff(logpath, start, xmldir1, xmldir2):
+def Diff(logpath, start, xmldir1, xmldir2, df):
     
     print('Loading list of changed files...')
     
-    dfchange = pd.read_csv(logpath+'change.csv')
     i = 0
     
     print('Stepping through each doc and comparing...')
-    html = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" type="text/css" href="style.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" /><title></title></head><body>'
     
-    with open(logpath + "\\test_updates_overview.html",'w', encoding='utf-8') as f:
-            f.write(html) 
+    
+    
+    for item in df.itertuples(): #loop through each item in the remainder list
+        #if str(dfchange.iloc[i,0]) == 'cfm26050.xml': 
+        html = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" type="text/css" href="style.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" /><title></title></head><body>'
+
+        filename1 = xmldir1 + str(df['ChapterNumber'].iloc[i] + '.xml')
+        filename2 = xmldir2 + str(df['ChapterNumber'].iloc[i] + '.xml')
+        print(i, filename1, filename2)                       
+        
+        #Import xml file into soup
+        tree1 = etree.parse(filename1)
+        tree2 = etree.parse(filename2)
+        chapnumber = tree1.find(".//ci:content", NSMAP).text 
+        title = tree1.find(".//docinfo:doc-heading", NSMAP).text 
+        title = title.replace(chapnumber + ' ', '')
+        html += '<div class="container"><h1>' + chapnumber + ':</h1><h2>' + title + '</h2><hr />'
+        input1 = tree1.getroot()
+        input2 = tree2.getroot()
+
+        page1 = ET.tostring(input1.find(".//pgrp"))
+        page2 = ET.tostring(input2.find(".//pgrp"))
+
+
+        html+= '<div contenteditable="true" class="container" style="width: 50%; height: 50%; float:left;"><h3>Old version</h3><hr />' + str(page1) + '</div>'
+        html+= '<div contenteditable="true" class="container" style="width: 50%; height: 50%; float:right;"><h3>New version</h3><hr />' + str(page2) + '</div></div>'
+        
+        
+        html = html.replace("b'<pgrp>",'')
+        html = html.replace("</pgrp>'",'')
+        html = html.replace("<h>",'<h3>')
+        html = html.replace("</h>",'</h3>')
+        html = html.replace("<text>",'')
+        html = html.replace("<text>",'')
+        html = html.replace("</text>",'')
+        html = html.replace("<text />", '')
+        html = html.replace("&#8226;\\t",'')
+        html = html.replace("<row",'<tr')
+        html = html.replace("<entry",'<td')
+        html = html.replace("</row>",'</tr>')
+        html = html.replace("</entry>",'</td>')
+        html = html.replace("<l>",'')
+        html = html.replace("</l>",'')
+        #html = html.replace("<p></p>",'')
+        #html = html.replace("</lilabel><p>",' ')
+
+        #wait = input("PAUSED...when ready press enter")
+        
+        
+        
+        #try: diff += difflib.HtmlDiff().make_table(input1para.text,input2paras[i].text,filename1,filename2,context=True)
+        #except: diff += '<span class="diff">Exception raised whilst comparing</span>'
+
+        #soup1 = BeautifulSoup(open(filename1), 'lxml') 
+        #soup2 = BeautifulSoup(open(filename2), 'lxml')  
+        #input1 = [soup1.text] #have to put it as a one itemed list for some reason in order for it to work properly
+        #input2 = [soup2.text]     
+        #print(input1)       
+
+        #input1 = re.sub(r'</[^>]*>','\n', str(input1))
+        #input1 = re.sub(r'<[^>]*>','', str(input1))
+        #input1 = re.sub(r'\n\n','\n', str(input1))
+        #input1 = re.sub(r'\n\n','\n', str(input1))
+        #input1 = re.sub(r'\n\n','\n', str(input1))
+
+        #input2 = re.sub(r'</[^>]*>','\n', str(input2))
+        #input2 = re.sub(r'<[^>]*>','', str(input2))
+        #input2 = re.sub(r'\n\n','\n', str(input2))
+        #input2 = re.sub(r'\n\n','\n', str(input2))
+        #input2 = re.sub(r'\n\n','\n', str(input2))
+        
+        print("Time taken so far..." + str(datetime.datetime.now() - start))
+        #if i == 10: break        
+    
+        html += '</body></html>'
+        with open(outputdir + 'chapters/' + chapnumber + ".html",'w', encoding='utf-8') as f:
+            f.write(html)  #select the first table and append to the html variable
             f.close()
             pass
-    
-    for index, item in dfchange.itertuples(): #loop through each item in the remainder list
-        if str(dfchange.iloc[i,0]) == 'cfm26050.xml': 
-            
-            filename1 = xmldir1 + str(dfchange.iloc[i,0])
-            filename2 = xmldir2 + str(dfchange.iloc[i,0])
-            print(i, filename1, filename2)                       
-            
-            #Import xml file into soup
-            tree1 = etree.parse(filename1)
-            tree2 = etree.parse(filename2)
-            input1 = tree1.getroot()
-            input2 = tree2.getroot()
-
-            page1 = ET.tostring(input1.find(".//pgrp"))
-            page2 = ET.tostring(input2.find(".//pgrp"))
-
-            page1 = re.sub(r"b'<pgrp>",'', str(page1))
-            page1 = re.sub(r"</pgrp>'",'', str(page1))
-            page1 = re.sub(r"<h>",'<h2>', str(page1))
-            page1 = re.sub(r"</h>",'</h2>', str(page1))
-            page1 = re.sub(r"<text>",'', str(page1))
-            page1 = re.sub(r"</text>",'', str(page1))
-            page1 = re.sub(r"&#8226;\\t",'', str(page1))
-            page1 = re.sub(r"<row",'<tr', str(page1))
-            page1 = re.sub(r"<entry",'<td', str(page1))
-            page1 = re.sub(r"</row>",'</tr>', str(page1))
-            page1 = re.sub(r"</entry>",'</td>', str(page1))
-
-            page2 = re.sub(r"b'<pgrp>",'', str(page2))
-            page2 = re.sub(r"</pgrp>'",'', str(page2))
-            page2 = re.sub(r"<h>",'<h2>', str(page2))
-            page2 = re.sub(r"</h>",'</h2>', str(page2))
-            page2 = re.sub(r"<text>",'', str(page2))
-            page2 = re.sub(r"</text>",'', str(page2))
-            page2 = re.sub(r"&#8226;\\t",'', str(page2))
-            page2 = re.sub(r"<row",'<tr', str(page2))
-            page2 = re.sub(r"<entry",'<td', str(page2))
-            page2 = re.sub(r"</row>",'</tr>', str(page2))
-            page2 = re.sub(r"</entry>",'</td>', str(page2))
-
-            html+= '<div contenteditable="true" class="container" style="width: 50%; height: 50%; float:left;"><h1>Old version</h1><hr />' + str(page1) + '</div>'
-            html+= '<div contenteditable="true" class="container" style="width: 50%; height: 50%; float:right;"><h1>New version</h1><hr />' + str(page2) + '</div>'
-            
-            #wait = input("PAUSED...when ready press enter")
-            
-            
-            
-            #try: diff += difflib.HtmlDiff().make_table(input1para.text,input2paras[i].text,filename1,filename2,context=True)
-            #except: diff += '<span class="diff">Exception raised whilst comparing</span>'
-
-            #soup1 = BeautifulSoup(open(filename1), 'lxml') 
-            #soup2 = BeautifulSoup(open(filename2), 'lxml')  
-            #input1 = [soup1.text] #have to put it as a one itemed list for some reason in order for it to work properly
-            #input2 = [soup2.text]     
-            #print(input1)       
-
-            #input1 = re.sub(r'</[^>]*>','\n', str(input1))
-            #input1 = re.sub(r'<[^>]*>','', str(input1))
-            #input1 = re.sub(r'\n\n','\n', str(input1))
-            #input1 = re.sub(r'\n\n','\n', str(input1))
-            #input1 = re.sub(r'\n\n','\n', str(input1))
-
-            #input2 = re.sub(r'</[^>]*>','\n', str(input2))
-            #input2 = re.sub(r'<[^>]*>','', str(input2))
-            #input2 = re.sub(r'\n\n','\n', str(input2))
-            #input2 = re.sub(r'\n\n','\n', str(input2))
-            #input2 = re.sub(r'\n\n','\n', str(input2))
-
-            
-            print("Time taken so far..." + str(datetime.datetime.now() - start))
-            #if i == 10: break
+        print("Exported to: " + outputdir + 'chapters/' + chapnumber + ".html")
         i = i + 1
-        
     
-    html += '</body></html>'
-    with open(logpath + "\\changes.html",'w', encoding='utf-8') as f:
-        f.write(html)  #select the first table and append to the html variable
-        f.close()
-        pass
-    print("Writing results to HTML file..." + logpath + "\\test_updates_overview.html")
     
 
 
@@ -970,6 +966,7 @@ source = "HMRC"
 maindir = "C:\\Users\\Hutchida\\Documents\\HMRC\\"
 #outputdir = maindir + "\\output\\"
 outputdir = "www\\"
+NSMAP = {'lnvxe': 'http://www.lexis-nexis.com/lnvxe', 'lnv': 'http://www.lexis-nexis.com/lnv', 'lnvni': 'http://www.lexis-nexis.com/lnvni', 'lnclx': 'http://www.lexis-nexis.com/lnclx', 'lncle': 'http://www.lexis-nexis.com/lncle', 'lndel': 'http://www.lexis-nexis.com/lndel', 'lngntxt': 'http://www.lexis-nexis.com/lngntxt', 'lndocmeta': 'http://www.lexis-nexis.com/lndocmeta', 'lnlit': 'http://www.lexis-nexis.com/lnlit', 'lnci': 'http://www.lexis-nexis.com/lnci', 'nitf': 'urn:nitf:iptc.org.20010418.NITF', 'lnvx': 'http://www.lexis-nexis.com/lnvx', 'ci': 'http://www.lexis-nexis.com/ci', 'glp': 'http://www.lexis-nexis.com/glp', 'case': 'http://www.lexis-nexis.com/glp/case', 'jrnl': 'http://www.lexis-nexis.com/glp/jrnl', 'comm': 'http://www.lexis-nexis.com/glp/comm', 'cttr': 'http://www.lexis-nexis.com/glp/cttr', 'dict': 'http://www.lexis-nexis.com/glp/dict', 'dig': 'http://www.lexis-nexis.com/glp/dig', 'docinfo': 'http://www.lexis-nexis.com/glp/docinfo', 'frm': 'http://www.lexis-nexis.com/glp/frm', 'in': 'http://www.lexis-nexis.com/glp/in', 'leg': 'http://www.lexis-nexis.com/glp/leg', 'xhtml': 'http://www.w3c.org/1999/xhtml'}
 
 start = datetime.datetime.now() 
 
@@ -993,8 +990,23 @@ print("\n\n\nSo far time taken..." + str(datetime.datetime.now() - start))
 print("\n\n\nEntering comparison phase..." + str(datetime.datetime.now()))
 
 #Comparison(logpath, source, maindir)
-LevDistComparison(logpath, xmldir1, xmldir2)
-#Diff(logpath, start, xmldir1, xmldir2)
+#LevDistComparison(logpath, xmldir1, xmldir2, NSMAP)
+
+notes = ''    
+df_new = pd.read_csv(outputdir + source + "_additions_levchar.csv")
+df_del = pd.read_csv(outputdir + source + "_additions_levchar.csv")
+df_final = pd.read_csv(outputdir + "df-text4.csv")
+#tidy up df_final a bit, stick this in a function later on
+#remove link column and rebuild it
+del df_final['Link']
+df_final['Link'] = '<a href="chapters//' + df_final['ChapterNumber'] + '.html" target="_blank">Click to view</a>' #mark up the link ready for html
+df_final.Link = df_final.Link.str.replace('—', ' ')
+df_final.Link = df_final.Link.str.replace('’',"'")
+df_final = df_final.sort_values(['LevDistance'], ascending = False)
+
+HTMLExport(notes, str(len(df_new)), str(len(df_del)), str(len(df_final)), df_new, df_del, df_final, 'ALL', outputdir + 'levchar.html')
+
+Diff(logpath, start, xmldir1, xmldir2, df_final)
 print("\n\n\nFinished! Total time taken..." + str(datetime.datetime.now() - start))
 
 #Export(logpath)
