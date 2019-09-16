@@ -1,63 +1,203 @@
-ChapterNumber,Title,Para,Relevant
-CG58045,CG58045 Example,"In year 0 a taxpayer acquires all the shares in T Ltd for £100,000.",True
-CG58045,CG58045 Example,In year 10 the taxpayer sells the shares in T Ltd at arm’s length to P Ltd.,True
-CG58045,CG58045 Example,The consideration is ,True
-CG58045,CG58045 Example,"cash £500,000, plus",True
-CG58045,CG58045 Example,"80,000 shares in P Ltd at market value of £2.25 each (total £180,000), plus",True
-CG58045,CG58045 Example,"the right to two payments of deferred consideration, the amount depending on future profits of T Ltd, to be satisfied only by an issue of shares in P Ltd.",True
-CG58045,CG58045 Example,"The market value of the right to deferred consideration at the time of disposal is agreed by Shares and Assets Valuation at £300,000.",True
-CG58045,CG58045 Example,"In year 11 shares in P Ltd to the value of £202,940 (73,000 shares at £2.78 each) are issued to the taxpayer in part satisfaction of the right to deferred consideration. The market value of the remainder of the right in year 11 is agreed by Shares and Assets Valuation at £90,000.",True
-CG58045,CG58045 Example,"In year 12 shares in P Ltd to the value of £118,440 (47,000 shares at £2.52 each) are issued in full satisfaction of the remainder of the right to deferred consideration.",True
-CG58045,CG58045 Example,P Ltd is a company whose shares are quoted on the Stock Exchange. All of the conditions are satisfied and the earn-out right is treated as a security by TCGA92/S138A.,True
-CG58045,CG58045 Example,COMPUTATIONS,True
-CG58045,CG58045 Example,A) IMMEDIATE CHARGEABLE GAIN,True
-CG58045,CG58045 Example,B) COST OF SHARES IN P LTD,True
-CG58045,CG58045 Example,C) COST OF NOTIONAL SECURITY = RIGHT TO DEFERRED CONSIDERATION,True
-CG58045,CG58045 Example,D) COMPUTATIONS WHEN DEFERRED CONSIDERATION RECEIVED,True
-CG58045,CG58045 Example,E) SHARES IN P LTD,True
-CG58045,CG58045 Example,EXPLANATION,True
-CG58045,CG58045 Example,The statutory reasons for the method of computation are;,True
-CG58045,CG58045 Example,CASH RECEIVED,True
-CG58045,CG58045 Example,The cash received is treated as a part-disposal of the old holding of T Ltd shares under TCGA92/S128 (3). The apportionment of the base cost of the old holding is made on the basis of market value at the date of disposal (TCGA92/S128 (4) and TCGA92/S129).,True
-CG58045,CG58045 Example,COST OF SHARES IN P LTD,True
-CG58045,CG58045 Example,The vendor has acquired shares in P Ltd and a `notional security’ under the terms of TCGA92/S138A. These are treated as two classes of shares. Together they form the `new holding’ under TCGA92/S127 as applied by TCGA92/S135 (3).,True
-CG58045,CG58045 Example,If the shares in P Ltd are not quoted the apportionment should be made by reference to market values at the date of a disposal of all or part of the new holding.,True
-CG58045,CG58045 Example,RIGHT TO DEFERRED UNASCERTAINABLE CONSIDERATION,True
-CG58045,CG58045 Example,The part satisfaction of the right to deferred consideration is a part disposal of the right. But because of TCGA92/S138A it is treated as a conversion of securities within TCGA92/S132. TCGA92/S127 applies with the necessary adaptations to the part disposal and part of the base cost of the `notional security’ is transferred to the holding of shares in P Ltd.,True
-CG58045,CG58045 Example,The procedure for obtaining valuations of the right to deferred unascertainable consideration is described at CG14950.,True
-CG58045,CG58045 Example,SHARES IN P LTD,True
-CG58045,CG58045 Example,The shares in P Ltd which are acquired go into the Section 104 holding of shares of the same class. The base cost and indexed pool of expenditure is calculated in accordance with B and C above.,True
-IHTM11260,IHTM11260 Exemptions: Conditional Exemption,"Land of outstanding scenic, historic or scientific interest",True
-IHTM11260,IHTM11260 Exemptions: Conditional Exemption,Buildings of outstanding historic or architectural interest,True
-IHTM11260,IHTM11260 Exemptions: Conditional Exemption,"Their essential amenity land, and",True
-IHTM11260,IHTM11260 Exemptions: Conditional Exemption,Objects historically associated with them.,True
-IHTM11260,IHTM11260 Exemptions: Conditional Exemption,The exemption has to be claimed and the required undertakings given by the appropriate person. The Heritage Team is primarily responsible for administering the exemption.,True
-PAYE130025,PAYE130025 Allowances,Enter the calculated coding allowance under Concessional Relief on the Allowances screen,True
-STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031030    The principal charge,True
-STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031040    Agreement to transfer,True
-STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031050    Conditional and unconditional agreements,True
-STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031060    Consideration: money or money's worth,True
-STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031070    Calculation of the tax,True
-STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031080    Unit trusts,True
-STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031090    Chargeable securities - general,True
-STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,"STSM031100    Chargeable securities - stocks, shares and loan capital",True
-STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,"STSM031110    Chargeable securities - interests, dividends and other rights",True
-STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031120    Chargeable securities - options to acquire and rights to allotment or subscription,True
-STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031130    Chargeable securities - units under a unit trust scheme,True
-STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031140    Instalment arrangements,True
-STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031150    Relationship with stamp duty,True
-STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031160    Reliefs and exemptions,True
-STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031170    Interaction with stamp duty and exemptions,True
-VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,"HMRC may decline to provide an advance assurance in certain circumstances, see [The advance assurance service is a non-statutory service offered by HMRC on a discretionary basis, where we may offer an opinion as to whether a prospective investment would be a qualifying investment.",True
-VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,"In general, companies seeking an investment from a VCT should not need an advance assurance from HMRC. VCTs should be able to rely upon their professional advisers to determine if a prospective investment is qualifying or not.",True
-VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,"[The advance assurance service is a non-statutory service offered by HMRC on a discretionary basis, where we may offer an opinion as to whether a prospective investment would be a qualifying investment.",True
-VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,"In general, companies seeking an investment from a VCT should not need an advance assurance from HMRC. VCTs should be able to rely upon their professional advisers to determine if a prospective investment is qualifying or not.",True
-VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,](https://www.gov.uk/hmrc-internal-manuals/venture-capital-schemes-manual/vcm54360) specifies the circumstances when HMRC will not withdraw approval from a VCT should it make a non-qualifying investment. ,True
-VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,"HMRC will expect a VCT to take all reasonable steps to ensure an investment would be qualifying; for example, acting on professional advice specifying the technical basis upon which the proposed investment would meet each requirement in Chapter 4 of Part 6 ITA 2007. Provided that the VCT has taken such steps HMRC will not withdraw approval from the VCT if the investment subsequently turns out to be non-qualifying. HMRC will accept that the breach was outside the control of the VCT.",True
-VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,"If there are genuine doubts about whether a proposed investment is qualifying, the company may seek an advance assurance from HMRC. The company must explain how it meets each condition, and draw attention in its application to each point of doubt with a full technical explanation as to why it believes the requirement is met.",True
-VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,The rules of confidentiality apply. Requests will be dealt with only if they come from the company’s secretary or directors or a person authorised by them to negotiate with HMRC on their behalf. Any other parties making enquiries about a company must address those enquiries to the company itself.,True
-VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,An advance assurance is given in respect of a particular issue of shares or securities. An assurance given in respect of one issue should not necessarily be regarded as providing assurance in respect of a different issue.,True
-VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,HMRC will not routinely provide an opinion on whether a company is a knowledge-intensive company. A company’s knowledge-intensive status will be considered only where the proposed investment would otherwise breach the rules for a qualifying holding.,True
-VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,"An advance assurance will not cover the status of the VCT itself, that is, whether the investment would enable the VCT to meet the conditions for approval under section 274 ITA 2007. Those conditions depend upon the VCT’s other investments. ",True
-VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,"HMRC may decline to provide an advance assurance in certain circumstances, see](http://hmrc-internal-manuals/venture-capital-schemes-manual/vcm55400) for more details.",True
-VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,Requests for an advance assurance should be made to the Small Company Enterprise Centre whose address and contact details are at VCM2070.,True
+ChapterNumber,Title,Para
+CG58027,CG58027 Amounts Brought Into Account By TCGA92/S48,"TCGA92/S138A (8) ensures that the rules on deferred ascertainable consideration apply in priority to those in TCGA92/S138A. It provides that any amount that would be included in the computations of a chargeable gain on a disposal by TCGA92/S48 cannot count as unascertainable consideration for the purposes of TCGA92/S138A. So, for example, consideration that could be within the definition of unascertainable in TCGA92/S138A (7) as described at CG58024 simply because it was contingent at the date of the disposal does not count as unascertainable consideration."
+CG58045,CG58045 Example,"In year 0 a taxpayer acquires all the shares in T Ltd for £100,000."
+CG58045,CG58045 Example,In year 10 the taxpayer sells the shares in T Ltd at arm’s length to P Ltd.
+CG58045,CG58045 Example,The consideration is 
+CG58045,CG58045 Example,"cash £500,000, plus"
+CG58045,CG58045 Example,"80,000 shares in P Ltd at market value of £2.25 each (total £180,000), plus"
+CG58045,CG58045 Example,"the right to two payments of deferred consideration, the amount depending on future profits of T Ltd, to be satisfied only by an issue of shares in P Ltd."
+CG58045,CG58045 Example,"The market value of the right to deferred consideration at the time of disposal is agreed by Shares and Assets Valuation at £300,000."
+CG58045,CG58045 Example,"In year 11 shares in P Ltd to the value of £202,940 (73,000 shares at £2.78 each) are issued to the taxpayer in part satisfaction of the right to deferred consideration. The market value of the remainder of the right in year 11 is agreed by Shares and Assets Valuation at £90,000."
+CG58045,CG58045 Example,"In year 12 shares in P Ltd to the value of £118,440 (47,000 shares at £2.52 each) are issued in full satisfaction of the remainder of the right to deferred consideration."
+CG58045,CG58045 Example,P Ltd is a company whose shares are quoted on the Stock Exchange. All of the conditions are satisfied and the earn-out right is treated as a security by TCGA92/S138A.
+CG58045,CG58045 Example,COMPUTATIONS
+CG58045,CG58045 Example,A) IMMEDIATE CHARGEABLE GAIN
+CG58045,CG58045 Example,B) COST OF SHARES IN P LTD
+CG58045,CG58045 Example,C) COST OF NOTIONAL SECURITY = RIGHT TO DEFERRED CONSIDERATION
+CG58045,CG58045 Example,D) COMPUTATIONS WHEN DEFERRED CONSIDERATION RECEIVED
+CG58045,CG58045 Example,E) SHARES IN P LTD
+CG58045,CG58045 Example,EXPLANATION
+CG58045,CG58045 Example,The statutory reasons for the method of computation are;
+CG58045,CG58045 Example,CASH RECEIVED
+CG58045,CG58045 Example,The cash received is treated as a part-disposal of the old holding of T Ltd shares under TCGA92/S128 (3). The apportionment of the base cost of the old holding is made on the basis of market value at the date of disposal (TCGA92/S128 (4) and TCGA92/S129).
+CG58045,CG58045 Example,COST OF SHARES IN P LTD
+CG58045,CG58045 Example,The vendor has acquired shares in P Ltd and a `notional security’ under the terms of TCGA92/S138A. These are treated as two classes of shares. Together they form the `new holding’ under TCGA92/S127 as applied by TCGA92/S135 (3).
+CG58045,CG58045 Example,If the shares in P Ltd are not quoted the apportionment should be made by reference to market values at the date of a disposal of all or part of the new holding.
+CG58045,CG58045 Example,RIGHT TO DEFERRED UNASCERTAINABLE CONSIDERATION
+CG58045,CG58045 Example,The part satisfaction of the right to deferred consideration is a part disposal of the right. But because of TCGA92/S138A it is treated as a conversion of securities within TCGA92/S132. TCGA92/S127 applies with the necessary adaptations to the part disposal and part of the base cost of the `notional security’ is transferred to the holding of shares in P Ltd.
+CG58045,CG58045 Example,The procedure for obtaining valuations of the right to deferred unascertainable consideration is described at CG14950.
+CG58045,CG58045 Example,SHARES IN P LTD
+CG58045,CG58045 Example,The shares in P Ltd which are acquired go into the Section 104 holding of shares of the same class. The base cost and indexed pool of expenditure is calculated in accordance with B and C above.
+CH201550,CH201550 General: Comp1 - Temporary Authorisation Of Tax Adviser During A Compliance Check,Non Caseflow Scanning cases
+CH201550,CH201550 General: Comp1 - Temporary Authorisation Of Tax Adviser During A Compliance Check,"Only paper copies of the form should be accepted. Caseworkers must not accept copies that have been submitted electronically, for example, by email. Paper copies of the form should be retained with the compliance check file/papers."
+CH201550,CH201550 General: Comp1 - Temporary Authorisation Of Tax Adviser During A Compliance Check,"In EF cases, Comp1 should be scanned to EF as document type MEMO and description Comp1."
+CH201550,CH201550 General: Comp1 - Temporary Authorisation Of Tax Adviser During A Compliance Check,Top of page
+CH201550,CH201550 General: Comp1 - Temporary Authorisation Of Tax Adviser During A Compliance Check,Cross Tax Cases
+CH201550,CH201550 General: Comp1 - Temporary Authorisation Of Tax Adviser During A Compliance Check,"If a temporary adviser is appointed during a cross tax compliance check, the lead caseworker must inform the other caseworkers involved in the check that there is a temporary adviser and the extent of their involvement with the compliance check."
+CH201550,CH201550 General: Comp1 - Temporary Authorisation Of Tax Adviser During A Compliance Check,Top of page
+CH201550,CH201550 General: Comp1 - Temporary Authorisation Of Tax Adviser During A Compliance Check,Data Security
+CH201550,CH201550 General: Comp1 - Temporary Authorisation Of Tax Adviser During A Compliance Check,"Caseworkers must be vigilant in ensuring that data security guidance is adhered to. This is especially important where there is the possibility of more than one adviser acting on behalf of the customer, for example, a permanent form 64-8 is already in place and a temporary authorisation Comp1 is received for a different adviser to deal with the compliance check."
+CH402000,CH402000 Establishing Penalty Behaviour: Contents,CH402750    Obtaining information from a third party
+CH402150,CH402150 Evasion: Contents,CH402170    Referral Criteria
+CH402150,CH402150 Evasion: Contents,CH402175    Voluntary request for contractual disclosure facility (CDF)
+CH402150,CH402150 Evasion: Contents,CH402180    Referral Process
+DT2853,DT2853 Azerbaijan: Dividends,The reductions to the above rates are not given if the dividends are effectively connected (see INTM153110 fifth sub-paragraph) with a business carried on by the United Kingdom resident recipient through a permanent establishment in Azerbaijan or with a fixed base in Azerbaijan from which he performs professional services.
+DT2853,DT2853 Azerbaijan: Dividends,"Where an Azerbaijan company pays a dividend to a United Kingdom company which controls directly or indirectly not less than 10 per cent of the voting power in the Azerbaijan company, credit may also be given for the underlying tax (see INTM164010(d)) Article 22(1)(b)."
+DT2854,DT2854 Azerbaijan: Interest,"Notwithstanding the provisions of Article 11(2), interest arising in Azerbaijan shall be exempt from Azerbaijan tax if it is derived and beneficially owned by the UK Government or any agency or instrumentality thereof."
+DT2855,DT2855 Azerbaijan: Royalties,"5 per cent for royalties paid in respect of any copyright of literary, artistic or scientific work (including cinematograph films, and films or tapes for radio or television broadcasting) and"
+DT2855,DT2855 Azerbaijan: Royalties,10 per cent in respect of all other royalties (Article 12(2)).
+DT2855,DT2855 Azerbaijan: Royalties,"Where however the royalties are effectively connected with a permanent establishment or fixed base which the UK resident recipient has in Azerbaijan, the provisions of the Business Profits Article (Article 7) or the Independent Personal Services Article (Article 14) will apply."
+DT2855,DT2855 Azerbaijan: Royalties,"The above reduced rates of Azerbaijan tax only apply if the income is taxed in the UK. So, in cases where the remittance basis is claimed, relief from Azerbaijan tax will only be due in respect of the income remitted to and taxed in the UK."
+IHTM11260,IHTM11260 Exemptions: Conditional Exemption,"Land of outstanding scenic, historic or scientific interest"
+IHTM11260,IHTM11260 Exemptions: Conditional Exemption,Buildings of outstanding historic or architectural interest
+IHTM11260,IHTM11260 Exemptions: Conditional Exemption,"Their essential amenity land, and"
+IHTM11260,IHTM11260 Exemptions: Conditional Exemption,Objects historically associated with them.
+IHTM11260,IHTM11260 Exemptions: Conditional Exemption,The exemption has to be claimed and the required undertakings given by the appropriate person. The Heritage Team is primarily responsible for administering the exemption.
+INTM162070,INTM162070 What HMRC Will Check - Whether There Are Any Obvious Reasons Why The Customer Might Not Be Entitled To Treaty Benefits,(This content has been withheld because of exemptions in the Freedom of Information Act 2000) INTM162080(This content has been withheld because of exemptions in the Freedom of Information Act 2000) INTM162080(This content has been withheld because of exemptions in the Freedom of Information Act 2000)
+INTM162070,INTM162070 What HMRC Will Check - Whether There Are Any Obvious Reasons Why The Customer Might Not Be Entitled To Treaty Benefits,(This content has been withheld because of exemptions in the Freedom of Information Act 2000) INTM162080(This content has been withheld because of exemptions in the Freedom of Information Act 2000)
+INTM162070,INTM162070 What HMRC Will Check - Whether There Are Any Obvious Reasons Why The Customer Might Not Be Entitled To Treaty Benefits,(This content has been withheld because of exemptions in the Freedom of Information Act 2000) INTM156000(This content has been withheld because of exemptions in the Freedom of Information Act 2000) INTM156030(This content has been withheld because of exemptions in the Freedom of Information Act 2000)
+INTM162070,INTM162070 What HMRC Will Check - Whether There Are Any Obvious Reasons Why The Customer Might Not Be Entitled To Treaty Benefits,"(This content has been withheld because of exemptions in the Freedom of Information Act 2000) RIS ID&I, Exchange of Information Team (RIS)(This content has been withheld because of exemptions in the Freedom of Information Act 2000)"
+INTM162070,INTM162070 What HMRC Will Check - Whether There Are Any Obvious Reasons Why The Customer Might Not Be Entitled To Treaty Benefits,(This content has been withheld because of exemptions in the Freedom of Information Act 2000)  (This content has been withheld because of exemptions in the Freedom of Information Act 2000)  (This content has been withheld because of exemptions in the Freedom of Information Act 2000)  (This content has been withheld because of exemptions in the Freedom of Information Act 2000)  (This content has been withheld because of exemptions in the Freedom of Information Act 2000)  (This content has been withheld because of exemptions in the Freedom of Information Act 2000)
+INTM162070,INTM162070 What HMRC Will Check - Whether There Are Any Obvious Reasons Why The Customer Might Not Be Entitled To Treaty Benefits,(This content has been withheld because of exemptions in the Freedom of Information Act 2000)
+INTM162070,INTM162070 What HMRC Will Check - Whether There Are Any Obvious Reasons Why The Customer Might Not Be Entitled To Treaty Benefits,(This content has been withheld because of exemptions in the Freedom of Information Act 2000)
+INTM162070,INTM162070 What HMRC Will Check - Whether There Are Any Obvious Reasons Why The Customer Might Not Be Entitled To Treaty Benefits,(This content has been withheld because of exemptions in the Freedom of Information Act 2000)
+INTM162080,INTM162080 Meaning Of Beneficial Ownership,(This content has been withheld because of exemptions in the Freedom of Information Act 2000)
+INTM162080,INTM162080 Meaning Of Beneficial Ownership,(This content has been withheld because of exemptions in the Freedom of Information Act 2000)
+INTM162080,INTM162080 Meaning Of Beneficial Ownership,(This content has been withheld because of exemptions in the Freedom of Information Act 2000)
+INTM162080,INTM162080 Meaning Of Beneficial Ownership,(This content has been withheld because of exemptions in the Freedom of Information Act 2000)
+INTM162080,INTM162080 Meaning Of Beneficial Ownership,(This content has been withheld because of exemptions in the Freedom of Information Act 2000)
+INTM162080,INTM162080 Meaning Of Beneficial Ownership,(This content has been withheld because of exemptions in the Freedom of Information Act 2000) Paul Wyer(This content has been withheld because of exemptions in the Freedom of Information Act 2000)
+INTM162080,INTM162080 Meaning Of Beneficial Ownership,"In any case where the Officer has strong reasons to believe that the customer is not the beneficial owner of the income in question, they may need to request further information and evidence from the customer (for example, copies of the contracts under which the income was paid). (This content has been withheld because of exemptions in the Freedom of Information Act 2000) INTM162170(This content has been withheld because of exemptions in the Freedom of Information Act 2000) "
+IPT05840,IPT05840 Methods Of Apportionment,employers’ policies covering employees for personal accident;
+IPT07815,IPT07815 Special Accounting Scheme,The contract is liable to the old rate of tax.
+IPT07815,IPT07815 Special Accounting Scheme,Example 8
+IPT07815,IPT07815 Special Accounting Scheme,A contract incepts after the rate change and is written into the insurer’s records during the transitional period.
+IPT07815,IPT07815 Special Accounting Scheme,The insurer is using the special accounting scheme.
+IPT07815,IPT07815 Special Accounting Scheme,The contract is liable to the new rate of tax.
+IPT07815,IPT07815 Special Accounting Scheme,Example 9
+IPT07815,IPT07815 Special Accounting Scheme,A contract incepts before the rate change and is written into the insurer’s records after the end of the transitional period.
+IPT07815,IPT07815 Special Accounting Scheme,The contract is liable to the new rate of tax.
+IPT07840,IPT07840 The Anti-Forestalling Provisions,"Where a concessionary period has been granted and an insurer using the special accounting scheme writes a premium on or after the date of the rate change but before the end of the statutory transitional period and the period of cover for the risk incepts on or after the date of the rate change, the insurer cannot claim that the premium is liable to tax at the old rate (i.e. because the contract was ‘made’ before then). Section 67B(3) of the Finance Act 1994 as inserted by the Finance Act 1997 provides that in these circumstances the contract shall be treated as if it were made on the date of the rate change. "
+IPT07840,IPT07840 The Anti-Forestalling Provisions,You should note that these anti-forestalling rules will not apply where it is normal for the insurer to create a tax point before the contract incepts.
+NIM02090,NIM02090 Company Credit Cards,Class 1 NICs are not due if:
+NIM02090,NIM02090 Company Credit Cards,the expenses are allowable business expenses (see NIM05020)
+NIM02090,NIM02090 Company Credit Cards,or
+NIM02090,NIM02090 Company Credit Cards,"goods/services are purchased, and "
+NIM02090,NIM02090 Company Credit Cards,"the employer gave prior authority to make the purchase, and"
+NIM02090,NIM02090 Company Credit Cards,"the director/employee explained in advance that the purchase was being made on the employer’s behalf, and"
+NIM02090,NIM02090 Company Credit Cards,the supplier accepted that the purchase was being made on the employer’s behalf.
+NIM02090,NIM02090 Company Credit Cards,"If any of the 3 requirements listed directly above are not met, a Class 1 NICs liability will arise in connection with the goods/services purchased. This is because the purchase will not then have been made on behalf of the employer but rather the employee will have arranged the purchase in a private capacity. If the employer subsequently pays the bill and does not seek reimbursement from the director/employee for the cost of the goods/services purchased, or the part of the cost which relates to private use where there is both private and business use, then Class 1 NICs will be due on the amount which relates to private use. This liability will arise at the time the purchase is made."
+NIM02090,NIM02090 Company Credit Cards,See also](https://www.gov.uk/hmrc-internal-manuals/national-insurance-manual/nim02190) regarding the purchase of goods and services by directors and other employees.
+PAYE001,PAYE001 Business Calendar (Internal Use Only),(This content has been withheld because of exemptions in the Freedom of Information Act 2000)
+PAYE001,PAYE001 Business Calendar (Internal Use Only),(This content has been withheld because of exemptions in the Freedom of Information Act 2000)
+PAYE130025,PAYE130025 Allowances,Enter the calculated coding allowance under Concessional Relief on the Allowances screen
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031030    The principal charge
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031040    Agreement to transfer
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031050    Conditional and unconditional agreements
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031060    Consideration: money or money's worth
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031070    Calculation of the tax
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031080    Unit trusts
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031090    Chargeable securities - general
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,"STSM031100    Chargeable securities - stocks, shares and loan capital"
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,"STSM031110    Chargeable securities - interests, dividends and other rights"
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031120    Chargeable securities - options to acquire and rights to allotment or subscription
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031130    Chargeable securities - units under a unit trust scheme
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031140    Instalment arrangements
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031150    Relationship with stamp duty
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031160    Reliefs and exemptions
+STSM030000,STSM030000 Scope Of Stamp Duty Reserve Tax (SDRT): Contents,STSM031170    Interaction with stamp duty and exemptions
+STSM101000,STSM101000 Introduction To Collective Investment Schemes: Contents,STSM101020    What is a Unit Trust?
+STSM101000,STSM101000 Introduction To Collective Investment Schemes: Contents,STSM101030    Authorised investments funds - general
+STSM101000,STSM101000 Introduction To Collective Investment Schemes: Contents,STSM101040    Unauthorised unit trust
+STSM101000,STSM101000 Introduction To Collective Investment Schemes: Contents,STSM101050    What is an open-ended investment company?
+STSM101000,STSM101000 Introduction To Collective Investment Schemes: Contents,STSM101060    Exchange Traded Fund
+STSM101000,STSM101000 Introduction To Collective Investment Schemes: Contents,STSM101065    Exchange Traded Fund: Stamp Duty and SDRT
+STSM101000,STSM101000 Introduction To Collective Investment Schemes: Contents,STSM101070    Classes of units and OEIC shares
+STSM101000,STSM101000 Introduction To Collective Investment Schemes: Contents,STSM101080    Umbrella collective investment schemes
+STSM101000,STSM101000 Introduction To Collective Investment Schemes: Contents,STSM101090    Open and closed-ended investment companies
+STSM101000,STSM101000 Introduction To Collective Investment Schemes: Contents,STSM101100    Schemes not treated as unit trust schemes
+STSM101000,STSM101000 Introduction To Collective Investment Schemes: Contents,STSM102000    Transfer of units in a unit trust or units issued as consideration
+STSM104000,STSM104000 Collectives: Calculation Of The Charge: Contents,STSM104040    Classes of shares in Open-Ended Investment Company
+STSM104000,STSM104000 Collectives: Calculation Of The Charge: Contents,STSM104050    Cancelled / Altered deals
+STSM104000,STSM104000 Collectives: Calculation Of The Charge: Contents,STSM104060    Reduction of Stamp Duty Reserve Tax where exempt investments are held by a fund
+STSM104000,STSM104000 Collectives: Calculation Of The Charge: Contents,STSM104070    Meaning of 'Average Value' for the N(N+E) calculation
+STSM104000,STSM104000 Collectives: Calculation Of The Charge: Contents,STSM104080    Information required in a monthly Stamp Duty Reserve Tax notice
+STSM104000,STSM104000 Collectives: Calculation Of The Charge: Contents,STSM104090    Example data for monthly SDRT FA99/SCH19 computation - Annex A
+STSM104000,STSM104000 Collectives: Calculation Of The Charge: Contents,STSM104100    1st example data for monthly SDRT computation involving negative surrender/issue figures - Annex B
+STSM104000,STSM104000 Collectives: Calculation Of The Charge: Contents,STSM104110    2nd example data for monthly SDRT computation involving negative surrender/issue figures - Annex C
+STSM107000,"STSM107000 Collectives: Contributions, Mergers And Other Matters: Contents",STSM107010    Overview - contribution to a unit trust / Open-Ended Investment Company
+STSM107000,"STSM107000 Collectives: Contributions, Mergers And Other Matters: Contents",STSM107020    Contribution to an existing unit trust / Open-Ended Investment Company
+STSM107000,"STSM107000 Collectives: Contributions, Mergers And Other Matters: Contents",STSM107030    Pro rata in specie contribution to an existing unit trust / Open-Ended Investment Company
+STSM107000,"STSM107000 Collectives: Contributions, Mergers And Other Matters: Contents","STSM107040    Investments acquired by, or transferred to, a collective investment scheme"
+STSM107000,"STSM107000 Collectives: Contributions, Mergers And Other Matters: Contents",STSM107050    Conversion of an authorised unit trust to an Open-Ended Investment Company
+STSM107000,"STSM107000 Collectives: Contributions, Mergers And Other Matters: Contents",STSM107060    Amalgamation of an authorised unit trust with an open-ended investment company
+STSM107000,"STSM107000 Collectives: Contributions, Mergers And Other Matters: Contents",STSM107070    Merger of authorised unit trusts
+STSM107000,"STSM107000 Collectives: Contributions, Mergers And Other Matters: Contents","STSM107080    Mergers, partitions and reconstructions of authorised unit trusts and Open-Ended Investment Companies - Stamp Duty Reserve Tax"
+STSM107000,"STSM107000 Collectives: Contributions, Mergers And Other Matters: Contents","STSM107090    Mergers, partitions and reconstructions of authorised unit trusts and Open-Ended Investment Companies - Stamp Duty"
+STSM107000,"STSM107000 Collectives: Contributions, Mergers And Other Matters: Contents",STSM107100    Termination of a collective investment scheme
+STSM107000,"STSM107000 Collectives: Contributions, Mergers And Other Matters: Contents",STSM107110    Fund supermarkets
+STSM107000,"STSM107000 Collectives: Contributions, Mergers And Other Matters: Contents",STSM107120    Fund supermarkets - Stamp Duty Reserve Tax implications
+STSM107000,"STSM107000 Collectives: Contributions, Mergers And Other Matters: Contents",STSM107130    Fund supermarkets - switching
+TSEM1710,TSEM1710 Trust Deeds: Unrequested Trust Deed - New Trust,You should not read the deed. Retain it for future use. You should not respond to the person who submitted it unless the deed is an original or they contact you again - see below. You may use the deed in an enquiry. The availability of the deed from the date received is not likely to prevent a discovery assessment at a later date.
+TSEM1710,TSEM1710 Trust Deeds: Unrequested Trust Deed - New Trust,"If the deed is a copy, file it in the Permanent Notes DR folder."
+TSEM1710,TSEM1710 Trust Deeds: Unrequested Trust Deed - New Trust,Original deed
+TSEM1710,TSEM1710 Trust Deeds: Unrequested Trust Deed - New Trust,"If you receive an unrequested original deed in paper format, copy it and put the copy in the Permanent Notes DR folder. Return the original immediately, by recorded delivery. Do not use staples or pins."
+TSEM1710,TSEM1710 Trust Deeds: Unrequested Trust Deed - New Trust,Top of page
+TSEM1710,TSEM1710 Trust Deeds: Unrequested Trust Deed - New Trust,Subsequent contact
+TSEM1710,TSEM1710 Trust Deeds: Unrequested Trust Deed - New Trust,"If the person who submitted the trust deed contacts you again to ask you to consider it, reply advising that you do not need to see the trust deed at this time. It is not HMRC Trusts policy to advise on the interpretation of trust deeds and it is the trustee’s responsibility to interpret the terms of the trust and to complete the tax return and self-assess accordingly. If they are in doubt their accountant or solicitor should be able to help."
+TSEM1710,TSEM1710 Trust Deeds: Unrequested Trust Deed - New Trust,Tell the trustee we have retained the trust deed they sent in the event it is needed at a later date in connection with any enquiry or review of the terms of the trust.
+TSEM1711,TSEM1711 Trust Deeds: Unrequested Trust Deed - Established Trust,If the trust deed is sent in
+TSEM1711,TSEM1711 Trust Deeds: Unrequested Trust Deed - Established Trust,"without explanation, or"
+TSEM1711,TSEM1711 Trust Deeds: Unrequested Trust Deed - Established Trust,with a request for comments on the deed
+TSEM1711,TSEM1711 Trust Deeds: Unrequested Trust Deed - Established Trust,respond as for new trusts in TSEM1710.
+TSEM1711,TSEM1711 Trust Deeds: Unrequested Trust Deed - Established Trust,"The return is designed to enable full disclosure to be made without the need to send in other material. But taxpayers and practitioners are entitled to send in additional material if they consider that it adds information of relevance to the tax liability that cannot be contained within the return. We accept any additional information sent in with the return. So you should not send the deed back. Retain it and treat it as part of the return. If there is no normal compliance reason to enquire into the return, do not look at the deed, but if you open an enquiry at any time you may use it. You do not need to write to the taxpayer or agent, unless the document is an original, in which case see TSEM1710."
+TSEM1711,TSEM1711 Trust Deeds: Unrequested Trust Deed - Established Trust,"Taxpayers and agents should be aware that the submission of documents may not provide protection against a discovery assessment beyond that arising from the submission of the return alone. The information contained in the additional material may have been fully covered within the return or, alternatively, there may be so much material that the HMRC officer ‘could not have been reasonably expected, on the basis of the information made available to him before that time, to be aware’ (TMA70/S29(5)) of the particular point of liability, unless the taxpayer or agent had explained its relevance(see EM3261)."
+TSEM1711,TSEM1711 Trust Deeds: Unrequested Trust Deed - Established Trust,Top of page
+TSEM1711,TSEM1711 Trust Deeds: Unrequested Trust Deed - Established Trust,Trust deed sent in with explanation
+TSEM1711,TSEM1711 Trust Deeds: Unrequested Trust Deed - Established Trust,"Unrequested trust deeds may be accompanied by a letter explaining why the deed is being submitted. If there is a specific claim or query, deal with it accordingly."
+TSEM1711,TSEM1711 Trust Deeds: Unrequested Trust Deed - Established Trust,"For example, the deed may have been sent in support of a claim for overpayment relief, and the basis of taxation of the trust or beneficiaries is now in question. Before you consider the claim you should consider the status of the trust. If further advice is needed on the trust deed, submit it to Trusts Technical Edinburgh under TSEM2160. Trusts Technical Edinburgh will advise on the status of the trust and suggest whether you need to consult the technical specialist on overpayment relief claims."
+TSEM1711,TSEM1711 Trust Deeds: Unrequested Trust Deed - Established Trust,Top of page
+TSEM1711,TSEM1711 Trust Deeds: Unrequested Trust Deed - Established Trust,Trust deed sent in with request for general advice
+TSEM1711,TSEM1711 Trust Deeds: Unrequested Trust Deed - Established Trust,"If the letter asks for general advice on the tax consequences of the deed, see TSEM1720."
+TSEM1713,TSEM1713 Trust Deeds: Requesting Trust Deeds,Copies or originals
+TSEM1713,TSEM1713 Trust Deeds: Requesting Trust Deeds,"FA 2008 Schedule 36, Section 8(1) allows us to accept copies of documents. You should normally accept copy trust deeds. "
+TSEM1713,TSEM1713 Trust Deeds: Requesting Trust Deeds,"You should not routinely ask to see the original trust deed if you have been supplied with a copy. However, it may be appropriate to request the original document, for example, where detail on the copy is unclear, incomplete or there is doubt about its authenticity."
+TSEM1713,TSEM1713 Trust Deeds: Requesting Trust Deeds,"If you do need access to the original document, you can make a written request to see it. There is guidance on requesting original documents at CH229900."
+TSEM1715,TSEM1715 Trust Deeds: Trust Deed That You Have Requested,"You should not normally ask to see the original deed - see TSEM1713. If the deed submitted to you is an original, copy it. After use, put the copy away in the Permanent Notes sub-folder. Put the office date stamp and reference on the back of the original. Return it immediately by recorded delivery. Do not use staples or pins."
+TSEM1715,TSEM1715 Trust Deeds: Trust Deed That You Have Requested,"If you receive an extract registered Scottish legal document (one which bears at the top, reference to the Registers of Scotland) treat it as an original document, unless, exceptionally, you have been told that you can keep the document."
+TSEM1715,TSEM1715 Trust Deeds: Trust Deed That You Have Requested,Copy document
+TSEM1715,TSEM1715 Trust Deeds: Trust Deed That You Have Requested,"You will normally keep a copy deed. If you have been asked to return it, put the office date stamp and reference on the back. Make a copy to keep, and return the one sent in to you."
+TSEM1715,TSEM1715 Trust Deeds: Trust Deed That You Have Requested,You should ensure that what you have been given is the final version of the deed and not a draft. Check that it is dated and that the date accords with what you know about when the trust was set up. Check also that it includes a copy of the signatures of all parties involved. If there are no signatures it is an indication that it is not the final version of the deed.
+TSEM1720,TSEM1720 Trust Deeds: Commenting On A Trust Deed,HMRC’s ‘Clearances and approvals’ guidance states that
+TSEM1720,TSEM1720 Trust Deeds: Commenting On A Trust Deed,"‘HMRC does not provide clearances, or advice in respect of the application of Chapter 5 Part 5 ITTOIA 2005 or the tax consequences of executing non-charitable trust deeds or settlements.’"
+TSEM1720,TSEM1720 Trust Deeds: Commenting On A Trust Deed,External customers can find this guidance at http://www.hmrc.gov.uk/cap/.
+VAT-SINGLE-ENTITY-AND-DISAGGREGATION-MANUAL,VAT Single Entity And Disaggregation,VATDSAG01000    Introduction: contents
+VAT-SINGLE-ENTITY-AND-DISAGGREGATION-MANUAL,VAT Single Entity And Disaggregation,VATDSAG02000    Handling business separation cases: contents
+VAT-SINGLE-ENTITY-AND-DISAGGREGATION-MANUAL,VAT Single Entity And Disaggregation,VATDSAG03000    Single Entity: contents
+VAT-SINGLE-ENTITY-AND-DISAGGREGATION-MANUAL,VAT Single Entity And Disaggregation,VATDSAG04000    Single Entity and Partnerships: contents
+VAT-SINGLE-ENTITY-AND-DISAGGREGATION-MANUAL,VAT Single Entity And Disaggregation,VATDSAG05000    Disaggregation: contents
+VAT-SINGLE-ENTITY-AND-DISAGGREGATION-MANUAL,VAT Single Entity And Disaggregation,VATDSAG06000    Determining whether disaggregation has occurred: contents
+VAT-SINGLE-ENTITY-AND-DISAGGREGATION-MANUAL,VAT Single Entity And Disaggregation,VATDSAG07000    What to do if you have reached a conclusion of disaggregation: contents
+VAT-SINGLE-ENTITY-AND-DISAGGREGATION-MANUAL,VAT Single Entity And Disaggregation,VATDSAG08000    Useful legal decisions: contents
+VAT-SUPPLY-AND-CONSIDERATION,VAT Supply And Consideration,VATSC01000    Audience
+VAT-SUPPLY-AND-CONSIDERATION,VAT Supply And Consideration,VATSC02000    Roles and responsibilities
+VAT-SUPPLY-AND-CONSIDERATION,VAT Supply And Consideration,VATSC03000    Basic principles and underlying law
+VAT-SUPPLY-AND-CONSIDERATION,VAT Supply And Consideration,VATSC05000    Further guidance for identifying supply
+VAT-SUPPLY-AND-CONSIDERATION,VAT Supply And Consideration,VATSC30000    Consideration
+VAT-SUPPLY-AND-CONSIDERATION,VAT Supply And Consideration,VATSC70000    Whether supplies are goods or services
+VAT-SUPPLY-AND-CONSIDERATION,VAT Supply And Consideration,VATSC80000    Single and multiple supplies
+VAT-SUPPLY-AND-CONSIDERATION,VAT Supply And Consideration,VATSC90000    Direction of supplies
+VAT-SUPPLY-AND-CONSIDERATION,VAT Supply And Consideration,VATSC99000    Illegal supplies
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,"HMRC may decline to provide an advance assurance in certain circumstances, see [The advance assurance service is a non-statutory service offered by HMRC on a discretionary basis, where we may offer an opinion as to whether a prospective investment would be a qualifying investment."
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,"In general, companies seeking an investment from a VCT should not need an advance assurance from HMRC. VCTs should be able to rely upon their professional advisers to determine if a prospective investment is qualifying or not."
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,"[The advance assurance service is a non-statutory service offered by HMRC on a discretionary basis, where we may offer an opinion as to whether a prospective investment would be a qualifying investment."
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,"In general, companies seeking an investment from a VCT should not need an advance assurance from HMRC. VCTs should be able to rely upon their professional advisers to determine if a prospective investment is qualifying or not."
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,](https://www.gov.uk/hmrc-internal-manuals/venture-capital-schemes-manual/vcm54360) specifies the circumstances when HMRC will not withdraw approval from a VCT should it make a non-qualifying investment. 
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,"HMRC will expect a VCT to take all reasonable steps to ensure an investment would be qualifying; for example, acting on professional advice specifying the technical basis upon which the proposed investment would meet each requirement in Chapter 4 of Part 6 ITA 2007. Provided that the VCT has taken such steps HMRC will not withdraw approval from the VCT if the investment subsequently turns out to be non-qualifying. HMRC will accept that the breach was outside the control of the VCT."
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,"If there are genuine doubts about whether a proposed investment is qualifying, the company may seek an advance assurance from HMRC. The company must explain how it meets each condition, and draw attention in its application to each point of doubt with a full technical explanation as to why it believes the requirement is met."
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,The rules of confidentiality apply. Requests will be dealt with only if they come from the company’s secretary or directors or a person authorised by them to negotiate with HMRC on their behalf. Any other parties making enquiries about a company must address those enquiries to the company itself.
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,An advance assurance is given in respect of a particular issue of shares or securities. An assurance given in respect of one issue should not necessarily be regarded as providing assurance in respect of a different issue.
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,HMRC will not routinely provide an opinion on whether a company is a knowledge-intensive company. A company’s knowledge-intensive status will be considered only where the proposed investment would otherwise breach the rules for a qualifying holding.
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,"An advance assurance will not cover the status of the VCT itself, that is, whether the investment would enable the VCT to meet the conditions for approval under section 274 ITA 2007. Those conditions depend upon the VCT’s other investments. "
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,"HMRC may decline to provide an advance assurance in certain circumstances, see](http://hmrc-internal-manuals/venture-capital-schemes-manual/vcm55400) for more details."
+VCM55360,VCM55360 VCT: Requests For Advance Assurances: Overview,Requests for an advance assurance should be made to the Small Company Enterprise Centre whose address and contact details are at VCM2070.

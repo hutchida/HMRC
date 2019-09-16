@@ -520,7 +520,7 @@ def Comparison(logpath, source, maindir):
                 row = {"ParaShifted": 'True'}
             else:
                 row = {"ParaShifted": 'False'}
-            if ChapNum == 'CFM26050': 
+            if ChapNum == 'PAYE130025': 
                 print(i)
                 print(x)
                 print(x+i)
@@ -534,7 +534,7 @@ def Comparison(logpath, source, maindir):
                 row = {"ParaShifted": 'True'}
             else:
                 row = {"ParaShifted": 'False'}
-            if ChapNum == 'CFM26050': 
+            if ChapNum == 'PAYE130025': 
                 print(i)
                 print(x)
                 print(x-i)
@@ -767,95 +767,6 @@ def Comparison(logpath, source, maindir):
 
     #wait = input("PAUSED...when ready press enter")
 
-
-def levenshtein_distance(prev, curr):
-    counter = {"+": 0, "-": 0}
-    distance = 0
-    for edit_code, *_ in ndiff(prev, curr):
-        if edit_code == " ":
-            distance += max(counter.values())
-            counter = {"+": 0, "-": 0}
-        else: 
-            counter[edit_code] += 1
-    distance += max(counter.values())
-    return distance
-
-
-#compare previous and current character lengths of the paras and return difference
-def CharacterCountDiff(prev, curr):   
-    if prev == curr:
-        CharCount = 0
-    else:
-        if prev > curr: 
-            CharCount = prev - curr
-        else: 
-            if curr > prev: 
-                CharCount = curr - prev
-            else: CharCount = ''
-    #print(CharCount) 
-    return CharCount
-
-def LevDistComparison(logpath, xmldir1, xmldir2):
-    print("Opening up docs on the change list to calculate Levenshtein Distance...")
-    NSMAP = {'lnvxe': 'http://www.lexis-nexis.com/lnvxe', 'lnv': 'http://www.lexis-nexis.com/lnv', 'lnvni': 'http://www.lexis-nexis.com/lnvni', 'lnclx': 'http://www.lexis-nexis.com/lnclx', 'lncle': 'http://www.lexis-nexis.com/lncle', 'lndel': 'http://www.lexis-nexis.com/lndel', 'lngntxt': 'http://www.lexis-nexis.com/lngntxt', 'lndocmeta': 'http://www.lexis-nexis.com/lndocmeta', 'lnlit': 'http://www.lexis-nexis.com/lnlit', 'lnci': 'http://www.lexis-nexis.com/lnci', 'nitf': 'urn:nitf:iptc.org.20010418.NITF', 'lnvx': 'http://www.lexis-nexis.com/lnvx', 'ci': 'http://www.lexis-nexis.com/ci', 'glp': 'http://www.lexis-nexis.com/glp', 'case': 'http://www.lexis-nexis.com/glp/case', 'jrnl': 'http://www.lexis-nexis.com/glp/jrnl', 'comm': 'http://www.lexis-nexis.com/glp/comm', 'cttr': 'http://www.lexis-nexis.com/glp/cttr', 'dict': 'http://www.lexis-nexis.com/glp/dict', 'dig': 'http://www.lexis-nexis.com/glp/dig', 'docinfo': 'http://www.lexis-nexis.com/glp/docinfo', 'frm': 'http://www.lexis-nexis.com/glp/frm', 'in': 'http://www.lexis-nexis.com/glp/in', 'leg': 'http://www.lexis-nexis.com/glp/leg', 'xhtml': 'http://www.w3c.org/1999/xhtml'}
-
-    df = pd.DataFrame()
-    dfchange = pd.read_csv(logpath+'change.csv')
-    i = 0
-    for index, item in dfchange.itertuples(): #loop through each item in the remainder list
-        #if str(dfchange.iloc[i,0]) == 'cfm26050.xml': 
-        filename1 = xmldir1 + str(dfchange.iloc[i,0])
-        filename2 = xmldir2 + str(dfchange.iloc[i,0])
-        #print(i, filename1, filename2)   
-
-        tree1 = etree.parse(filename1)
-        tree2 = etree.parse(filename2)
-        page1 = ET.tostring(tree1.getroot(), encoding='utf-8', method='text')
-        page2 = ET.tostring(tree2.getroot(), encoding='utf-8', method='text')
-        
-        chapnumber = tree1.find(".//ci:content", NSMAP).text  
-        title = tree1.find(".//docinfo:doc-heading", NSMAP).text
-        levdisttotal = levenshtein_distance(str(page1), str(page2))
-        charcountdiff = CharacterCountDiff(len(str(page1)), len(str(page2)))
-        texts1 = tree1.findall(".//text")
-        texts2 = tree2.findall(".//text")
-        
-        g=0
-        textlist=[]
-        if levdisttotal > 0:
-            for text1 in texts1:
-                try:                         
-                    #levdisttemp = levenshtein_distance(str(text1.text), str(texts2[g].text))
-                    oldtext = ''
-                    newtext = ''
-                    oldtexts = text1.xpath('.//text()') #list of all text parts within the tag
-                    for individualtext in oldtexts: oldtext+=individualtext
-                    newtexts = texts2[g].xpath('.//text()')
-                    for individualtext in newtexts: newtext+=individualtext
-
-                    levdisttemp = levenshtein_distance(oldtext, newtext)
-                    print(levdisttemp, levdisttotal)
-                    print(oldtext+'\n')
-                    print(newtext)
-                    #print(str(text1.text)+'\n')
-                    #print(str(texts2[g].text))
-                    if levdisttemp > 0:
-                        levdisttemppercent = round(((levdisttemp / levdisttotal) * 100), 2)
-                        textlist.append(['t'+str(g),levdisttemp, str(levdisttemppercent)+'%'])            
-                except: print('error')
-                g+=1
-        else:
-            textlist = 'NA'
-    
-        link = 'View changes'
-        row = {"ChapterNumber": chapnumber, "Title": title, "LevDistance": levdisttotal, "CharCountDiff": charcountdiff, "ParaBreakdown": [textlist], "Link":link}
-        print(row)
-        df = df.append(row, ignore_index=True) 
-        df.to_csv(outputdir + "df-text4.csv", sep=',', index=False)
-    i+=1
-
-    #wait = input("PAUSED...when ready press enter")
-
 def Diff(logpath, start, xmldir1, xmldir2):
     
     print('Loading list of changed files...')
@@ -872,7 +783,7 @@ def Diff(logpath, start, xmldir1, xmldir2):
             pass
     
     for index, item in dfchange.itertuples(): #loop through each item in the remainder list
-        if str(dfchange.iloc[i,0]) == 'cfm26050.xml': 
+        if str(dfchange.iloc[i,0]) == 'paye130025.xml': 
             
             filename1 = xmldir1 + str(dfchange.iloc[i,0])
             filename2 = xmldir2 + str(dfchange.iloc[i,0])
@@ -911,8 +822,8 @@ def Diff(logpath, start, xmldir1, xmldir2):
             page2 = re.sub(r"</row>",'</tr>', str(page2))
             page2 = re.sub(r"</entry>",'</td>', str(page2))
 
-            html+= '<div contenteditable="true" class="container" style="width: 50%; height: 50%; float:left;"><h1>Old version</h1><hr />' + str(page1) + '</div>'
-            html+= '<div contenteditable="true" class="container" style="width: 50%; height: 50%; float:right;"><h1>New version</h1><hr />' + str(page2) + '</div>'
+            html+= '<div class="container" style="width: 50%; height: 50%; float:left;"><h1>Old version</h1><hr />' + str(page1) + '</div>'
+            html+= '<div class="container" style="width: 50%; height: 50%; float:right;"><h1>New version</h1><hr />' + str(page2) + '</div>'
             
             #wait = input("PAUSED...when ready press enter")
             
@@ -992,8 +903,7 @@ print("\n\n\nSo far time taken..." + str(datetime.datetime.now() - start))
 
 print("\n\n\nEntering comparison phase..." + str(datetime.datetime.now()))
 
-#Comparison(logpath, source, maindir)
-LevDistComparison(logpath, xmldir1, xmldir2)
+Comparison(logpath, source, maindir)
 #Diff(logpath, start, xmldir1, xmldir2)
 print("\n\n\nFinished! Total time taken..." + str(datetime.datetime.now() - start))
 
