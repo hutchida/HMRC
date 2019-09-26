@@ -515,14 +515,14 @@ print("\n\n\nSo far time taken..." + str(datetime.datetime.now() - start))
 #logdate = datetime.datetime.now()
 print("\n\n\nEntering Lev Dist comparison phase..." + str(datetime.datetime.now()))
 
-LevDistComparison(logpath, xmldir1, xmldir2, NSMAP)
+#LevDistComparison(logpath, xmldir1, xmldir2, NSMAP)
 df_new = pd.read_csv(outputdir + source + "_additions_levchar.csv")
 df_del = pd.read_csv(outputdir + source + "_additions_levchar.csv")
 df_final = pd.read_csv(outputdir + "df-text7.csv")
 #tidy up df_final a bit, stick this in a function later on
 #remove link column and rebuild it
 del df_final['Link']
-df_final['Link'] = '<a href="chapters//' + df_final['ChapterNumber'] + '.html" target="_blank">Click to view</a>' #mark up the link ready for html
+df_final['Link'] = '<a href="chapters/' + df_final['ChapterNumber'] + '.html" target="_blank">Click to view</a>' #mark up the link ready for html
 df_final.Link = df_final.Link.str.replace('—', ' ')
 df_final.Link = df_final.Link.str.replace('’',"'")
 df_final = df_final[(df_final['paraChangeCount'] != 0)]
@@ -542,7 +542,7 @@ df_final = df_final.sort_values(['LevDistance'], ascending = False)
 
 #HTMLExport(notes, str(len(df_new)), str(len(df_del)), str(len(df_final)), df_new, df_del, df_final, 'ALL', outputdir + 'levchar.html')
 
-Diff(logpath, start, xmldir1, xmldir2, df_final)
+#Diff(logpath, start, xmldir1, xmldir2, df_final)
 
 menu = '<p><a href="index.html">No Filter</a> | <a href="nocontents.html">No contents pages included</a> | <a href="lev100.html">No contents + Lev Dist Threshold @ 100</a> | <a href="lev200.html">No contents + Lev Dist Threshold @ 200</a></p>'
 #menu = ''
