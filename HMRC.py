@@ -17,6 +17,8 @@ import re
 import string
 import difflib
 from difflib import ndiff
+from docx import Document
+import win32com.client
 
 if sys.version_info[0] < 3:
     from StringIO import StringIO
@@ -277,10 +279,12 @@ def LevDistComparison(logpath, xmldir1, xmldir2, NSMAP):
                 try:
                     oldtexts = text1.xpath('.//text()') #list of all text parts within the tag
                     for individualtext in oldtexts: 
+                        individualtext = re.sub('\s$', '', individualtext) #remove whitespace from end of string
                         try:oldtext+=etree.strip_tags(individualtext,'remotelink')        
                         except TypeError: oldtext+=individualtext
                     newtexts = texts2[g].xpath('.//text()')
                     for individualtext in newtexts: 
+                        individualtext = re.sub('\s$', '', individualtext) #remove whitespace from end of string
                         try: newtext+=etree.strip_tags(individualtext,'remotelink')
                         except TypeError: newtext+=individualtext
                 except IndexError: pass
@@ -487,6 +491,262 @@ def Diff(logpath, start, xmldir1, xmldir2, df):
 
 
 
+def ExportToHTML(logpath, start, xmldir1, xmldir2, df):    
+    i = 0
+    print('Stepping through each doc and comparing...')     
+    for item in df.itertuples(): #loop through each item in the remainder list
+        #if str(dfchange.iloc[i,0]) == 'cfm26050.xml': 
+        #html = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" type="text/css" href="style.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" /><title></title></head><body>'
+
+        filename1 = xmldir1 + str(df['ChapterNumber'].iloc[i] + '.xml')
+        filename2 = xmldir2 + str(df['ChapterNumber'].iloc[i] + '.xml')
+        #print(i, filename1, filename2)                       
+        
+        #Import xml file into soup
+        tree1 = etree.parse(filename1)
+        tree2 = etree.parse(filename2)
+        
+        etree.strip_tags(tree1,'remotelink')
+        etree.strip_tags(tree2,'remotelink')
+
+        #deconstruct xml into dictionaries for comparison later        
+        dict1 = {}
+        dict2 = {}
+        wantedTags = ['text', 'h']
+        d=0
+        for elem in tree1.iter(): 
+            if elem.tag in wantedTags:                
+                if elem.text != None:
+                    if elem.text != ' ':
+                        if elem.tag == 'h': tag = 'h4'
+                        else: tag = 'p'                    
+                        text = etree.strip_tags(elem,'remotelink')
+                        text = re.sub('\s$', '', elem.text) #remove whitespace from end of string
+                        dict1.update({d: [tag, text]})
+                        d+=1
+        
+        d=0
+        for elem in tree2.iter(): 
+            if elem.tag in wantedTags:
+                if elem.text != None:
+                    if elem.text != ' ':
+                        if elem.tag == 'h': tag = 'h4'
+                        else: tag = 'p'
+                        text = etree.strip_tags(elem,'remotelink')
+                        text = re.sub('\s$', '', elem.text) 
+                        dict2.update({d: [tag, text]})
+                        d+=1
+        
+        chapnumber = tree1.find(".//ci:content", NSMAP).text 
+        doctitle1 = tree1.find(".//docinfo:doc-heading", NSMAP).text 
+        doctitle1 = doctitle1.replace(chapnumber + ' ', '')
+        doctitle2 = tree2.find(".//docinfo:doc-heading", NSMAP).text 
+        doctitle2 = doctitle2.replace(chapnumber + ' ', '')
+
+        def XMLtoHTML(dictionary, tree, doctitle, chapnumber, outputdir):
+            html = etree.Element('html')
+            head = etree.SubElement(html, 'head')
+            meta = etree.SubElement(head, 'meta')
+            meta.set('http-equiv', 'Content-Type')
+            meta.set('content', 'text/html; charset=utf-8')
+            link = etree.SubElement(head, 'link') #local css
+            link.set('rel', 'stylesheet')
+            link.set('type', 'text/css')
+            link.set('href', '../css/style.css')
+            link = etree.SubElement(head, 'link') #bootstrap
+            link.set('rel', 'stylesheet')
+            link.set('href', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css')
+            link.set('itegrity', 'sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm')
+            link.set('crossorigin', 'anonymous')
+
+            title = etree.SubElement(head, 'title')
+            title.text = 'HMRC - ' + chapnumber + ' - ' + doctitle
+            body = etree.SubElement(html, 'body')
+            divmain = etree.SubElement(body, 'div')
+            divmain.set('class', 'container')
+            h1 = etree.SubElement(divmain, 'h1')
+            h1.text = chapnumber #+ ':'
+            hr = etree.SubElement(divmain, 'hr')
+            title = etree.SubElement(divmain, 'h3')
+            title.text = doctitle
+            
+            for entry in dictionary:           
+                sup = etree.SubElement(divmain, 'sup')
+                sup.text = str(entry)
+                line = etree.SubElement(divmain, dict1[entry][0])
+                line.text = dict1[entry][1]
+            
+            
+            htmlfilepath = outputdir + chapnumber + ".html"        
+            tree = etree.ElementTree(html)
+            tree.write(htmlfilepath,encoding='utf-8')
+
+            print("Exported to: " + htmlfilepath)
+
+        
+        
+        XMLtoHTML(dict1, tree1, doctitle1, chapnumber, 'C:\\GIT\\Chapters\\')        
+        #print("Time taken so far..." + str(datetime.datetime.now() - start))
+        #wait = input("PAUSED...when ready press enter")
+        #XMLtoHTML(dict2, tree2, doctitle2, chapnumber, 'C:\\GIT\\Chapters\\')        
+        #print("Time taken so far..." + str(datetime.datetime.now() - start))
+        #wait = input("PAUSED...when ready press enter")
+        i = i + 1
+
+
+def ExportToDoc(logpath, start, xmldir1, xmldir2, df):    
+    i = 0
+    print('Stepping through each doc and comparing...')     
+    for item in df.itertuples(): #loop through each item in the remainder list
+        #if str(dfchange.iloc[i,0]) == 'cfm26050.xml': 
+        #html = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" type="text/css" href="style.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" /><title></title></head><body>'
+
+        filename1 = xmldir1 + str(df['ChapterNumber'].iloc[i] + '.xml')
+        filename2 = xmldir2 + str(df['ChapterNumber'].iloc[i] + '.xml')
+        #print(i, filename1, filename2)                       
+        
+        #Import xml file into soup
+        tree1 = etree.parse(filename1)
+        tree2 = etree.parse(filename2)
+        
+        etree.strip_tags(tree1,'remotelink')
+        etree.strip_tags(tree2,'remotelink')
+
+        #deconstruct xml into dictionaries for comparison later        
+        dict1 = {}
+        dict2 = {}
+        wantedTags = ['text', 'h']
+        d=0
+        for elem in tree1.iter(): 
+            if elem.tag in wantedTags:                
+                if elem.text != None:
+                    if elem.text != ' ':
+                        if elem.tag == 'h': tag = 'h4'
+                        else: tag = 'p'                    
+                        text = etree.strip_tags(elem,'remotelink')
+                        text = re.sub('\s$', '', elem.text) #remove whitespace from end of string
+                        dict1.update({d: [tag, text]})
+                        d+=1
+        
+        d=0
+        for elem in tree2.iter(): 
+            if elem.tag in wantedTags:
+                if elem.text != None:
+                    if elem.text != ' ':
+                        if elem.tag == 'h': tag = 'h4'
+                        else: tag = 'p'
+                        text = etree.strip_tags(elem,'remotelink')
+                        text = re.sub('\s$', '', elem.text) 
+                        dict2.update({d: [tag, text]})
+                        d+=1
+        
+        chapnumber = tree1.find(".//ci:content", NSMAP).text 
+        doctitle1 = tree1.find(".//docinfo:doc-heading", NSMAP).text 
+        doctitle1 = doctitle1.replace(chapnumber + ' ', '')
+        doctitle2 = tree2.find(".//docinfo:doc-heading", NSMAP).text 
+        doctitle2 = doctitle2.replace(chapnumber + ' ', '')
+
+        def XMLtoDoc(dictionary, tree, doctitle, chapnumber, outputdir, type):
+            document = Document()
+            document.add_heading('HMRC - ' + chapnumber + ' - ' + doctitle, 0)
+            for entry in dictionary: document.add_paragraph(dictionary[entry][1])            
+            docfilepath = outputdir + chapnumber + '-' + type + ".docx"    
+            document.save(docfilepath) 
+            #print("Exported to: " + docfilepath)
+
+        
+        
+        XMLtoDoc(dict1, tree1, doctitle1, chapnumber, outputdir + '\\Chapters\\', 'old')    
+        XMLtoDoc(dict2, tree2, doctitle2, chapnumber, outputdir + '\\Chapters\\', 'new')    
+        #Create the Application word
+        Application=win32com.client.gencache.EnsureDispatch("Word.Application")
+        Application.CompareDocuments(Application.Documents.Open('C:\\GIT\\HMRC\\www\\chapters\\' + chapnumber + '-old.docx'), Application.Documents.Open('C:\\GIT\\HMRC\\www\\chapters\\' + chapnumber + '-new.docx'))
+        #Application.ActiveDocument.ActiveWindow.View.Type = 3 # prevent that word opens itself
+        Application.ActiveDocument.SaveAs (FileName = 'C:\\GIT\\HMRC\\www\\chapters\\' + chapnumber + '-comp.docx')
+        Application.Documents.Close()
+        Application.Quit()
+        deleteList.append('C:\\GIT\\HMRC\\www\\chapters\\' + chapnumber + "-old.docx")
+        deleteList.append('C:\\GIT\\HMRC\\www\\chapters\\' + chapnumber + "-new.docx")
+        print("Exported to: " + 'C:\\GIT\\HMRC\\www\\chapters\\' + chapnumber + '-comp.docx')
+        i = i + 1
+    
+def ExportToTXT(logpath, start, xmldir1, xmldir2, df):    
+    i = 0
+    print('Stepping through each doc and comparing...')     
+    for item in df.itertuples(): #loop through each item in the remainder list
+        #if str(dfchange.iloc[i,0]) == 'cfm26050.xml': 
+        #html = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" type="text/css" href="style.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" /><title></title></head><body>'
+
+        filename1 = xmldir1 + str(df['ChapterNumber'].iloc[i] + '.xml')
+        filename2 = xmldir2 + str(df['ChapterNumber'].iloc[i] + '.xml')
+        #print(i, filename1, filename2)                       
+        
+        #Import xml file into soup
+        tree1 = etree.parse(filename1)
+        tree2 = etree.parse(filename2)
+        
+        etree.strip_tags(tree1,'remotelink')
+        etree.strip_tags(tree2,'remotelink')
+
+        #deconstruct xml into dictionaries for comparison later        
+        dict1 = {}
+        dict2 = {}
+        wantedTags = ['text', 'h']
+        d=0
+        for elem in tree1.iter(): 
+            if elem.tag in wantedTags:                
+                if elem.text != None:
+                    if elem.text != ' ':
+                        if elem.tag == 'h': tag = 'h4'
+                        else: tag = 'p'                    
+                        text = etree.strip_tags(elem,'remotelink')
+                        text = re.sub('\s$', '', elem.text) #remove whitespace from end of string
+                        dict1.update({d: [tag, text]})
+                        d+=1
+        
+        d=0
+        for elem in tree2.iter(): 
+            if elem.tag in wantedTags:
+                if elem.text != None:
+                    if elem.text != ' ':
+                        if elem.tag == 'h': tag = 'h4'
+                        else: tag = 'p'
+                        text = etree.strip_tags(elem,'remotelink')
+                        text = re.sub('\s$', '', elem.text) 
+                        dict2.update({d: [tag, text]})
+                        d+=1
+        
+        chapnumber = tree1.find(".//ci:content", NSMAP).text 
+        doctitle1 = tree1.find(".//docinfo:doc-heading", NSMAP).text 
+        doctitle1 = doctitle1.replace(chapnumber + ' ', '')
+        doctitle2 = tree2.find(".//docinfo:doc-heading", NSMAP).text 
+        doctitle2 = doctitle2.replace(chapnumber + ' ', '')
+        
+        def XMLtoTXT(dictionary, tree, doctitle, chapnumber, outputdir):            
+            text = 'HMRC - ' + chapnumber + ' - ' + doctitle   
+            for entry in dictionary: text += '\n\n' + dictionary[entry][1] 
+            textfilepath = outputdir + chapnumber + ".txt"
+            with open(textfilepath,'w') as f:
+                f.write(text)
+                f.close()
+                pass
+            print("Exported to: " + textfilepath)
+
+        
+        
+        #XMLtoTXT(dict1, tree1, doctitle1, chapnumber, 'C:\\GIT\\Chapters\\')   
+        XMLtoTXT(dict2, tree2, doctitle2, chapnumber, 'C:\\GIT\\Chapters\\')        
+        #print("Time taken so far..." + str(datetime.datetime.now() - start))
+        #wait = input("PAUSED...when ready press enter")
+        #XMLtoHTML(dict2, tree2, doctitle2, chapnumber, 'C:\\GIT\\Chapters\\')        
+        #print("Time taken so far..." + str(datetime.datetime.now() - start))
+        #wait = input("PAUSED...when ready press enter")
+        i = i + 1
+    
+
+
+
+
 
 #### MAIN ####
 
@@ -503,7 +763,7 @@ maindir = "C:\\Users\\Hutchida\\Documents\\HMRC\\"
 #outputdir = maindir + "\\output\\"
 outputdir = "www\\"
 NSMAP = {'lnvxe': 'http://www.lexis-nexis.com/lnvxe', 'lnv': 'http://www.lexis-nexis.com/lnv', 'lnvni': 'http://www.lexis-nexis.com/lnvni', 'lnclx': 'http://www.lexis-nexis.com/lnclx', 'lncle': 'http://www.lexis-nexis.com/lncle', 'lndel': 'http://www.lexis-nexis.com/lndel', 'lngntxt': 'http://www.lexis-nexis.com/lngntxt', 'lndocmeta': 'http://www.lexis-nexis.com/lndocmeta', 'lnlit': 'http://www.lexis-nexis.com/lnlit', 'lnci': 'http://www.lexis-nexis.com/lnci', 'nitf': 'urn:nitf:iptc.org.20010418.NITF', 'lnvx': 'http://www.lexis-nexis.com/lnvx', 'ci': 'http://www.lexis-nexis.com/ci', 'glp': 'http://www.lexis-nexis.com/glp', 'case': 'http://www.lexis-nexis.com/glp/case', 'jrnl': 'http://www.lexis-nexis.com/glp/jrnl', 'comm': 'http://www.lexis-nexis.com/glp/comm', 'cttr': 'http://www.lexis-nexis.com/glp/cttr', 'dict': 'http://www.lexis-nexis.com/glp/dict', 'dig': 'http://www.lexis-nexis.com/glp/dig', 'docinfo': 'http://www.lexis-nexis.com/glp/docinfo', 'frm': 'http://www.lexis-nexis.com/glp/frm', 'in': 'http://www.lexis-nexis.com/glp/in', 'leg': 'http://www.lexis-nexis.com/glp/leg', 'xhtml': 'http://www.w3c.org/1999/xhtml'}
-
+deleteList = []
 start = datetime.datetime.now() 
 
 print("\n\n\nEntering prelim phase..." + str(datetime.datetime.now()))
@@ -515,17 +775,18 @@ print("\n\n\nSo far time taken..." + str(datetime.datetime.now() - start))
 #logdate = datetime.datetime.now()
 print("\n\n\nEntering Lev Dist comparison phase..." + str(datetime.datetime.now()))
 
-#LevDistComparison(logpath, xmldir1, xmldir2, NSMAP)
+LevDistComparison(logpath, xmldir1, xmldir2, NSMAP)
 df_new = pd.read_csv(outputdir + source + "_additions_levchar.csv")
 df_del = pd.read_csv(outputdir + source + "_additions_levchar.csv")
 df_final = pd.read_csv(outputdir + "df-text7.csv")
 #tidy up df_final a bit, stick this in a function later on
 #remove link column and rebuild it
 del df_final['Link']
-df_final['Link'] = '<a href="chapters/' + df_final['ChapterNumber'] + '.html" target="_blank">Click to view</a>' #mark up the link ready for html
+df_final['Link'] = '<a href="chapters/' + df_final['ChapterNumber'] + '.html" target="_blank">View</a>' #mark up the link ready for html
 df_final.Link = df_final.Link.str.replace('—', ' ')
 df_final.Link = df_final.Link.str.replace('’',"'")
 df_final = df_final[(df_final['paraChangeCount'] != 0)]
+df_final['TrackedChanges'] = '<a href="chapters/' + df_final['ChapterNumber'] + '-comp.docx" target="_blank">Download</a>' 
 
 df_final.LevDistance = df_final.LevDistance.astype(int)
 df_final.textLevTotal = df_final.textLevTotal.astype(int)
@@ -534,7 +795,7 @@ df_final.paraCount = df_final.paraCount.astype(int)
 df_final.paraChangeCount = df_final.paraChangeCount.astype(int)
 
 
-columnsTitles = ['ChapterNumber', 'Title', 'LevDistance', 'CharCountDiff', 'paraChangeCount', 'paraCount', 'Link']
+columnsTitles = ['ChapterNumber', 'Title', 'LevDistance', 'CharCountDiff', 'paraChangeCount', 'paraCount', 'Link', 'TrackedChanges']
 df_final = df_final.reindex(columns=columnsTitles)
 df_final = df_final.sort_values(['LevDistance'], ascending = False)
 #df_final = df_final.rename(columns={'textLevTotal': 'Lev Distance', 'paraChangeCount': 'Number of paras changed'})    
@@ -542,7 +803,7 @@ df_final = df_final.sort_values(['LevDistance'], ascending = False)
 
 #HTMLExport(notes, str(len(df_new)), str(len(df_del)), str(len(df_final)), df_new, df_del, df_final, 'ALL', outputdir + 'levchar.html')
 
-#Diff(logpath, start, xmldir1, xmldir2, df_final)
+#Diff(logpath, start, xmldir1, xmldir2, df_final)  
 
 menu = '<p><a href="index.html">No Filter</a> | <a href="nocontents.html">No contents pages included</a> | <a href="lev100.html">No contents + Lev Dist Threshold @ 100</a> | <a href="lev200.html">No contents + Lev Dist Threshold @ 200</a></p>'
 #menu = ''
@@ -562,8 +823,11 @@ df_lev200 = df_noContents[(df_noContents.LevDistance > 200)]
 HTMLExport(notes, str(len(df_new)), str(len(df_del)), str(len(df_lev200)), df_new, df_del, df_lev200, 'Without contents pages + Lev Dist threshold at 100', outputdir + 'lev200.html', menu)
 
 
+#ExportToDoc(logpath, start, xmldir1, xmldir2, df_final)   
 
+print("Time taken so far..." + str(datetime.datetime.now() - start))
 
+for doc in deleteList: os.remove(doc)
 
 print("\n\n\nFinished! Total time taken..." + str(datetime.datetime.now() - start))
 

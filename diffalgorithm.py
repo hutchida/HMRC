@@ -40,7 +40,7 @@ for entry in dict1:
                 print('Page 1 has more elements than page 2...')
                 x+=1
         else: #string1 hasn't been deleted, but now check whether string2 has been added
-            if dict1[n][1] == dict2[n+1][1] #then string2 has been added and needs to be reflected in left div
+            if dict1[n][1] == dict2[n+1][1]: #then string2 has been added and needs to be reflected in left div
                 offset+=1
                 #left div
                 sup = etree.SubElement(divleft, 'sup')
