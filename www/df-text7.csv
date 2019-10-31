@@ -1653,3 +1653,1116 @@ OT03000,23.0,100.0,View changes,Petroleum Revenue Tax: Contents,12.0,19.0,97.0
 OT03005,57.0,280.0,View changes,PRT: Overview Of PRT: Contents,4.0,7.0,93.0
 OT03010,59.0,78.0,View changes,PRT - Introduction,3.0,9.0,3.0
 OT03050,60.0,86.0,View changes,PRT - Outline,9.0,16.0,19.0
+OT03100,287.0,312.0,View changes,PRT - Definitions,38.0,39.0,15472.0
+OT03150,2.0,37.0,View changes,PRT Overview Of PRT - Computation Of PRT Charge,14.0,28.0,19.0
+OT03500,204.0,1012.0,View changes,PRT: Changes - FA93: Contents,9.0,13.0,317.0
+OT03510,4.0,7.0,View changes,FA93 - Outline,4.0,8.0,5.0
+OT03515,3.0,7.0,View changes,FA93 - Effect On Non-Taxable And Taxable Fields,2.0,23.0,4.0
+OT03525,30.0,75.0,View changes,FA93 - Reduction In Rate Of PRT,1.0,6.0,1.0
+OT03530,1.0,4.0,View changes,FA93 - Apportionment Of Expenditure Between Taxable And Non-Taxable Fields,3.0,9.0,5.0
+OT03535,7.0,10.0,View changes,FA93 - Fixed Assets And Dedicated Mobile Assets - Attribution Of Income And Expenditure,4.0,16.0,4.0
+OT03540,0.0,3.0,View changes,FA93 - Non-Dedicated Mobile Assets,1.0,11.0,1.0
+OT03550,0.0,3.0,View changes,FA93 - Tariff Receipts Allowance (TRA),1.0,6.0,1.0
+OT04005,2.0,5.0,View changes,Chargeable Periods,0.0,8.0,0.0
+OT04030,1.0,5.0,View changes,Appointment Of Responsible Person,2.0,11.0,2.0
+OT04060,0.0,3.0,View changes,Returns By Responsible Person - PRT 2,1.0,13.0,1.0
+OT04100,0.0,2.0,View changes,Returns By Participators - PRT 6,1.0,6.0,1.0
+OT04120,2.0,4.0,View changes,Deferral Of Returns,1.0,8.0,1.0
+OT04150,0.0,2.0,View changes,Payment Provisions - Payment On Account - PRT 6,1.0,6.0,2.0
+OT04240,0.0,2.0,View changes,PRT: Administration - Payment Provisions - Payment Of Tax,1.0,5.0,1.0
+OT04270,3.0,5.0,View changes,Payment Provisions - Interest,0.0,12.0,0.0
+OT04280,1.0,3.0,View changes,Payment Provisions - Interest Cap,0.0,13.0,0.0
+OT04300,6.0,8.0,View changes,Assessments And Loss Determinations,1.0,14.0,1.0
+OT04330,1.0,3.0,View changes,Amended Assessments And Loss Determinations,1.0,11.0,1.0
+OT04360,1.0,3.0,View changes,Appeals Against Assessments,1.0,14.0,1.0
+OT04390,0.0,2.0,View changes,Claims Outline,1.0,9.0,1.0
+OT04395,1.0,3.0,View changes,Claims - Schedule 5 \ 7 Interface,1.0,8.0,1.0
+OT04400,0.0,2.0,View changes,Claims - Time Limits For Claims,4.0,10.0,4.0
+OT04410,1.0,3.0,View changes,Claims - Claim Periods,3.0,14.0,3.0
+OT04420,2.0,4.0,View changes,Claims By Responsible Person - PRT 30,0.0,14.0,0.0
+OT04425,1.0,3.0,View changes,Responsible Person Claims - Division Of Expenditure,2.0,11.0,3.0
+OT04450,3.0,5.0,View changes,Responsible Person Claims - Confidentiality,2.0,17.0,2.0
+OT04480,2.0,4.0,View changes,Claims By Participators - PRT 40,0.0,13.0,0.0
+OT04510,1.0,3.0,View changes,Schedule 7 Claims PRTD8 & PRT60B,2.0,9.0,2.0
+OT04570,0.0,2.0,View changes,Cross Field Allowance Elections,1.0,5.0,1.0
+OT04630,1.0,3.0,View changes,Decisions And Allowance Of Claims,2.0,13.0,2.0
+OT04635,1.0,3.0,View changes,Decisions - Part And Final Claim Decisions,0.0,11.0,0.0
+OT04640,5.0,7.0,View changes,Decisions - Reservations On Claims,3.0,15.0,3.0
+OT04645,72.0,75.0,View changes,Decisions - Time Limit For Final Claim Decision,1.0,5.0,72.0
+OT04650,0.0,2.0,View changes,Decisions - Timing Of Claim Decisions,1.0,6.0,1.0
+OT04660,75.0,77.0,View changes,Claims And Correspondence During The Assessing Rounds,1.0,10.0,72.0
+OT04690,2.0,4.0,View changes,Appeals Against Claim Decisions,0.0,9.0,0.0
+OT04720,0.0,2.0,View changes,Negative Claims,2.0,10.0,2.0
+OT04740,72.0,74.0,View changes,Informal Claims,1.0,6.0,72.0
+OT04743,2.0,4.0,View changes,Informal Claims - Procedures,0.0,10.0,0.0
+OT04746,145.0,147.0,View changes,Informal Claims - Research Expenditure,1.0,7.0,144.0
+OT04750,0.0,2.0,View changes,Notice Of Variation,1.0,14.0,1.0
+OT04780,1.0,3.0,View changes,Withdrawal Of Claims,1.0,10.0,1.0
+OT04785,1.0,3.0,View changes,PRT: Administration - Relief For Overpaid Tax,1.0,9.0,1.0
+OT04790,1.0,3.0,View changes,Information Relating To Sales At Arm’S Length And Market Value Of Oil,0.0,13.0,0.0
+OT05000,26.0,511.0,View changes,PRT: Valuation: Contents,8.0,13.0,62.0
+OT05004,267.0,782.0,View changes,PRT: Computation: Contents,17.0,20.0,321.0
+OT05008,2.0,4.0,View changes,PRT: Computations - General Introduction,0.0,11.0,0.0
+OT05012,3.0,5.0,View changes,PRT: Computations - Outline,1.0,16.0,2.0
+OT05016,16.0,28.0,View changes,PRT: Computations - Tax Point,21.0,24.0,4918.0
+OT05020,6.0,12.0,View changes,PRT: Computation - Valuation Point And Gross Profit,6.0,16.0,10.0
+OT05025,54.0,58.0,View changes,PRT: Computation - Arm's Length Rule,16.0,24.0,5511.0
+OT05030,44.0,46.0,View changes,PRT: Computation - The Arms Length Rule - Examples,20.0,23.0,9971.0
+OT05075,0.0,3.0,View changes,PRT: Computation - Currency Translation - Outline,2.0,20.0,2.0
+OT05080,4.0,28.0,View changes,PRT: Currency Translation - Practical Application,4.0,16.0,497.0
+OT05105,15.0,17.0,View changes,PRT: CIF Sales - Chargeable Periods Ended Before 1 January 1994,1.0,10.0,1.0
+OT05110,15.0,20.0,View changes,PRT: CIF Sales - Chargeable Periods Ended After 31 December 1993,0.0,7.0,0.0
+OT05115,15.0,17.0,View changes,PRT: CIF Sales - Chargeable Periods Ended After 30 June 2006,0.0,5.0,0.0
+OT05120,15.0,17.0,View changes,PRT: CIF Sales - Third Party / Affiliate Shipping,1.0,10.0,1.0
+OT05125,1.0,3.0,View changes,PRT: Computation - Excluded Oil,0.0,13.0,0.0
+OT05135,6.0,8.0,View changes,PRT: Computation - Gas Levy,0.0,13.0,0.0
+OT05150,1.0,3.0,View changes,PRT: Computation - Stock And Oil In Transit,0.0,14.0,0.0
+OT05200,303.0,658.0,View changes,PRT: The Nomination Scheme - Contents,12.0,16.0,364.0
+OT05202,71.0,76.0,View changes,Why The Scheme Was Introduced,0.0,5.0,0.0
+OT05205,16.0,41.0,View changes,The Scheme For Chargeable Periods On Or After 01 July 2006: Background,0.0,19.0,0.0
+OT05210,25.0,61.0,View changes,Nomination Scheme For Deliveries On Or After 01 July 2006,0.0,6.0,0.0
+OT05215,24.0,34.0,View changes,Scope,1.0,11.0,1.0
+OT05220,22.0,65.0,View changes,Time-Limits For Making Nominations,0.0,12.0,0.0
+OT05225,26.0,61.0,View changes,Manner Of Making A Nomination,0.0,9.0,0.0
+OT05230,23.0,36.0,View changes,Content Of A Nomination Made During Business Hours,2.0,18.0,2.0
+OT05232,24.0,35.0,View changes,Content Of A Nomination Made Outside Business Hours,1.0,20.0,2.0
+OT05234,26.0,32.0,View changes,Effective Nominations - Further Provisions,0.0,8.0,0.0
+OT05240,23.0,64.0,View changes,Ineffective Nomination - How To Calculate Nomination Excesses,3.0,16.0,3.0
+OT05245,29.0,33.0,View changes,Scheme: Allocating Nomination Excesses To Fields,2.0,37.0,2.0
+OT05250,26.0,32.0,View changes,Nomination Excesses Taxable To Both CT And SC,0.0,6.0,0.0
+OT05300,233.0,1515.0,View changes,PRT: Valuation Of Non-Arm's Length Disposals And Appropriations - Oil: Contents,32.0,36.0,458.0
+OT05302,22.0,66.0,View changes,Methods - Dependence Upon Kind Of Oil Being Valued,1.0,10.0,2.0
+OT05308,3.0,7.0,View changes,"Crude Oils And Products - Notional Delivery Day For Stock, Deliveries And Appropriations",2.0,28.0,2.0
+OT05310,2.0,7.0,View changes,Crude Oils And Products - Loading Slots,0.0,16.0,0.0
+OT05315,32.0,90.0,View changes,Crude Oils And Products- Category 1 Oil Introduction,0.0,12.0,0.0
+OT05317,1.0,5.0,View changes,Crude Oils And Products - Category 1 Oil Basis Of Values Calculations,0.0,19.0,0.0
+OT05321,32.0,53.0,View changes,Crude Oils And Products- Category 1 Oil Brent,0.0,13.0,0.0
+OT05323,1.0,5.0,View changes,Crude Oils And Products - Category 1 Oil Non-Brent Grades,0.0,7.0,0.0
+OT05325,817.0,841.0,View changes,Crude Oils And Products - How To Calculate Category 1 Values,46.0,54.0,8551.0
+OT05328,2.0,6.0,View changes,Crude Oils And Products - Category 1 Oil Forties Blend Sulphur De-Escalator,0.0,11.0,0.0
+OT05330,3.0,7.0,View changes,Crude Oils And Products - Category 1 Anti Avoidance,0.0,30.0,0.0
+OT05335,0.0,4.0,View changes,Crude Oils And Products - Category 2 Oils Introduction,1.0,11.0,1.0
+OT05337,3.0,8.0,View changes,Crude Oils And Products - Category 2 Basis Of Values Calculations,0.0,14.0,0.0
+OT05340,0.0,5.0,View changes,Crude Oils And Products - Category 2 Value Calculation Mechanism: Overview,1.0,10.0,1.0
+OT05343,0.0,4.0,View changes,Crude Oils And Products - List Of Oils Within Category 2,0.0,7.0,0.0
+OT05343A,36.0,139.0,View changes,Crude Oils And Products - Category 2 - Alba,0.0,12.0,0.0
+OT05343B,36.0,175.0,View changes,Crude Oils And Products - Category 2 - Anasuria,0.0,11.0,0.0
+OT05343C,36.0,174.0,View changes,Crude Oils And Products - Category 2 - Beryl,0.0,11.0,0.0
+OT05343D,36.0,174.0,View changes,Crude Oils And Products - Category 2 - Clair,0.0,11.0,0.0
+OT05343E,36.0,174.0,View changes,Crude Oils And Products - Category 2 - Curlew,0.0,11.0,0.0
+OT05343F,36.0,174.0,View changes,Crude Oils And Products - Category 2 - Foinavon,0.0,11.0,0.0
+OT05343G,36.0,174.0,View changes,Crude Oils And Products - Category 2 - Gryphon,0.0,11.0,0.0
+OT05343H,36.0,174.0,View changes,Crude Oils And Products - Category 2 - Harding,0.0,11.0,0.0
+OT05343I,36.0,174.0,View changes,Crude Oils And Products - Category 2 - Pierce,0.0,12.0,0.0
+OT05343J,36.0,174.0,View changes,Crude Oils And Products - Category 2 - Schiehallion,0.0,11.0,0.0
+OT05343K,36.0,174.0,View changes,Crude Oils And Products - Category 2 - Triton,0.0,11.0,0.0
+OT05343L,36.0,174.0,View changes,Crude Oils And Products - Category 2 - Wytch Farm,0.0,11.0,0.0
+OT05345,33.0,87.0,View changes,Crude Oils And Products - Category 2 - Valuation Of Condensate,0.0,9.0,0.0
+OT05350,39.0,42.0,View changes,Crude Oils & Products - Category 2 - Valuation Of Lpgs,0.0,16.0,0.0
+OT05352,38.0,43.0,View changes,Crude Oils & Products - Category 2 Exceptions,0.0,8.0,0.0
+OT05355,39.0,42.0,View changes,Crude Oils & Products - Valuation Of Tariffs In Kind,0.0,6.0,0.0
+OT05360,2015.0,6120.0,View changes,PRT: Valuation Of Non-Arms Length Disposals And Appropriations - Gas: Contents,32.0,34.0,2777.0
+OT05362,113.0,120.0,View changes,PRT: Valuation Of Non-Arms Length Disposals And Appropriations - Gas - Valuation Of Light Gases To 31 December 1993,2.0,7.0,2.0
+OT05364,1.0,4.0,View changes,PRT: Valuation Of Non-Arm's Gas - Re-Opening An Election In Force At 31 December 1993,0.0,8.0,0.0
+OT05366,1.0,4.0,View changes,PRT: Valuation Of Non-Arm's Gas - Re-Opening An Election - New Price Formula,0.0,8.0,0.0
+OT05370,1.0,4.0,View changes,PRT: Valuation Of Non-Arm's Gas - Re-Opening An Election - Practice,0.0,12.0,0.0
+OT05375,0.0,5.0,View changes,PRT: Valuation Of Non-Arm's Gas - Valuation Of Light Gases From 1 January 1994 - Legislation,1.0,19.0,2.0
+OT05380,1.0,4.0,View changes,PRT: Valuation Of Non-Arm's Gas - Valuation Of Light Gases From 1 January 1994 - General Principles,1.0,10.0,1.0
+OT05385,0.0,5.0,View changes,PRT: Valuation Of Non-Arm's Gas - Valuation Of Light Gases From 1 January 1994 - Procedures,2.0,12.0,2.0
+OT05390,1.0,4.0,View changes,PRT: Valuation Of Non-Arm's Gas - Valuation Of Light Gases From 1 January 1994 - Current Approaches,1.0,6.0,1.0
+OT05392,1.0,4.0,View changes,PRT: Valuation Of Non-Arm's Gas - Valuation Of Light Gases From 1 January 1994 - Identifying The Disposal,0.0,9.0,0.0
+OT05394,1.0,4.0,View changes,PRT: Valuation Of Non-Arm's Gas - Valuation Of Light Gases From 1 January 1994 - Timing Of The Disposal,0.0,9.0,0.0
+OT05396,1.0,4.0,View changes,PRT: Valuation Of Non-Arm's Gas - Valuation Of Light Gases From 1 January 1994 - Fixed Price Sales,0.0,7.0,0.0
+OT05398,1.0,4.0,View changes,PRT: Valuation Of Non-Arm's Gas - Valuation Of Light Gases From 1 January 1994 - Location,0.0,6.0,0.0
+OT05402,0.0,5.0,View changes,PRT: Valuation Of Non-Arm's Gas - Valuation Of Light Gases From 1 January 1994 - Take Or Pay,1.0,7.0,1.0
+OT05404,1.0,4.0,View changes,PRT: Valuation Of Non-Arm's Gas - Valuation Of Light Gases From 1 January 1994 - Buyer’S/Seller’S Nominations,0.0,5.0,0.0
+OT05406,1.0,4.0,View changes,PRT: Valuation Of Non-Arm's Gas - Valuation Of Light Gases From 1 January 1994 - Other Elements,0.0,5.0,0.0
+OT05408,1.0,4.0,View changes,PRT: Valuation Of Non-Arm's Gas - Valuation Of Light Gases From 1 January 1994 - Published Prices,0.0,10.0,0.0
+OT05410,1.0,4.0,View changes,PRT: Valuation Of Non-Arm's Gas - Valuation Of Light Gases From 1 January 1994 - Net Back Pricing Agreements,0.0,6.0,0.0
+OT05412,1.0,4.0,View changes,PRT: Valuation Of Non-Arm's Gas - Valuation Of Light Gases From 1 January 1994 - Re-Opening Agreements,0.0,8.0,0.0
+OT05414,1.0,175.0,View changes,PRT: Valuation Of Non-Arm's Gas - Valuation Of Light Gases From 1 January 1994 - Status Of Elections,0.0,5.0,0.0
+OT05416,1.0,4.0,View changes,PRT: Valuation Of Non-Arm's Gas - Valuation Of Light Gases From 1 January 1994 - Transfer Of Field Interests,0.0,6.0,0.0
+OT05418,1.0,4.0,View changes,PRT: Valuation Of Non-Arm's Gas - Valuation Of Light Gases From 1 January 1994 - Market Evidence,0.0,6.0,0.0
+OT05422,1.0,4.0,View changes,PRT: Valuation Of Non-Arm's Gas - Valuation Of Light Gases From 1 January 1994 - No Inter-Affiliate Agreement,0.0,6.0,0.0
+OT05424,1.0,4.0,View changes,PRT: Valuation Of Non-Arm's Gas - Valuation Of Light Gases From 1 January 1994 - None Specific Field Contracts,0.0,5.0,0.0
+OT05425,1.0,4.0,View changes,PRT: Valuation Of Non-Arm's Gas - Valuation Of Light Gases From 1 January 1994 - Conclusion,0.0,6.0,0.0
+OT05430,1.0,4.0,View changes,PRT: Valuation Of Non-Arm's Gas - The ICI Case - The Arm’S Length Rule,0.0,8.0,0.0
+OT05435,1.0,4.0,View changes,PRT: Valuation Of Non-Arm's Gas - Take Or Pay Arrangements,1.0,12.0,1.0
+OT05440,1.0,4.0,View changes,PRT: Valuation Of Non-Arm's Gas - Capacity Payments,0.0,6.0,0.0
+OT05445,1.0,4.0,View changes,PRT: Valuation Of Non-Arm's Gas - Gas Banking,0.0,6.0,0.0
+OT05450,1.0,4.0,View changes,PRT: Valuation Of Non-Arm's Gas - Gas Substitution Within An Allocation Agreement,1.0,12.0,1.0
+OT05455,1.0,6.0,View changes,PRT: Valuation Of Non-Arm's Gas - Gas Substitution Within An Allocation Agreement - Example,1.0,15.0,1.0
+OT05500,130.0,595.0,View changes,PRT: Royalty - Contents,9.0,13.0,145.0
+OT05501,44.0,49.0,View changes,Licence Debit And Credit,0.0,11.0,0.0
+OT05505,44.0,78.0,View changes,Licence Payments,0.0,9.0,0.0
+OT05510,44.0,49.0,View changes,Royalty Paying Fields,0.0,15.0,0.0
+OT05515,43.0,79.0,View changes,Royalty Payable,0.0,9.0,0.0
+OT05520,44.0,78.0,View changes,Royalty -Paid,0.0,5.0,0.0
+OT05525,44.0,78.0,View changes,Royalty Repaid,0.0,5.0,0.0
+OT05530,44.0,78.0,View changes,Periodic Payments,0.0,7.0,0.0
+OT05535,44.0,78.0,View changes,Transfers Of Interest,0.0,6.0,0.0
+OT05540,43.0,79.0,View changes,Chargeable Or Allowable,0.0,6.0,0.0
+OT05600,213.0,487.0,View changes,PRT: Commingling: Contents,11.0,15.0,230.0
+OT05601,1.0,3.0,View changes,PRT: Commingling - Introduction,0.0,7.0,0.0
+OT05625,1.0,3.0,View changes,PRT: Commingling - Amendments To Allocation Methods,0.0,6.0,0.0
+OT05635,1.0,3.0,View changes,PRT: Commingling - PRT Treatment Of Re-Injected Gas,0.0,11.0,0.0
+OT05640,1.0,3.0,View changes,PRT: Commingling - Storage Schemes,0.0,7.0,0.0
+OT05700,0.0,2.0,View changes,PRT: Advance Petroleum Revenue Tax - Background,1.0,9.0,1.0
+OT05800,70.0,636.0,View changes,PRT: Attribution Of Blended Crude Oil -Terminals Liftings - Contents,19.0,22.0,215.0
+OT05805,35.0,99.0,View changes,PRT: Terminal Introduction,0.0,7.0,0.0
+OT05810,32.0,39.0,View changes,PRT: Terminal Scope,0.0,10.0,0.0
+OT05820,28.0,44.0,View changes,PRT: Terminal Background,0.0,15.0,0.0
+OT05830,33.0,39.0,View changes,PRT: Terminal How Terminals (And Offshore Loading Facilities) Operate - The Loading Programme,0.0,23.0,0.0
+OT05840,14.0,58.0,View changes,PRT: Terminal The Attribution Rules,0.0,12.0,0.0
+OT05850,29.0,44.0,View changes,PRT: Terminal The Basic Formula (Regulation 4),1.0,17.0,1.0
+OT05860,27.0,45.0,View changes,PRT: Terminal Production Entitlement,0.0,22.0,0.0
+OT05870,28.0,45.0,View changes,PRT: Terminal Delays And Accelerations In Loading,0.0,20.0,0.0
+OT05880,31.0,47.0,View changes,PRT: Terminal Attribution Formula- The Result,0.0,20.0,0.0
+OT05890,33.0,39.0,View changes,PRT: Terminal Volume Of Oil To Be Used In Determining “A” (Regulation 3),0.0,10.0,0.0
+OT05900,32.0,40.0,View changes,PRT: Terminal Balancing Parcels (Regulation 2(1)),0.0,8.0,0.0
+OT05910,33.0,39.0,View changes,PRT: Terminal Treatment Of Balancing Parcels (Regulation 6),0.0,13.0,0.0
+OT05920,33.0,39.0,View changes,PRT: Terminal Allocation Of Oil Sold Under ‘Period Of Entitlement’ And Term Contracts (Regulation 5),0.0,26.0,0.0
+OT05930,30.0,36.0,View changes,PRT: Terminal Example,0.0,6.0,0.0
+OT05940,32.0,40.0,View changes,PRT: Terminal Period Of Entitlement Purchaser Not Applying The Rules Operationally,0.0,6.0,0.0
+OT05950,28.0,51.0,View changes,PRT: Terminal Disposal Of Field Interests- Main Rules (Regulation 7),0.0,21.0,0.0
+OT05960,36.0,42.0,View changes,PRT: Terminal Disposal Of Field Interests- Sale Not Proceeding (Regulation 9),0.0,6.0,0.0
+OT05965,31.0,42.0,View changes,PRT: Terminal Disposal Of Field Interests- Further Provisions (Regulation 8),0.0,16.0,0.0
+OT05970,98.0,145.0,View changes,PRT: Terminal Disposal Of Field Interests - Examples,0.0,28.0,0.0
+OT08900,72.0,75.0,View changes,PRT: Expenditure: Contents,0.0,18.0,0.0
+OT09000,90.0,93.0,View changes,PRT: Allowable Field,0.0,28.0,0.0
+OT09025,46.0,49.0,View changes,Expenditure - Outline,17.0,27.0,17.0
+OT09050,43.0,52.0,View changes,Expenditure - Searching,5.0,12.0,8.0
+OT09075,45.0,50.0,View changes,Expenditure - Obtaining A Relevant Licence,1.0,10.0,1.0
+OT09100,41.0,54.0,View changes,Expenditure - Ascertaining,2.0,13.0,3.0
+OT09125,46.0,50.0,View changes,Expenditure - Winning,0.0,13.0,0.0
+OT09150,45.0,50.0,View changes,Expenditure - Measuring,0.0,6.0,0.0
+OT09175,46.0,50.0,View changes,Expenditure - Transporting,3.0,21.0,4.0
+OT09200,43.0,52.0,View changes,Expenditure - Initial Treatment Or Initial Storage,0.0,18.0,0.0
+OT09225,45.0,49.0,View changes,Expenditure - Disposing,1.0,9.0,1.0
+OT09250,46.0,48.0,View changes,Expenditure - Decommissioning - Related Expenditure,0.0,8.0,0.0
+OT09275,46.0,48.0,View changes,Expenditure - Material Stocks,2.0,8.0,2.0
+OT09300,37.0,57.0,View changes,Expenditure - Redundancy,1.0,26.0,1.0
+OT09325,36.0,58.0,View changes,Expenditure - Overheads,3.0,28.0,3.0
+OT09350,46.0,48.0,View changes,Expenditure - Insurance,3.0,16.0,4.0
+OT09375,43.0,51.0,View changes,Expenditure - Apportionment Of Expenditure,4.0,13.0,4.0
+OT09400,46.0,48.0,View changes,Expenditure - Tariff Related Expenditure,1.0,13.0,1.0
+OT09425,46.0,48.0,View changes,Expenditure - Prevention Of Double Allowance,1.0,6.0,1.0
+OT09450,46.0,48.0,View changes,Expenditure - Non-Allowable Field Expenditure,6.0,11.0,6.0
+OT09475,46.0,48.0,View changes,Expenditure - Specifically Excluded Expenditure: Interest,2.0,12.0,2.0
+OT09500,43.0,51.0,View changes,Expenditure - Specifically Excluded Expenditure: Land And Buildings,0.0,13.0,0.0
+OT09525,39.0,55.0,View changes,Expenditure - Specifically Excluded Expenditure: Production Related,0.0,13.0,0.0
+OT09550,45.0,49.0,View changes,Expenditure - Specifically Excluded Expenditure: Payments To Obtain A Licence (Other Than To Secretary Of State),0.0,7.0,0.0
+OT09575,46.0,48.0,View changes,Expenditure - Specifically Excluded Expenditure: Payments In Respect Of Tax Assessed On Non-Resident Contractors,1.0,5.0,1.0
+OT09600,46.0,48.0,View changes,Expenditure - Anti-Avoidance Provisions: Sale And Leaseback,1.0,19.0,1.0
+OT09625,46.0,48.0,View changes,Expenditure - Subsidised Expenditure,0.0,5.0,0.0
+OT10000,302.0,733.0,View changes,PRT: Decommissioning: Contents,12.0,16.0,488.0
+OT10025,24.0,26.0,View changes,PRT: Decommissioning - Introduction,4.0,10.0,4.0
+OT10050,20.0,30.0,View changes,PRT: Decommissioning - Allowable Expenditure,4.0,18.0,5.0
+OT10100,22.0,28.0,View changes,PRT: Decommissioning - Allowable Expenditure (Continued),1.0,9.0,1.0
+OT10150,22.0,28.0,View changes,PRT: Decommissioning - Allowable Expenditure: Restoration Work,3.0,9.0,3.0
+OT10200,20.0,30.0,View changes,PRT: Decommissioning - Apportionment Of Allowable Expenditure,4.0,13.0,4.0
+OT10250,20.0,30.0,View changes,PRT: Decommissioning - Apportionment Of Allowable Expenditure: Transitional Provisions,0.0,16.0,0.0
+OT10300,21.0,29.0,View changes,PRT: Decommissioning - Allowable Expenditure: Abandonment Guarantees,3.0,17.0,4.0
+OT10350,23.0,27.0,View changes,PRT: Decommissioning - Allowable Expenditure: Abandonment Guarantees: Payments Under Guarantees,0.0,7.0,0.0
+OT10450,74.0,84.0,View changes,PRT: Decommissioning - Allowable Expenditure: Abandonment Guarantees: Defaulter's Decommissioning Costs Met By Co-Participators Or Former Participators,0.0,16.0,0.0
+OT10500,22.0,28.0,View changes,PRT: Decommissioning - Allowable Expenditure: Abandonment Guarantees: Reimbursement By Defaulter Of Decommissioning Costs Met By Co-Participators Or Former Participators,0.0,9.0,0.0
+OT10550,22.0,28.0,View changes,PRT: Decommissioning - Allowable Expenditure: Exempt Gas Fields,0.0,18.0,0.0
+OT10800,35.0,452.0,View changes,PRT: Decommissioning Certainty: Contents,5.0,7.0,185.0
+OT10803,52.0,56.0,View changes,Certainty - Outline Of The Legislation,1.0,8.0,7.0
+OT10805,23.0,27.0,View changes,Certainty - The Effect Of A Claim On PRT,0.0,14.0,0.0
+OT10808,22.0,28.0,View changes,Certainty - The Effect Of Claims On Oil Allowance,0.0,19.0,0.0
+OT11000,264.0,646.0,View changes,PRT: Long Term Assets: Contents,12.0,16.0,335.0
+OT11025,23.0,27.0,View changes,PRT: Long-Term Assets - Outline,6.0,21.0,6.0
+OT11050,21.0,29.0,View changes,PRT: Long-Term Assets - Basic Conditions For Relief,5.0,19.0,5.0
+OT11100,22.0,28.0,View changes,PRT: Long-Term Assets - Non-Dedicated Mobile Assets,2.0,16.0,3.0
+OT11150,21.0,29.0,View changes,PRT: Long-Term Assets - Dedicated Mobile Assets,2.0,18.0,2.0
+OT11200,23.0,27.0,View changes,PRT: Long-Term Assets - Exempt Gas And Deballasting,1.0,7.0,1.0
+OT11250,20.0,30.0,View changes,PRT: Long-Term Assets - Associated Assets,5.0,21.0,7.0
+OT11300,21.0,29.0,View changes,PRT: Long-Term Assets - Remote Associated Assets,2.0,9.0,3.0
+OT11350,18.0,32.0,View changes,PRT: Long-Term Assets - Assets No Longer In Use For Principal Field,0.0,16.0,0.0
+OT11400,15.0,35.0,View changes,PRT: Long-Term Assets - Assets Used For More Than One Field,4.0,25.0,4.0
+OT11500,19.0,31.0,View changes,PRT: Long-Term Assets - Brought-In Assets,2.0,17.0,2.0
+OT11600,17.0,33.0,View changes,PRT: Long-Term Assets - Subsequent Use Of Assets Outside Taxable Fields,1.0,25.0,1.0
+OT11700,23.0,27.0,View changes,PRT: Long-Term Assets - Connected Parties,2.0,7.0,2.0
+OT12000,336.0,1630.0,View changes,PRT: Supplement: Contents,20.0,24.0,464.0
+OT12025,20.0,30.0,View changes,PRT: Supplement - Outline,5.0,14.0,5.0
+OT12050,23.0,27.0,View changes,PRT: Supplement - Eligible Expenditure: Summary,5.0,10.0,7.0
+OT12075,20.0,30.0,View changes,PRT: Supplement - Claims To Supplement,3.0,15.0,3.0
+OT12100,23.0,27.0,View changes,PRT: Supplement - Bringing About The Commencement Of Winning Or Transporting Oil,3.0,14.0,3.0
+OT12150,24.0,26.0,View changes,PRT: Supplement - Bringing About The Commencement: Searching For Oil,2.0,9.0,3.0
+OT12200,24.0,26.0,View changes,PRT: Supplement - Bringing About The Commencement: Field Development,6.0,27.0,8.0
+OT12250,22.0,28.0,View changes,PRT: Supplement - Ascertaining The Extent Of Oil-Bearing Area,1.0,9.0,1.0
+OT12300,20.0,30.0,View changes,PRT: Supplement - Substantially Improving The Rate At Which Oil Can Be Won,1.0,27.0,1.0
+OT12350,24.0,26.0,View changes,PRT: Supplement - Providing Installations For Initial Treatment Or Storage,1.0,7.0,1.0
+OT12400,23.0,27.0,View changes,PRT: Supplement - Overheads,0.0,7.0,0.0
+OT12450,24.0,26.0,View changes,PRT: Supplement - Apportionment Of Expenditure,0.0,5.0,0.0
+OT12500,22.0,28.0,View changes,PRT: Supplement - Expenditure Partly To Generate Tariff Receipts,1.0,9.0,1.0
+OT12550,24.0,26.0,View changes,PRT: Supplement - Hired Assets,0.0,6.0,0.0
+OT12575,21.0,29.0,View changes,PRT: Supplement - Contractor Financing,1.0,17.0,1.0
+OT12600,24.0,26.0,View changes,PRT: Supplement - Contractor Financing: Example,0.0,9.0,0.0
+OT12625,24.0,26.0,View changes,PRT: Supplement - Disposal Receipts: Supplement Restriction,1.0,5.0,1.0
+OT12650,20.0,30.0,View changes,PRT: Supplement - Net Profit Period,9.0,21.0,10.0
+OT12700,13.0,37.0,View changes,PRT: Supplement - Recalculated Net Profit Period,0.0,20.0,0.0
+OT12725,23.0,27.0,View changes,PRT: Supplement - Loss Following Net Profit Period,0.0,11.0,0.0
+OT12750,24.0,26.0,View changes,PRT: Supplement - Interaction With Other Provisions,3.0,8.0,3.0
+OT13000,66.0,207.0,View changes,PRT: Cross Field Allowances: Contents,3.0,7.0,90.0
+OT13020,23.0,27.0,View changes,Allowances - Outline,2.0,7.0,2.0
+OT13040,19.0,31.0,View changes,Allowances - How It Works,3.0,14.0,5.0
+OT13060,17.0,33.0,View changes,Allowances - Procedures,0.0,15.0,0.0
+OT13100,267.0,852.0,View changes,Spreading Elections : Contents,8.0,13.0,343.0
+OT13110,19.0,105.0,View changes,Spreading Elections - Outline,0.0,7.0,0.0
+OT13120,18.0,105.0,View changes,Spreading Elections - Form Of Election,0.0,6.0,0.0
+OT13130,12.0,75.0,View changes,"Spreading Elections, OTA75\SCH3\PARAS 9-10 - Time Limits",0.0,7.0,0.0
+OT13140,19.0,106.0,View changes,Spreading Elections - Method Of Spreading,0.0,10.0,0.0
+OT13150,18.0,105.0,View changes,Spreading Elections - Interaction With Oil Allowance,0.0,6.0,0.0
+OT13160,19.0,106.0,View changes,Spreading Elections - Interaction With Safeguard,2.0,10.0,2.0
+OT13170,18.0,105.0,View changes,Spreading Elections - Interaction With Net Profit Period,0.0,6.0,0.0
+OT13180,18.0,106.0,View changes,Spreading Elections - Interest,0.0,5.0,0.0
+OT13200,85.0,137.0,View changes,PRT: Exempt Gas Provisions: Contents,6.0,10.0,110.0
+OT13210,20.0,31.0,View changes,- Outline,1.0,13.0,1.0
+OT13220,23.0,28.0,View changes,- Amendment Of A Section 10 Exempt Contract,0.0,8.0,0.0
+OT13230,24.0,27.0,View changes,- Sales Or Transfer Of An Interest In A Field Subject To A Section 10 Exempt Contract,0.0,7.0,0.0
+OT13240,24.0,27.0,View changes,- Expenditure Provisions,1.0,7.0,1.0
+OT13250,22.0,30.0,View changes,- Long-Term Asset Expenditure,1.0,16.0,1.0
+OT13260,24.0,27.0,View changes,- Tariff Receipts Of Exempt Gas Fields,0.0,5.0,0.0
+OT13450,24.0,27.0,View changes,PRT: Transmedian Fields,1.0,7.0,2.0
+OT13500,118.0,827.0,View changes,PRT: Foreign Fields: Contents,7.0,11.0,218.0
+OT13510,24.0,28.0,View changes,Fields - Definition Of Foreign Field,1.0,7.0,1.0
+OT13525,94.0,116.0,View changes,Fields - Tariff And Disposal Receipts,0.0,15.0,0.0
+OT13550,23.0,28.0,View changes,Fields - TRA And Foreign User Fields,0.0,7.0,0.0
+OT13560,24.0,27.0,View changes,Fields - Oil Allowance - Foreign Fields,1.0,5.0,1.0
+OT13570,24.0,27.0,View changes,Fields - E&A - Designated Area - Transmedian Fields,0.0,5.0,0.0
+OT13600,24.0,27.0,View changes,Fields - Double Taxation Relief,0.0,5.0,0.0
+OT13650,24.0,28.0,View changes,Fields - Abolition Of PRT - Foreign And Transmedian Fields,0.0,5.0,0.0
+OT13750,678.0,1729.0,View changes,PRT: Non Field,27.0,31.0,897.0
+OT13760,46.0,49.0,View changes,PRT: Non-Field Expenditure - Outline,3.0,8.0,4.0
+OT13775,46.0,48.0,View changes,PRT: Non-Field Expenditure - Claims,2.0,13.0,2.0
+OT13790,45.0,49.0,View changes,PRT: Non-Field Expenditure - Prevention Of Double Allowance,1.0,9.0,1.0
+OT13810,42.0,52.0,View changes,PRT: Non-Field Expenditure - Associated Company Claims,1.0,16.0,1.0
+OT13825,44.0,50.0,View changes,PRT: Non-Field Expenditure - Acquisition Of Interests In Producing Fields,1.0,13.0,1.0
+OT13840,44.0,50.0,View changes,PRT: Non-Field Expenditure - Treatment Of Long-Term Assets,1.0,13.0,1.0
+OT13850,45.0,49.0,View changes,"PRT: Non-Field Expenditure - Receipts, Pre 16 March 1983",1.0,12.0,1.0
+OT13860,40.0,54.0,View changes,"PRT: Non-Field Expenditure - Receipts, Post 15 March 1983",2.0,19.0,3.0
+OT13875,45.0,49.0,View changes,PRT: Non-Field Expenditure - Bottom Hole Contributions,0.0,9.0,0.0
+OT13900,44.0,50.0,View changes,PRT: Non-Field Expenditure - Receipts: Extended Production Tests,1.0,11.0,1.0
+OT13910,44.0,50.0,View changes,PRT: Non-Field Expenditure - Disallowable Expenditure,0.0,12.0,0.0
+OT13925,46.0,48.0,View changes,PRT: Non-Field Expenditure - Non-Arm's Length Expenditure,1.0,6.0,1.0
+OT13940,45.0,49.0,View changes,PRT: Non-Field Expenditure - Designated Area,1.0,7.0,3.0
+OT13950,45.0,49.0,View changes,PRT: Non-Field Expenditure - Abortive Exploration Expenditure: Basic Conditions,1.0,19.0,1.0
+OT13960,42.0,52.0,View changes,"Non-Field Expenditure - Abortive Exploration Expenditure: 'Is Not, And Is Unlikely To Become Allowable For A Field'",0.0,24.0,0.0
+OT13975,102.0,196.0,View changes,Non-Field Expenditure - Exploration And Appraisal Expenditure: Basic Conditions,4.0,23.0,147.0
+OT13990,46.0,48.0,View changes,PRT: Non-Field Expenditure - Exploration And Appraisal Expenditure: Expenditure Not Related To A Field,0.0,7.0,0.0
+OT14000,44.0,50.0,View changes,PRT: Non-Field Expenditure - Exploration And Appraisal Expenditure: Searching And Ascertaining,2.0,18.0,2.0
+OT14010,43.0,51.0,View changes,PRT: Non-Field Expenditure: Exploration And Appraisal Expenditure: Licence Payments,0.0,9.0,0.0
+OT14025,46.0,48.0,View changes,PRT: Non-Field Expenditure: Exploration And Appraisal Expenditure: Onshore Expenditure,0.0,10.0,0.0
+OT14040,45.0,49.0,View changes,PRT: Non-Field Expenditure: Exploration And Appraisal Expenditure: Transitional Provisions: Outline,3.0,8.0,3.0
+OT14050,43.0,51.0,View changes,PRT: Non-Field Expenditure: Exploration And Appraisal Expenditure: Transitional Provisions: Committed Expenditure,0.0,19.0,0.0
+OT14060,38.0,56.0,View changes,PRT: Non-Field Expenditure - Exploration And Appraisal Expenditure: Transitional Provisions: Supplementary Relief,0.0,20.0,0.0
+OT14080,46.0,48.0,View changes,PRT: Non-Field Expenditure - Exploration And Appraisal Expenditure: Transitional Provisions - Interaction Of FA93\S188 And S189,0.0,9.0,0.0
+OT14100,46.0,48.0,View changes,PRT: Non-Field Expenditure - Research Expenditure: Outline,1.0,8.0,1.0
+OT14125,40.0,54.0,View changes,PRT: Non-Field Expenditure - Research Expenditure: Basic Conditions,1.0,27.0,1.0
+OT14140,46.0,48.0,View changes,PRT: Non-Field Expenditure - Research Expenditure: Associated Companies,0.0,6.0,0.0
+OT14250,100.0,206.0,View changes,PRT: Provisional Expenditure Allowance: Contents,3.0,9.0,123.0
+OT14300,33.0,192.0,View changes,PRT: Provisional Expenditure Allowance - Outline,2.0,12.0,2.0
+OT14350,22.0,28.0,View changes,Allowance - Clawback,1.0,12.0,1.0
+OT14400,2477.0,2512.0,View changes,Allowance - Examples,2.0,19.0,58.0
+OT14500,203.0,289.0,View changes,PRT: Meaning Of Expenditure Incurred And Timing Issues: Contents,4.0,8.0,239.0
+OT14510,24.0,26.0,View changes,Issues - Background,3.0,7.0,3.0
+OT14520,24.0,26.0,View changes,Issues - Time When Expenditure Is Incurred,1.0,13.0,1.0
+OT14540,23.0,27.0,View changes,Issues - Accounting Systems,0.0,11.0,0.0
+OT14560,23.0,27.0,View changes,Issues - Chargeable Periods In Which Expenditure May Be Brought Into Account,0.0,7.0,0.0
+OT14600,461.0,743.0,View changes,PRT: Associated Party Transactions: Contents,12.0,15.0,499.0
+OT14610,22.0,28.0,View changes,Transactions - General Objectives,0.0,7.0,0.0
+OT14620,19.0,31.0,View changes,Transactions - Scope Of Application,0.0,17.0,0.0
+OT14640,23.0,27.0,View changes,Transactions - Types Of Expenditure Affected And The Time Expenditure Was Incurred,0.0,12.0,0.0
+OT14660,24.0,26.0,View changes,Transactions - Interest And Other Pecuniary Obligations,0.0,5.0,0.0
+OT14680,23.0,27.0,View changes,Transactions - Hiring Of Assets,0.0,8.0,0.0
+OT14700,24.0,26.0,View changes,Transactions - Services,0.0,6.0,0.0
+OT14720,24.0,26.0,View changes,Transactions - Provision Of Fuel Oil,0.0,5.0,0.0
+OT14740,23.0,27.0,View changes,Transactions - Insurance,0.0,10.0,0.0
+OT14760,21.0,29.0,View changes,Transactions - Direct Insurance With A Captive,0.0,10.0,0.0
+OT14780,22.0,28.0,View changes,Transactions - Indirect Insurance With A Captive,0.0,11.0,0.0
+OT14800,24.0,26.0,View changes,Transactions - Insurance - Information,1.0,22.0,1.0
+OT14840,22.0,28.0,View changes,Transactions - Oil Insurance Ltd,0.0,9.0,0.0
+OT15000,879.0,1300.0,View changes,PRT: Tariff And Disposal Receipts: Contents,25.0,29.0,1001.0
+OT15010,2.0,4.0,View changes,Receipts - Outline,1.0,8.0,2.0
+OT15025,1.0,3.0,View changes,Receipts - Definition Of Tariff Receipts,3.0,16.0,3.0
+OT15060,0.0,2.0,View changes,Receipts - Definition Of Disposal Receipts,4.0,18.0,5.0
+OT15100,1.0,3.0,View changes,Receipts - Definition Of Qualifying Assets,0.0,12.0,0.0
+OT15150,6.0,8.0,View changes,Receipts - Chargeable Field,0.0,20.0,0.0
+OT15210,2755.0,2761.0,View changes,Receipts - Participators In Common,4.0,14.0,1521.0
+OT15240,7.0,9.0,View changes,Receipts - Cessation Of Field Or Tariff Use,1.0,14.0,1.0
+OT15250,9.0,11.0,View changes,Receipts - Reduction Of Disposal Receipts For Tax-Exempt Tariffing Use,0.0,32.0,0.0
+OT15300,2.0,4.0,View changes,Receipts - Restriction Of Supplement On Disposal,1.0,17.0,1.0
+OT15400,1.0,3.0,View changes,Receipts - Consideration Received By Connected Persons Under Avoidance Schemes,2.0,9.0,2.0
+OT15450,6.0,8.0,View changes,Receipts - Transactions Not At Arm's Length,1.0,16.0,1.0
+OT15500,3.0,5.0,View changes,Receipts - Use By Connected Or Associated Person Under Avoidance Scheme,1.0,11.0,1.0
+OT15540,2.0,4.0,View changes,Receipts - Purchase Of Oil At Place Of Extraction,2.0,15.0,2.0
+OT15600,2.0,4.0,View changes,Tariff Receipts Allowance,1.0,9.0,1.0
+OT15625,1.0,3.0,View changes,Definition Of A User Field,0.0,9.0,0.0
+OT15650,3.0,5.0,View changes,Qualifying Tariff Receipts,1.0,13.0,1.0
+OT15675,3.0,5.0,View changes,Calculation Of Participator's Share Of Tariff Receipts Allowance,1.0,23.0,1.0
+OT15700,2.0,4.0,View changes,Calculation Of Tariff Receipts Allowance Relating To Only Part Of Throughput,0.0,7.0,0.0
+OT15725,2.0,4.0,View changes,Calculation Of Tariff Receipts Allowance: Participators In Common,0.0,17.0,0.0
+OT15750,1.0,3.0,View changes,Qualifying Tariff Receipts Referable To Different Periods,2.0,21.0,2.0
+OT15760,1.0,3.0,View changes,Receipts - Qualifying Tariff Receipts Referable To Different Periods - Example 1,0.0,7.0,0.0
+OT15770,4.0,6.0,View changes,Qualifying Tariff Receipts Referable To Different Periods - Example 2,0.0,12.0,0.0
+OT15800,566.0,2150.0,View changes,PRT: Tax-Exempt Tariffing Receipts: Contents,16.0,20.0,712.0
+OT15810,2.0,4.0,View changes,PRT: Tax-Exempt Tariffing Receipts - Outline,2.0,11.0,2.0
+OT15820,2.0,5.0,View changes,PRT: Tax-Exempt Tariffing Receipts - Definition,0.0,12.0,0.0
+OT15830,0.0,3.0,View changes,"PRT: Tax-Exempt Tariffing Receipts - Definitions Of New Field, Existing Field & UK Recommissioned Field",0.0,10.0,0.0
+OT15840,2.0,6.0,View changes,PRT: Tax-Exempt Tariffing Receipts - Foreign Fields,0.0,8.0,0.0
+OT15850,0.0,3.0,View changes,PRT: Tax-Exempt Tariffing Receipts - Transmedian Fields,0.0,6.0,0.0
+OT15860,4.0,6.0,View changes,PRT: Tax-Exempt Tariffing Receipts - Definition Of Qualifying Existing Field,0.0,18.0,0.0
+OT15870,0.0,3.0,View changes,PRT: Tax-Exempt Tariffing Receipts - Excepted Assets - Assets Wholly Situated In An Existing Field,0.0,7.0,0.0
+OT15880,3.0,6.0,View changes,PRT: Tax-Exempt Tariffing Receipts - Excepted Assets - Tankers And Tanker Loading Fields,0.0,14.0,0.0
+OT15900,4.0,7.0,View changes,PRT: Tax-Exempt Tariffing Receipts - Transitional Provision,0.0,14.0,0.0
+OT15910,2.0,5.0,View changes,PRT: Tax-Exempt Tariffing Receipts - Tax-Exempt Tariffing Receipts - Related Expenditure,1.0,11.0,1.0
+OT15920,4.0,7.0,View changes,PRT: Tax-Exempt Tariffing Receipts - Cost Allocation The Modified Approach,1.0,12.0,1.0
+OT15930,2.0,5.0,View changes,PRT: Tax-Exempt Tariffing Receipts - Participators In Common And Connected Party Transactions,1.0,11.0,1.0
+OT15940,10.0,13.0,View changes,PRT: Tax-Exempt Tariffing Receipts - Cost Allocation Calculation,1.0,22.0,1.0
+OT16000,254.0,1847.0,View changes,PRT: Allowable Losses: Contents,18.0,20.0,1008.0
+OT16050,1.0,4.0,View changes,Losses - Outline,6.0,11.0,7.0
+OT16100,2.0,6.0,View changes,Losses - Set Off Against Preceding Periods,2.0,11.0,2.0
+OT16150,1.0,4.0,View changes,Losses - Set Off Against Future Periods,0.0,6.0,0.0
+OT16200,1.0,4.0,View changes,Losses - Set Off When Production Ceases,1.0,7.0,1.0
+OT16250,58.0,188.0,View changes,PRT: Allowable Losses - Unrelievable Field Losses,3.0,9.0,5.0
+OT16260,1.0,4.0,View changes,Losses - Unrelievable Field Losses - Link To Chargeable Periods,0.0,7.0,0.0
+OT16270,2.0,6.0,View changes,Losses - Unrelievable Field Losses - Associated Party Claims,0.0,7.0,0.0
+OT16290,3.0,5.0,View changes,Losses - Unrelievable Field Losses - Unrelated Field Expenditure,0.0,15.0,0.0
+OT16350,41.0,224.0,View changes,Permanent Cessation Of Winning Oil,0.0,8.0,0.0
+OT16450,1.0,3.0,View changes,Losses - Transfer Of Licence Inerests,4.0,9.0,4.0
+OT16500,1.0,3.0,View changes,Losses - Unrelievable Field Losses: Licence Transfers: Anti-Avoidance - Background,3.0,9.0,3.0
+OT16510,9.0,11.0,View changes,Losses - Unrelievable Field Losses: Licence Transfers - Anti-Avoidance - Details,3.0,23.0,4.0
+OT16520,1.0,3.0,View changes,Losses - Unrelievable Field Losses: Licence Transfers - Anti-Avoidance - Examples,0.0,10.0,0.0
+OT16550,2.0,4.0,View changes,Losses - Stranded Losses,1.0,11.0,1.0
+OT16600,5.0,7.0,View changes,Losses - Repayment Interest,0.0,16.0,0.0
+OT17025,0.0,2.0,View changes,PRT: Oil Allowance - Background,1.0,7.0,1.0
+OT17050,1.0,3.0,View changes,PRT: Oil Allowance - Entitlement,3.0,9.0,3.0
+OT17100,0.0,2.0,View changes,PRT: Oil Allowance - Amount Of Allowance,2.0,18.0,2.0
+OT17150,1.0,3.0,View changes,PRT: Oil Allowance - Calculation Of Cash Equivalent,3.0,16.0,4.0
+OT17250,1.0,3.0,View changes,PRT: Oil Allowance - Treatment Of Gas,0.0,22.0,0.0
+OT17300,8.0,10.0,View changes,PRT: Oil Allowance - Reallocation Of Oil Allowance In Final Periods,0.0,24.0,0.0
+OT17350,0.0,2.0,View changes,PRT: Oil Allowance - Late Expenditure Claims,1.0,7.0,1.0
+OT17500,297.0,907.0,View changes,PRT: Safeguard: Contents,13.0,17.0,321.0
+OT17525,1.0,3.0,View changes,PRT: Safeguard - Outline,3.0,6.0,3.0
+OT17550,2.0,4.0,View changes,PRT: Safeguard - Basic Calculation,2.0,10.0,3.0
+OT17560,0.0,2.0,View changes,PRT: Safeguard - Adjusted Profit,1.0,15.0,1.0
+OT17570,1.0,3.0,View changes,PRT: Safeguard - Accumulated Capital Expenditure,2.0,11.0,2.0
+OT17580,9.0,13.0,View changes,PRT: Safeguard - Example,2.0,7.0,2.0
+OT17600,4.0,6.0,View changes,PRT: Safeguard - Limit On Chargeable Periods,0.0,17.0,0.0
+OT17700,12.0,86.0,View changes,PRT: Safeguard - Supplement,0.0,8.0,0.0
+OT17750,6.0,8.0,View changes,PRT: Safeguard - Deferred Expenditure Claims,3.0,26.0,4.0
+OT17760,4.0,6.0,View changes,PRT: Safeguard - Deferred Expenditure Claims - Example 1,0.0,11.0,0.0
+OT17770,3.0,5.0,View changes,PRT: Safeguard - Deferred Expenditure Claims - Example 2,0.0,10.0,0.0
+OT17780,4.0,6.0,View changes,PRT: Safeguard - Deferred Expenditure Claims - Example 3,0.0,9.0,0.0
+OT18000,845.0,1853.0,View changes,PRT Transfer Of Licence Interests Contents,23.0,27.0,933.0
+OT18170,0.0,2.0,View changes,PRT: Transfer Of Licence Interests - Transfers Of Oil,1.0,5.0,1.0
+OT18180,0.0,2.0,View changes,PRT: Transfer Of Licence Interests - Treatment Of Overriding Royalty,1.0,5.0,1.0
+OT18250,481.0,1341.0,View changes,PRT: Unitisations And Re-Determinations: Contents,12.0,16.0,528.0
+OT18260,2.0,7.0,View changes,e-Determinations - Regulations,0.0,5.0,0.0
+OT18270,1.0,8.0,View changes,e-Determinations - Unitisation Agreements,0.0,8.0,0.0
+OT18280,2.0,7.0,View changes,"e-Determinations - Unitisations, PRT Treatment",0.0,6.0,0.0
+OT18290,1.0,8.0,View changes,e-Determinations - Schedule 17,0.0,10.0,0.0
+OT18300,2.0,7.0,View changes,e-Determinations - Re-Determination Claims,0.0,10.0,0.0
+OT18310,2.0,7.0,View changes,e-Determinations - Negative Uplift And Safeguard,0.0,6.0,0.0
+OT18320,2.0,7.0,View changes,e-Determinations - Farm Outs - Outline,0.0,12.0,0.0
+OT18330,2.0,7.0,View changes,e-Determinations - Purchase Of Licence Interests - No PRT Field Yet Determined,0.0,9.0,0.0
+OT18340,2.0,215.0,View changes,e-Determinations - Purchase Of Licence Interests - PRT Field Determined And Comprised In Licence,0.0,12.0,0.0
+OT18350,2.0,7.0,View changes,e-Determinations - Work Programme - PRT Treatment,0.0,6.0,0.0
+OT18360,2.0,7.0,View changes,e-Determinations - Development Carry,0.0,6.0,0.0
+OT18370,2.0,7.0,View changes,e-Determinations - Carried Interest - PRT Treatment,0.0,14.0,0.0
+OT18500,186.0,694.0,View changes,PRT Compliance: Contents,17.0,21.0,328.0
+OT18510,44.0,152.0,View changes,Risk Factors And Distinctive Features Of The Tax,0.0,18.0,0.0
+OT18520,49.0,51.0,View changes,Changes In Approach To The Management Of Risk,0.0,5.0,0.0
+OT18530,47.0,53.0,View changes,LB Operating Model - The Role Of The CRM In PRT,0.0,7.0,0.0
+OT18540,48.0,52.0,View changes,Tax Compliance Risk Management Process Guidance,2.0,14.0,3.0
+OT18550,46.0,54.0,View changes,The New Approach To Governance And Delivery,1.0,12.0,1.0
+OT18560,48.0,74.0,View changes,The Relationship With Low Risk Customers,0.0,6.0,0.0
+OT18570,36.0,64.0,View changes,"Responding To Specific Returns, Claims And Notification From A Low Risk Customer",3.0,22.0,4.0
+OT18580,49.0,74.0,View changes,Joint Venture Claims - Confidentiality,0.0,10.0,0.0
+OT18590,47.0,54.0,View changes,Clear Errors,0.0,7.0,0.0
+OT18600,49.0,53.0,View changes,Risk Assessment - Evaluating Potential Sources Of Risk Against All Available Information,0.0,6.0,0.0
+OT18610,47.0,54.0,View changes,Risk Assessment - The Process,1.0,8.0,1.0
+OT18620,47.0,54.0,View changes,"Risk Assessment - Mandatory Work, Projects And Campaigns",0.0,8.0,0.0
+OT18630,49.0,52.0,View changes,Risk Assessment - Regime Integrity Work,0.0,7.0,0.0
+OT18640,48.0,53.0,View changes,Risk Assessment - The Risk Review Process,0.0,6.0,0.0
+OT18650,47.0,54.0,View changes,Risk Assessment - First Claims And Continuing Audits,0.0,8.0,0.0
+OT18660,48.0,54.0,View changes,Risk Working - PRT / Accounts Reconciliations,0.0,8.0,0.0
+OT18670,47.0,54.0,View changes,Risk Working - Time Limits And Expenditure Claims,0.0,6.0,0.0
+OT18750,112.0,646.0,View changes,PRT: Penalties: Contents,10.0,12.0,452.0
+OT18755,67.0,210.0,View changes,On Or After 30 June 2010,1.0,5.0,1.0
+OT18760,28.0,34.0,View changes,PRT: Penalties - Chargeable Periods Ending Before 30 June 2010,2.0,13.0,8.0
+OT18770,0.0,3.0,View changes,PRT: Penalties - Penalty Provisions: Incorrect Returns,3.0,8.0,3.0
+OT18785,373.0,408.0,View changes,PRT: Penalties - Amount Of Penalty: Participator,16.0,20.0,4590.0
+OT18795,8.0,11.0,View changes,PRT: Penalties - Penalty Provisions: Late Returns,9.0,10.0,1666.0
+OT19025,274.0,277.0,View changes,PRT: Appendices - Valuation Of LPG,42.0,45.0,15586.0
+OT19040,152.0,194.0,View changes,PRT: Appendices - Review Of LPG Methodology,14.0,34.0,9634.0
+OT19075,227.0,230.0,View changes,PRT: Appendices - Commingling,32.0,41.0,5274.0
+OT19100,4.0,7.0,View changes,PRT: Appendices - Valuation Exchange Transitions Dates,0.0,9.0,0.0
+OT19125,276.0,279.0,View changes,PRT: Appendices - Extra Statutory Concessions,18.0,22.0,6125.0
+OT19140,228.0,13832.0,View changes,PRT: Appendices - PRT/Accounts Reconciliation (Full Version),31.0,34.0,33009.0
+OT19200,902.0,908.0,View changes,PRT: Appendices - Deferral Of PRT Returns,74.0,82.0,33058.0
+OT19225,566.0,569.0,View changes,PRT: Appendices - Deferral Of Returns (Alternative Method - Informal Returns),45.0,47.0,24094.0
+OT19250,0.0,3.0,View changes,PRT Appendices - Elections For Oil Fields To Become Non-Taxable,0.0,29.0,0.0
+OT20200,395.0,2954.0,View changes,Corporation Tax General: Contents,18.0,22.0,502.0
+OT20201,0.0,3.0,View changes,Background,1.0,5.0,1.0
+OT20202,1.0,4.0,View changes,Overview Of The Main Types Of Costs Incurred In Oil Exploration And Production - Introduction,0.0,8.0,0.0
+OT20203,2.0,5.0,View changes,Overview Of The Main Types Of Costs Incurred In Oil Exploration And Production - Exploration,0.0,8.0,0.0
+OT20204,1.0,3.0,View changes,Overview Of The Main Types Of Costs Incurred In Oil Exploration And Production - Production,0.0,7.0,0.0
+OT20205,0.0,3.0,View changes,Overview Of The Main Types Of Costs Incurred In Oil Exploration And Production - Decommissioning And Abandonment,1.0,5.0,1.0
+OT20251,0.0,3.0,View changes,World-Wide Activities,1.0,5.0,1.0
+OT20252,1.0,4.0,View changes,Sale Of A Small Quantity Of Oil,0.0,6.0,0.0
+OT20255,1.0,3.0,View changes,Cessation Of Trade,0.0,7.0,0.0
+OT20300,1.0,3.0,View changes,Take Or Pay Gas Sales Contracts,0.0,9.0,0.0
+OT20310,2.0,4.0,View changes,Intangible Fixed Assets - Oil Licences,0.0,9.0,0.0
+OT20315,65.0,75.0,View changes,Intangible Fixed Assets - Oil Licences - Exclusion From The Scheme,0.0,8.0,0.0
+OT20400,1.0,3.0,View changes,EU Emissions Trading Scheme - Introduction,0.0,6.0,0.0
+OT20405,1.0,3.0,View changes,EU Emissions Trading Scheme - Phase I,0.0,11.0,0.0
+OT20410,1.0,3.0,View changes,EU Emissions Trading Scheme - Phase II,0.0,10.0,0.0
+OT20415,1.0,3.0,View changes,EU Emissions Trading Scheme - Phase III,0.0,6.0,0.0
+OT21000,1041.0,2273.0,View changes,Corporation Tax Ring Fence: Contents,38.0,42.0,1094.0
+OT21001,4.0,6.0,View changes,Introduction To The Ring Fence,0.0,9.0,0.0
+OT21002,2.0,4.0,View changes,Oil Extraction As A Separate Trade,0.0,9.0,0.0
+OT21003,11.0,13.0,View changes,Definition Of Oil Extraction Activities,0.0,18.0,0.0
+OT21004,1.0,3.0,View changes,Definition Of Oil Rights,0.0,6.0,0.0
+OT21005,2.0,4.0,View changes,Definition Of Oil,0.0,7.0,0.0
+OT21010,1.0,3.0,View changes,Associated Companies,0.0,7.0,0.0
+OT21015,2.0,4.0,View changes,Delivery Outwith The UK,1.0,8.0,1.0
+OT21017,1.0,3.0,View changes,Definitions Of Ring Fence Income And Ring Fence Profits,0.0,6.0,0.0
+OT21020,2.0,4.0,View changes,Separate Notional Ring Fence And Non-Ring Fence Trades,0.0,7.0,0.0
+OT21026,85.0,988.0,View changes,The Valuation Of Oil: Contents,6.0,10.0,215.0
+OT21027,6.0,8.0,View changes,Disposed Of Or Appropriated,1.0,13.0,1.0
+OT21028,1.0,3.0,View changes,Arm’S Length Sales And Transportation Costs,0.0,6.0,0.0
+OT21031,3.0,5.0,View changes,Other Non-Arm’S Length Transactions,0.0,8.0,0.0
+OT21032,1.0,3.0,View changes,The Valuation Of Oil - Nomination Scheme Excesses,0.0,5.0,0.0
+OT21035,2.0,4.0,View changes,Other Income,0.0,8.0,0.0
+OT21040,1.0,3.0,View changes,Tariff Receipts And Tax-Exempt Tariffing Receipts,0.0,10.0,0.0
+OT21045,374.0,917.0,View changes,Losses And Group Relief: Contents,7.0,11.0,389.0
+OT21055,3.0,5.0,View changes,Losses Carried Forward,0.0,8.0,0.0
+OT21060,6.0,12.0,View changes,Carry Back Of Abandonment And Decommissioning Losses,5.0,13.0,9.0
+OT21065,12.0,14.0,View changes,Extended Carry Back For General Decommissioning And Terminal Losses,1.0,19.0,1.0
+OT21066,1.0,3.0,View changes,Extended Carry Back For General Decommissioning And Terminal Losses - Example,0.0,5.0,0.0
+OT21070,1.0,3.0,View changes,Expenses Of Management,0.0,8.0,0.0
+OT21071,3.0,5.0,View changes,Expenses Of Management - Transitional Provisions,0.0,8.0,0.0
+OT21075,1.0,3.0,View changes,Deduction Of PRT In Computing Income For CT Purposes,0.0,7.0,0.0
+OT21076,2.0,4.0,View changes,The Treatment Of Repayments Of PRT Arising From The Carry Back Of PRT Losses,0.0,8.0,0.0
+OT21083,1.0,3.0,View changes,Sale And Leaseback Of Assets,0.0,6.0,0.0
+OT21090,1.0,3.0,View changes,Currency Differences And Valuation Of Oil - Introduction,0.0,7.0,0.0
+OT21095,1.0,3.0,View changes,Currency Differences And Valuation Of Oil - The Basis Used For Conversion,0.0,8.0,0.0
+OT21100,1.0,3.0,View changes,The Treatment Of ACT,0.0,7.0,0.0
+OT21105,64.0,168.0,View changes,Transfer Pricing: Contents,4.0,8.0,122.0
+OT21115,1.0,3.0,View changes,General Overview,1.0,7.0,1.0
+OT21120,1.0,3.0,View changes,Transactions Between Companies,0.0,6.0,0.0
+OT21125,2.0,6.0,View changes,Cross-Ring Fence Transactions Within A Company,0.0,7.0,0.0
+OT21195,177.0,3400.0,View changes,The Supplementary Charge: Contents,17.0,21.0,497.0
+OT21200,1.0,5.0,View changes,Introduction,1.0,10.0,1.0
+OT21202,2.0,6.0,View changes,Commencement,1.0,7.0,1.0
+OT21204,1.0,5.0,View changes,The Meaning Of “Adjusted Ring Fence Profits”,1.0,7.0,1.0
+OT21206,4.0,8.0,View changes,The Meaning Of “Finance Costs”,1.0,18.0,1.0
+OT21209,1.0,7.0,View changes,The Meaning Of “Finance Lease” And “Accounts”,0.0,7.0,0.0
+OT21215,2.0,6.0,View changes,Management Provisions,0.0,15.0,0.0
+OT21219,1.0,5.0,View changes,The Supplementary Charge - No Supplementary Charge Losses Or Adjusted Ring Fence Losses,0.0,9.0,0.0
+OT21220,3.0,7.0,View changes,The Supplementary Charge - Negative Financing Costs,1.0,10.0,1.0
+OT21222,3.0,7.0,View changes,The Supplementary Charge - Ring Fence Trading Loss With Negative Finance Costs,1.0,10.0,1.0
+OT21223,5.0,9.0,View changes,The Supplementary Charge - Example 1 - The Carry Forward Of A CT Ring Fence Loss And A Shadow Computation Tracking Financing Costs,0.0,20.0,0.0
+OT21224,9.0,12.0,View changes,The Supplementary Charge - Example 2 - Group Relief Of Corporation Tax Ring Fence Loss And A Shadow Computation Tracking Financing Costs,0.0,25.0,0.0
+OT21228,110.0,209.0,View changes,Restriction Of Relief For Decommissioning Expenditure: Overview,0.0,7.0,0.0
+OT21230,110.0,125.0,View changes,Restriction Of Relief For Decommissioning Expenditure: The Amount Of Restriction,1.0,13.0,1.0
+OT21231,149.0,167.0,View changes,Increase Of Relief For Decommissioning Expenditure Where It Is Taken Into Account For PRT Purposes: Overview,0.0,7.0,0.0
+OT21233,153.0,187.0,View changes,Increase Of Relief For Decommissioning Expenditure Where It Is Taken Into Account For PRT Purposes: The Amount Of Additional Deduction,0.0,6.0,0.0
+OT21240,121.0,949.0,View changes,First-Year Allowances For A Ring Fence Trade - Contents,8.0,12.0,285.0
+OT21241,1.0,5.0,View changes,First-Year Allowances For A Ring Fence Trade - Introduction,1.0,8.0,1.0
+OT21242,1.0,5.0,View changes,First-Year Allowances For A Ring Fence Trade: Plant And Machinery,0.0,13.0,0.0
+OT21245,2.0,6.0,View changes,First-Year Allowances For A Ring Fence Trade: Plant And Machinery Used Wholly For The Purposes Of The Trade,1.0,13.0,1.0
+OT21246,2.0,6.0,View changes,First-Year Allowances For A Ring Fence Trade: Withdrawal Of Plant And Machinery Allowances,0.0,14.0,0.0
+OT21300,2.0,6.0,View changes,The Payment Of Ring Fence CT And The Supplementary Charge In Three Instalments,0.0,13.0,0.0
+OT21500,528.0,1259.0,View changes,Onshore Allowance: Contents,11.0,15.0,556.0
+OT21515,32.0,36.0,View changes,Onshore Allowance - Generation Of The Onshore Allowance,13.0,17.0,3751.0
+OT21520,20.0,26.0,View changes,Onshore Allowance - Reduction Of Adjusted Ring Fence Profits,12.0,18.0,1623.0
+OT21525,21.0,25.0,View changes,Onshore Allowance - Activated And Unactivated Onshore Allowance The Basic Calculation Rules,10.0,17.0,1427.0
+OT21540,2.0,4.0,View changes,Onshore Allowance - Transfers Of Allowance On Disposal Of Equity Share,0.0,16.0,0.0
+OT21600,216.0,240.0,View changes,Hire Of Relevant Assets: Contents,4.0,7.0,222.0
+OT21601,2.0,4.0,View changes,Hire Of Relevant Assets - Introduction,0.0,11.0,0.0
+OT21605,1.0,3.0,View changes,Hire Of Relevant Assets - Scope Of Legislation,2.0,10.0,2.0
+OT21610,0.0,2.0,View changes,Hire Of Relevant Assets - Effect Of Being Within CTA2010\S285A,1.0,9.0,1.0
+OT21615,0.0,2.0,View changes,Hire Of Relevant Assets - Anti Avoidance Provision,1.0,7.0,1.0
+OT22000,245.0,512.0,View changes,Interest And Financing: Contents,10.0,14.0,249.0
+OT22002,2.0,4.0,View changes,Transactions Across The Ring Fence,0.0,10.0,0.0
+OT22005,11.0,13.0,View changes,Summary Of The Statutory Provisions,0.0,17.0,0.0
+OT22006,7.0,9.0,View changes,Qualifying Loans,0.0,15.0,0.0
+OT22014,1.0,3.0,View changes,Charges Which Were Not Allowed Against Ring Fence Profits,0.0,6.0,0.0
+OT22020,1.0,3.0,View changes,Sale And Leaseback Finance Charges,0.0,6.0,0.0
+OT25999,211.0,1100.0,View changes,Capital Allowances: Contents,10.0,14.0,243.0
+OT26001,0.0,2.0,View changes,Introduction,1.0,10.0,1.0
+OT26002,2.0,4.0,View changes,Meaning Of Oil & Gas Exploration And Appraisal,0.0,10.0,0.0
+OT26005,3.0,5.0,View changes,Judicial Comment On Scientific Research And Oil Exploration,0.0,10.0,0.0
+OT26007,2.0,4.0,View changes,Joint Memorandum Of 1967,0.0,7.0,0.0
+OT26008,0.0,2.0,View changes,1967 Memorandum - Details,1.0,8.0,1.0
+OT26016,3.0,5.0,View changes,1967 Memorandum - HMRC View On The Meaning Of Field,0.0,9.0,0.0
+OT26017,2.0,4.0,View changes,1967 Memorandum - HMRC View On Exclusions,0.0,8.0,0.0
+OT26018,3.0,5.0,View changes,1967 Memorandum - HMRC View On End Of Stage 3,0.0,8.0,0.0
+OT26027,1.0,3.0,View changes,1967 Memorandum - Gaps Between Stages 3 And 4 In Oil Exploration And Development,0.0,6.0,0.0
+OT26030,1.0,3.0,View changes,RDA Claims During Production Operations,0.0,6.0,0.0
+OT26036,1.0,3.0,View changes,Geographical Scope Of Research And Development Allowances,0.0,6.0,0.0
+OT26045,1.0,3.0,View changes,The Purchase Of The Results Of Past Exploration Work,0.0,10.0,0.0
+OT26052,1.0,3.0,View changes,Disposal Of A Licence Interest,0.0,7.0,0.0
+OT26054,3.0,5.0,View changes,Disposal Of A Licence For An Undeveloped Area,0.0,11.0,0.0
+OT26056,1.0,3.0,View changes,The Allowance Of Certain Drilling Expenditure,1.0,9.0,1.0
+OT26060,1.0,4.0,View changes,Farm-Ins,0.0,7.0,0.0
+OT26080,719.0,1446.0,View changes,Exploration Expenditure Supplement: Contents,13.0,17.0,736.0
+OT26081,0.0,3.0,View changes,Introduction,1.0,9.0,1.0
+OT26083,1.0,4.0,View changes,Qualifying Companies And Qualifying Expenditure,0.0,11.0,0.0
+OT26085,2.0,5.0,View changes,Accounting Periods,1.0,14.0,1.0
+OT26088,2.0,10.0,View changes,Relevant Percentage For Calculating The EES,1.0,8.0,4.0
+OT26090,4.0,7.0,View changes,Pre-Commencement Supplement,1.0,13.0,1.0
+OT26091,2.0,5.0,View changes,Licence Disposals And Group Relief - Reductions To The Pre-Commencement Mixed Pool,0.0,10.0,0.0
+OT26095,2.0,6.0,View changes,Post-Commencement Period,1.0,9.0,3.0
+OT26097,0.0,3.0,View changes,Ring Fence Losses And Qualifying E&A Losses,1.0,12.0,1.0
+OT26098,1.0,4.0,View changes,Pools Of Qualifying E&A Losses And Non Qualifying Losses,1.0,12.0,1.0
+OT26099,2.0,5.0,View changes,Post-Commencement EES - Using The Pools,0.0,11.0,0.0
+OT26100,2.0,5.0,View changes,Post Commencement EES Pools - Straddling Periods,1.0,8.0,2.0
+OT26105,2070.0,4995.0,View changes,Ring Fence Expenditure Supplement: Contents,38.0,41.0,2192.0
+OT26108,6.0,9.0,View changes,Conditions For Relief - Outline,3.0,14.0,5.0
+OT26120,5.0,9.0,View changes,Limit On Number Of Accounting Periods For Which Supplement May Be Claimed,1.0,9.0,1.0
+OT26130,4.0,7.0,View changes,Pre-Commencement Supplement,2.0,8.0,3.0
+OT26140,10.0,13.0,View changes,The Mixed Pool Of Qualifying Pre-Commencement Expenditure And Supplement,2.0,18.0,2.0
+OT26145,1.0,4.0,View changes,Pre-Commencement Mixed Pool - Reduction In Respect Of Disposal Proceeds Under The Capital Allowance Act,1.0,7.0,1.0
+OT26150,1.0,5.0,View changes,Pre-Commencement Pool - Reduction In Respect Of Unrelieved Group Ring Fence Profits,1.0,6.0,1.0
+OT26155,1.0,4.0,View changes,Supplement In Respect Of A Post-Commencement Period,2.0,9.0,2.0
+OT26160,3.0,6.0,View changes,Ring Fence Losses And Qualifying And Non-Qualifying E&A Losses,1.0,7.0,1.0
+OT26165,3.0,6.0,View changes,Ring Fence Loss - The Special Rule For Straddling Periods,0.0,10.0,0.0
+OT26190,2.0,5.0,View changes,Calculating The Supplement Due,3.0,8.0,5.0
+OT26200,1462.0,2885.0,View changes,Capital Allowances - Extended Ring Fence Expenditure Supplement For Onshore Activities : Contents,17.0,21.0,1648.0
+OT26201,0.0,4.0,View changes,Capital Allowances: Extended Ring Fence Expenditure Supplement For Onshore Activities- Introduction,1.0,5.0,1.0
+OT26203,44.0,47.0,View changes,Capital Allowances: Extended Ring Fence Expenditure Supplement For Onshore Activities - Conditions For Relief And Outline,16.0,18.0,4450.0
+OT26205,2.0,5.0,View changes,Capital Allowances: Extended Ring Fence Expenditure Supplement For Onshore Activities - Relevant Percentage,0.0,7.0,0.0
+OT26220,2.0,5.0,View changes,Capital Allowances: Extended Ring Fence Expenditure Supplement For Onshore Activities - Unrelieved Group Ring Fence Profits,1.0,7.0,1.0
+OT26225,0.0,3.0,View changes,Capital Allowances: Extended Ring Fence Expenditure Supplement For Onshore Activities - Pre-Commencement Additional Supplement,0.0,8.0,0.0
+OT26230,3.0,6.0,View changes,Capital Allowances: Extended Ring Fence Expenditure Supplement For Onshore Activities - Qualifying Pre-Commencement Onshore Expenditure,0.0,13.0,0.0
+OT26235,4.0,7.0,View changes,Capital Allowances: Extended Ring Fence Expenditure Supplement For Onshore Activities - The Mixed Pool Of Qualifying Pre-Commencement Onshore Expenditure And Supplement Previously Allowed,1.0,21.0,1.0
+OT26240,1.0,3.0,View changes,Capital Allowances: Extended Ring Fence Expenditure Supplement For Onshore Activities - Reduction For Disposal Proceeds Under The Capital Allowances Act From The Pre-Commencement Mixed Pool,0.0,8.0,0.0
+OT26245,1.0,3.0,View changes,Capital Allowances: Extended Ring Fence Expenditure Supplement For Onshore Activities - Reduction In Respect Of Unrelieved Group Ring Fence Profits From The Pre-Commencement Mixed Pool,0.0,9.0,0.0
+OT26265,0.0,2.0,View changes,Capital Allowances: Extended Ring Fence Expenditure Supplement For Onshore Activities: The Reference Amount For A Post-Commencement Period,0.0,5.0,0.0
+OT26300,891.0,1703.0,View changes,Capital Allowances - Mineral Extraction Allowance: Contents,17.0,21.0,923.0
+OT26315,2.0,4.0,View changes,Capital Allowances: Mineral Extraction Allowance - Rates Of Writing Down Allowances,0.0,14.0,0.0
+OT26320,6.0,8.0,View changes,Capital Allowances: Mineral Extraction Allowance - Acquisition Of A Mineral Asset Owned By A Previous Trader (Second Hand Assets),1.0,17.0,1.0
+OT26325,1.0,3.0,View changes,Capital Allowances: Mineral Extraction Allowance - Acquisition Of An Oil Licence From A Non Trader,0.0,6.0,0.0
+OT26330,1.0,3.0,View changes,Capital Allowances: Mineral Extraction Allowance - Acquisition Of Other Assets From Non-Traders,0.0,6.0,0.0
+OT26335,0.0,2.0,View changes,Capital Allowances: Mineral Extraction Allowance - Limitations On Qualifying Expenditure On Second Hand Assets,1.0,9.0,1.0
+OT26340,1.0,3.0,View changes,Capital Allowances: Mineral Extraction Allowance - Definition Of Mineral Asset,0.0,7.0,0.0
+OT26350,1.0,3.0,View changes,Capital Allowances: Mineral Extraction Allowance - Qualifying And Non-Qualifying Expenditure,0.0,7.0,0.0
+OT26355,5.0,7.0,View changes,Capital Allowances: Mineral Extraction Allowance - Qualifying Expenditure In Oil Trades,1.0,20.0,1.0
+OT26370,3.0,5.0,View changes,Capital Allowances: Mineral Extraction Allowance - Disposal Events And Disposal Values,0.0,13.0,0.0
+OT26380,3.0,5.0,View changes,Capital Allowances: Mineral Extraction Allowance - Balancing Allowances And Charges,0.0,8.0,0.0
+OT26390,2.0,4.0,View changes,Capital Allowances: Mineral Extraction Allowance - Pre-Trading Expenditure,0.0,7.0,0.0
+OT26395,1.0,3.0,View changes,Capital Allowances: Mineral Extraction Allowance - Migration To UK Residence,0.0,5.0,0.0
+OT26400,230.0,369.0,View changes,Industrial Buildings Or Structures: Contents,4.0,8.0,232.0
+OT26401,2.0,4.0,View changes,Industrial Buildings Or Structures - The Application Of IBA To The Oil & Gas Industry,0.0,7.0,0.0
+OT26402,1.0,3.0,View changes,Industrial Buildings Or Structures - Initial Treatment Or Initial Storage Of Oil In A CT Ring Fence Trade,0.0,10.0,0.0
+OT26403,0.0,2.0,View changes,Industrial Buildings Or Structures - Buildings Constructed For Occupation By Or For Welfare Of Employees,1.0,9.0,1.0
+OT26500,252.0,452.0,View changes,Capital Allowances - Plant And Machinery: Contents,6.0,10.0,253.0
+OT26506,0.0,2.0,View changes,Capital Allowances: Plant And Machinery - CT Ring Fence Trades,1.0,7.0,1.0
+OT26508,1.0,3.0,View changes,Capital Allowances: Plant And Machinery - Transfers Of Interests In Oil Fields,0.0,11.0,0.0
+OT26600,185.0,585.0,View changes,Capital Allowances - Long Life Assets: Contents,5.0,9.0,208.0
+OT26602,2.0,4.0,View changes,Capital Allowances: Long Life Assets - Brief Outline,0.0,11.0,0.0
+OT26603,3.0,5.0,View changes,Capital Allowances: Long Life Assets - Expenditure Excluded From Being On Long Life Assets - Ships And Offshore Installations,0.0,13.0,0.0
+OT26608,1.0,3.0,View changes,Capital Allowances: Long Life Assets - Are Floating Production Storage And Offloading Vessels Long Life Assets?,0.0,7.0,0.0
+OT26680,885.0,1761.0,View changes,Production Sharing Contracts: Contents,17.0,20.0,885.0
+OT26685,2.0,4.0,View changes,Production Sharing Contracts - What Is A PSC?,0.0,8.0,0.0
+OT26700,1.0,3.0,View changes,Production Sharing Contracts - Capital Allowances And Ownership,0.0,7.0,0.0
+OT26710,2.0,4.0,View changes,Production Sharing Contracts - Deemed Ownership Of Assets,0.0,7.0,0.0
+OT26740,1.0,3.0,View changes,Production Sharing Contracts - The Scope Of The PSC Rules On Plant And Machinery,0.0,8.0,0.0
+OT26750,3.0,5.0,View changes,Production Sharing Contracts - Ownership Terms,0.0,8.0,0.0
+OT26755,1.0,3.0,View changes,Production Sharing Contracts - Provision Of Plant And Machinery,0.0,6.0,0.0
+OT26760,3.0,5.0,View changes,Production Sharing Contracts - Trade Use And Qualifying Purposes,0.0,9.0,0.0
+OT26770,3.0,6.0,View changes,Production Sharing Contracts - Anti-Avoidance Provisions And “Carry” Arrangements,0.0,8.0,0.0
+OT26775,1.0,5.0,View changes,Production Sharing Contracts - Triggering Relief For Deemed Ownership,0.0,6.0,0.0
+OT26780,3.0,6.0,View changes,Production Sharing Contracts - The Pool Value On Migration Into The UK,0.0,9.0,0.0
+OT26785,7.0,10.0,View changes,Production Sharing Contracts - Cessation Of Relief And Disposal Value,0.0,15.0,0.0
+OT28010,10.0,15.0,View changes,Outline Of The Legislation,7.0,14.0,318.0
+OT28020,1121.0,2357.0,View changes,General Decommissioning Expenditure: Contents,16.0,20.0,1140.0
+OT28040,2.0,5.0,View changes,Meaning Of General Decommissioning Expenditure,2.0,16.0,2.0
+OT28050,3.0,6.0,View changes,Further Definitions,0.0,25.0,0.0
+OT28060,2.0,5.0,View changes,"Decommissioned Plant And Machinery Used Partly For A Non Ring Fence Trade, Expenditure Incurred On Or After 12 March 2008 And Before 22 April 2009",1.0,9.0,1.0
+OT28080,0.0,2.0,View changes,Relief For Expenditure Incurred Before Cessation Of Ring Fence Trade And On Or After 12 March 2008,3.0,11.0,3.0
+OT28100,3.0,6.0,View changes,Relief For Expenditure Incurred Before Cessation Of Ring Fence Trade And On Or Before 11 March 2008,1.0,15.0,1.0
+OT28205,2.0,5.0,View changes,Relief For Expenditure Incurred After Cessation Of Ring Fence Trade And On Or After 22 April 2009,3.0,32.0,3.0
+OT28210,4.0,7.0,View changes,Meaning Of Post-Cessation Period On Or After 12 March 2008,1.0,15.0,1.0
+OT28300,490.0,1098.0,View changes,Expenditure Connected With Reuse Of Offshore Oil Infrastructure: Contents,5.0,9.0,490.0
+OT28310,2.0,5.0,View changes,Expenditure Qualifying For Writing Down Allowances,4.0,14.0,5.0
+OT28320,1.0,4.0,View changes,Exceptions To Expenditure Qualifying For Writing Down Allowances,0.0,14.0,0.0
+OT28350,3.0,6.0,View changes,Writing Down Allowances For The Net Cost Of Demolition,0.0,7.0,0.0
+OT28400,0.0,3.0,View changes,Expenditure On And Under Abandonment Guarantees,0.0,7.0,0.0
+OT28410,1.0,4.0,View changes,Meaning Of Abandonment Guarantee,0.0,9.0,0.0
+OT28420,0.0,3.0,View changes,Relief For Reimbursement Expenditure Under Abandonment Guarantees,1.0,8.0,1.0
+OT28430,2.0,5.0,View changes,Relief For Expenditure Incurred By A Participator In Meeting A Defaulter’S Abandonment Expenditure,1.0,11.0,2.0
+OT28440,2.0,6.0,View changes,Reimbursement By Defaulter In Respect Of Abandonment Expenditure,0.0,11.0,0.0
+OT28460,2.0,5.0,View changes,Buying Out Abandonment Obligations,0.0,10.0,0.0
+OT28470,2.0,5.0,View changes,Relief For Contributions To Trust Funds,0.0,7.0,0.0
+OT28600,423.0,684.0,View changes,Decommissioning Security Agreements: Contents,6.0,10.0,430.0
+OT28601,1.0,4.0,View changes,Introduction,0.0,8.0,0.0
+OT28605,1.0,4.0,View changes,Tax Treatment Of Sums Paid Into The Trust,0.0,6.0,0.0
+OT28610,2.0,5.0,View changes,Tax Treatment Of Income Arising To The Trust,0.0,10.0,0.0
+OT28620,1.0,3.0,View changes,Tax Treatment Of Sums Paid Out To Meet The Costs Of Decommissioning,0.0,5.0,0.0
+OT28700,260.0,478.0,View changes,Decommissioning Certainty: Contents,6.0,8.0,410.0
+OT28703,28.0,32.0,View changes,Outline Of The Legislation,1.0,11.0,7.0
+OT28707,30.0,38.0,View changes,Other Provisions,8.0,20.0,1457.0
+OT28710,1.0,3.0,View changes,Other Provisions - Schedule 31,0.0,10.0,0.0
+OT28712,2.0,4.0,View changes,Other Provisions - Schedule 32,0.0,7.0,0.0
+OT30000,195.0,427.0,View changes,Capital Gains: Contents,14.0,18.0,220.0
+OT30001,3.0,65.0,View changes,Capital Gains,0.0,7.0,0.0
+OT30008,284.0,451.0,View changes,Licences For Exploration And Exploitation: Contents,5.0,9.0,297.0
+OT30011,6.0,8.0,View changes,Licences For Exploration And Exploitation - Onshore Licences,0.0,16.0,0.0
+OT30018,105.0,258.0,View changes,Farm Outs: Contents,4.0,8.0,111.0
+OT30021,2.0,4.0,View changes,Farm Outs - Exploration,0.0,9.0,0.0
+OT30022,2.0,4.0,View changes,Farm Outs - Developments,0.0,7.0,0.0
+OT30023,2.0,4.0,View changes,Farm Outs - Production,0.0,6.0,0.0
+OT30038,457.0,1104.0,View changes,Undeveloped Areas: Contents,13.0,17.0,465.0
+OT30040,1.0,3.0,View changes,Undeveloped Areas - Introduction,0.0,6.0,0.0
+OT30041,1.0,3.0,View changes,Undeveloped Areas - Overseas Licences,0.0,6.0,0.0
+OT30043,3.0,5.0,View changes,Undeveloped Areas - Definitions - 1,0.0,10.0,0.0
+OT30045,3.0,5.0,View changes,Undeveloped Areas - Three Dimensional Co-Ordinates,0.0,12.0,0.0
+OT30075,1.0,3.0,View changes,"Computational Points - Full Disposal, No Cash Consideration",0.0,6.0,0.0
+OT30077,1.0,3.0,View changes,Computational Points - Definition Of A Part Disposal,0.0,6.0,0.0
+OT30098,227.0,357.0,View changes,Drilling Expenditure: Contents,6.0,10.0,234.0
+OT30101,3.0,5.0,View changes,Drilling Expenditure - Amount Of Deduction,0.0,13.0,0.0
+OT30106,2.0,4.0,View changes,Drilling Expenditure - Intangible Drilling Costs Of Production Wells,0.0,8.0,0.0
+OT30125,550.0,1296.0,View changes,Consideration Other Than Cash: Contents,12.0,16.0,680.0
+OT30131,2.0,4.0,View changes,Subordinated Interests,1.0,7.0,1.0
+OT30132,3.0,6.0,View changes,Development Carry,1.0,8.0,1.0
+OT30133,2.0,5.0,View changes,Licence Swaps - Disposals Made Before 22 April 2009,2.0,10.0,2.0
+OT30134,2.0,6.0,View changes,Work Obligation,0.0,8.0,0.0
+OT30135,1.0,4.0,View changes,Agreement Of The Farmer In To Valuation,0.0,8.0,0.0
+OT30136,1.0,4.0,View changes,Licence Swaps - Licence Only Consideration - Disposals Made On Or After 22 April 2009,1.0,14.0,1.0
+OT30137,0.0,3.0,View changes,Licence Swaps - Mixed Consideration Received - Disposals Made On Or After 22 April 2009,1.0,16.0,1.0
+OT30138,0.0,3.0,View changes,Licence Swaps - Mixed Consideration Given - Disposals Made On Or After 22 April 2009,1.0,8.0,1.0
+OT30150,151.0,239.0,View changes,Allowable Costs: Contents,5.0,9.0,165.0
+OT30151,1.0,4.0,View changes,Allowable Costs - Drilling Costs,0.0,6.0,0.0
+OT30152,3.0,7.0,View changes,Allowable Costs - Wasting Asset Rules,0.0,11.0,0.0
+OT30153,3.0,6.0,View changes,Allowable Costs - Wasting Asset Rebasing To March 1982,0.0,17.0,0.0
+OT30155,3.0,6.0,View changes,Allowable Costs - Rebasing Where The Cost Of The Licence Is Nil,0.0,8.0,0.0
+OT30200,290.0,690.0,View changes,Rebasing Of Assets Held At 31 March 1982: Contents,5.0,9.0,290.0
+OT30215,1.0,4.0,View changes,Rebasing Of Assets Held At 31 March 1982 - Excluded Shares,0.0,10.0,0.0
+OT30295,1026.0,2087.0,View changes,Valuation Of Oil Assets Including Shares: Contents,18.0,22.0,1046.0
+PAYE-MANUAL,0.0,2.0,View changes,PAYE Manual,0.0,117.0,0.0
+PAYE001,232.0,277.0,View changes,Business Calendar (Internal Use Only),10.0,34.0,764.0
+PAYE10040,1.0,11.0,View changes,Coding: Double Taxation Relief,3.0,17.0,8.0
+PAYE103000,0.0,2.0,View changes,Individual Records: Maintain Individual Details: Contents,0.0,40.0,0.0
+PAYE103035,0.0,3.0,View changes,RLS Correspondence,0.0,30.0,0.0
+PAYE103045,0.0,3.0,View changes,Agent Details: Non CESA Agents,0.0,44.0,0.0
+PAYE130025,262.0,349.0,View changes,Allowances,207.0,210.0,32947.0
+PAYE130063,54.0,57.0,View changes,Third Party Information Disputes Process,0.0,3.0,0.0
+PAYE5015,0.0,2.0,View changes,Payroll Alignment,0.0,13.0,0.0
+PAYE5025,0.0,2.0,View changes,Submission Types,0.0,52.0,0.0
+PAYE53000,0.0,2.0,View changes,Employer Returns: Employer Return Work Lists: Contents,0.0,27.0,0.0
+PAYE53012,0.0,2.0,View changes,Post Capture - 2007-08 Onwards (Action Guide),0.0,26.0,0.0
+PAYE53015,0.0,2.0,View changes,EDI / Internet - Action By Employers Live Service Team,0.0,19.0,0.0
+PAYE55000,0.0,4.0,View changes,Employer Returns: RTI Submissions: Contents,0.0,17.0,0.0
+PAYE55010,0.0,4.0,View changes,Information,0.0,145.0,0.0
+PAYE57000,0.0,2.0,View changes,P11D Processing: Logging Forms P11D: Contents,0.0,13.0,0.0
+PAYE57035,0.0,2.0,View changes,Multiple Batches,0.0,12.0,0.0
+PAYE57045,0.0,2.0,View changes,Dispatch Cover Sheet,0.0,7.0,0.0
+PAYE57200,0.0,2.0,View changes,P11D Processing: Processing And Retrieving Forms P11D: Contents,0.0,27.0,0.0
+PAYE57275,0.0,2.0,View changes,Exiting A Batch,0.0,7.0,0.0
+PAYE57305,0.0,2.0,View changes,Capture MARORS,0.0,10.0,0.0
+PAYE57800,0.0,3.0,View changes,P11D Processing: QA/QC For Captured Forms P11D: Contents,0.0,12.0,0.0
+PAYE58000,0.0,3.0,View changes,P11D Processing: ECS / NPS Inhibition Signal: Contents,0.0,9.0,0.0
+PAYE62000,0.0,3.0,View changes,Employment Maintenance: Cease Employment: Contents,0.0,16.0,0.0
+PAYE62020,0.0,2.0,View changes,Employers Using Computerised Stationery,0.0,14.0,0.0
+PAYE62030,0.0,3.0,View changes,Capture Cessation Details,0.0,8.0,0.0
+PAYE62040,0.0,3.0,View changes,Individual Becomes Self Employed,0.0,11.0,0.0
+PAYE62055,0.0,3.0,View changes,Work Item 42 - P45 Part 1 - Tax Table Discrepancy,0.0,7.0,0.0
+PIM2056,4647.0,7303.0,View changes,Restriction For Income Tax Purposes From 2017/18: Apportionment,19.0,20.0,9115.0
+PTM000001,208.0,259.0,View changes,Glossary,33.0,68.0,362.0
+PTM025500,0.0,3.0,View changes,Authorised Practitioner,1.0,21.0,1.0
+PTM028000,0.0,4.0,View changes,Pension Age,1.0,24.0,1.0
+PTM031200,54.0,58.0,View changes,Conditions For Registering A Pension Scheme,2.0,54.0,2.0
+PTM032100,3384.0,3403.0,View changes,Applying To Register A Pension Scheme,30.0,47.0,7588.0
+PTM032300,54.0,58.0,View changes,HMRC Registers The Scheme,0.0,12.0,0.0
+PTM032400,29.0,32.0,View changes,HMRC Decides Not To Register The Scheme,0.0,7.0,0.0
+PTM044100,0.0,3.0,View changes,Conditions,1.0,212.0,1.0
+PTM051100,0.0,3.0,View changes,Essential Principles,0.0,190.0,0.0
+PTM051200,0.0,3.0,View changes,When The Annual Allowance Charge Does Not Apply,0.0,58.0,0.0
+PTM053000,0.0,2.0,View changes,Pension Input Amounts: Contents,0.0,16.0,0.0
+PTM053330,16007.0,16518.0,View changes,Worked Examples: ‘Split Normal Pension Ages’,5.0,131.0,1417.0
+PTM053710,0.0,2.0,View changes,Further Detail,1.0,105.0,1.0
+PTM054000,0.0,2.0,View changes,Pension Increase Exchanges (Or ‘Pies’),0.0,12.0,0.0
+PTM054400,0.0,2.0,View changes,Pre-6 April 2006 Inland Revenue Maximum Limits,0.0,60.0,0.0
+PTM055000,0.0,2.0,View changes,Carry Forward: Contents,0.0,6.0,0.0
+PTM055200,0.0,2.0,View changes,Calculating Unused Annual Allowance,0.0,79.0,0.0
+PTM056110,0.0,2.0,View changes,Tax Charge: General,0.0,35.0,0.0
+PTM056200,0.0,4.0,View changes,Telling HMRC,0.0,31.0,0.0
+PTM057100,0.0,4.0,View changes,Annual Allowance,0.0,112.0,0.0
+PTM058010,0.0,6.0,View changes,Transitional Rules For Tax Year 2015-16: General,0.0,27.0,0.0
+PTM058080,0.0,4.0,View changes,Transitional Rules For Tax Year 2015-16: Pension Input Amounts: Defined Benefits And Cash Balance Arrangements: Deferred Members,1.0,94.0,1.0
+PTM062210,0.0,4.0,View changes,Right To Take Benefits Before Normal Minimum Pension Age Of 55,1.0,37.0,1.0
+PTM062800,0.0,2.0,View changes,Pensions: Pension Payments Authorised By Regulations,1.0,62.0,1.0
+PTM063240,0.0,2.0,View changes,Applicable Amount,1.0,207.0,1.0
+PTM063500,0.0,2.0,View changes,Trivial Commutation Lump Sum,1.0,144.0,1.0
+PTM063600,0.0,2.0,View changes,Winding-Up Lump Sum,1.0,62.0,1.0
+PTM063700,0.0,2.0,View changes,Small Pension Payments,1.0,183.0,1.0
+PTM073010,0.0,3.0,View changes,Tax On Authorised Lump Sum Death Benefits,0.0,61.0,0.0
+PTM088500,0.0,3.0,View changes,Summary Of The Process For Testing Bces Against The Lifetime Allowance When The Member Has Died,1.0,156.0,1.0
+PTM088610,0.0,3.0,View changes,BCE 1 Designation Of Funds For Drawdown Pension During The Member's Lifetime,2.0,30.0,2.0
+PTM088620,0.0,3.0,View changes,BCE 2 Entitlement To A Scheme Pension,2.0,157.0,2.0
+PTM088630,0.0,3.0,View changes,BCE 3 Increase To A Scheme Pension In Payment,2.0,304.0,2.0
+PTM088640,0.0,3.0,View changes,BCE 4 Purchase Of A Lifetime Annuity,2.0,64.0,2.0
+PTM088650,0.0,3.0,View changes,"Benefit Crystallisation Events: Each Of The Benefit Crystallisation Events (Bces) In Detail: BCE 5, 5A And 5B Age 75",2.0,101.0,2.0
+PTM088660,0.0,3.0,View changes,BCE 5C And BCE 5D Relevant Unused Uncrystallised Funds Applied For Drawdown Or Annuity Following A Death,2.0,33.0,2.0
+PTM088670,0.0,3.0,View changes,Benefit Crystallisation Events: Each Of The Benefit Crystallisation Events (Bces) In Detail: BCE 6 Relevant Lump Sums,3.0,34.0,4.0
+PTM088680,0.0,4.0,View changes,Benefit Crystallisation Events: Each Of The Benefit Crystallisation Events (Bces) In Detail: BCE 7 Relevant Lump Sum Death Benefits,2.0,36.0,2.0
+PTM088690,0.0,2.0,View changes,The Lifetime Allowance And The Lifetime Allowance Charge: Benefit Crystallisation Events: Each Of The Benefit Crystallisation Events (Bces) In Detail: BCE 8 Transfer To QROPS,2.0,38.0,2.0
+PTM088700,0.0,4.0,View changes,Each Of The Benefit Crystallisation Events (Bces) In Detail: BCE 9 Prescribed Authorised Member Payments,2.0,36.0,2.0
+PTM092200,4569.0,4572.0,View changes,Protecting Pre-April 2006 Pension Rights: Divorce,7.0,27.0,2211.0
+PTM092300,54.0,57.0,View changes,Protecting Pre-April 2006 Pension Rights: Primary Protection,1.0,98.0,2.0
+PTM093210,16045.0,20221.0,View changes,Applying For Fixed Protection 2016 (FP 2016),43.0,67.0,12571.0
+PTM093520,12212.0,12214.0,View changes,Defined Benefits Arrangements - Aspects Of ‘Benefit Accrual’,50.0,69.0,17813.0
+PTM093700,0.0,2.0,View changes,Testing For Benefit Accrual,1.0,220.0,1.0
+PTM094310,1360.0,1363.0,View changes,Valuing Pension Savings For Individual Protection 2016,178.0,187.0,48378.0
+PTM095200,54.0,56.0,View changes,Pension Credit Factor,0.0,70.0,0.0
+PTM095320,54.0,56.0,View changes,The Non-Residence Factor For Cash Balance Arrangements,0.0,40.0,0.0
+PTM095330,54.0,56.0,View changes,The Non-Residence Factor For Other Money Purchase Arrangements,0.0,22.0,0.0
+PTM095340,54.0,56.0,View changes,The Non-Residence Factor For Defined Benefits Arrangements,0.0,48.0,0.0
+PTM095350,54.0,56.0,View changes,The Non-Residence Factor For Hybrid Arrangements,3.0,15.0,3.0
+PTM095360,0.0,2.0,View changes,Notifications Procedure For The Non-Residence Factor,1.0,32.0,1.0
+PTM095500,0.0,2.0,View changes,Applying Lifetime Allowance Enhancement Factors,2.0,60.0,2.0
+PTM098000,29.0,31.0,View changes,Late Submission Of Notifications For Protection From The Lifetime Allowance Charge,0.0,65.0,0.0
+PTM102000,0.0,2.0,View changes,Transfers From A Registered Pension Scheme To A QROPS,5.0,61.0,6.0
+PTM102200,0.0,2.0,View changes,Transfers: Transfers To A QROPS: Essential Principles Of The Overseas Transfer Charge,6.0,70.0,7.0
+PTM102300,0.0,2.0,View changes,When The Overseas Transfer Charge Doesn’T Apply – The Exclusion Conditions,5.0,52.0,7.0
+PTM102350,0.0,3.0,View changes,Examples Of When A Transfer Is Not Subject To The Overseas Transfer Charge,2.0,23.0,2.0
+PTM102400,0.0,4.0,View changes,When The Overseas Transfer Charge Arises Due To A Change In Circumstances After A Transfer,1.0,48.0,1.0
+PTM102600,0.0,3.0,View changes,When The Overseas Transfer Charge May Be Repaid,4.0,104.0,4.0
+PTM102700,0.0,3.0,View changes,Discharge From Liability To The Overseas Transfer Charge,1.0,23.0,1.0
+PTM103000,0.0,3.0,View changes,Scheme Administrator Actions - Before The Transfer,4.0,52.0,4.0
+PTM103100,0.0,3.0,View changes,Scheme Manager Actions – Before The Transfer,1.0,51.0,1.0
+PTM103150,0.0,3.0,View changes,Scheme Manager Actions – After The Transfer,1.0,91.0,1.0
+PTM109000,0.0,3.0,View changes,Transfers: Information Requirements In Respect Of A Transfer,1.0,90.0,1.0
+PTM112010,0.0,3.0,View changes,Introduction,2.0,61.0,2.0
+PTM112100,0.0,3.0,View changes,What Makes A Scheme A QROPS,1.0,40.0,1.0
+PTM112500,0.0,3.0,View changes,Exclusion And Other Loss Of QROPS Status,3.0,46.0,3.0
+PTM112700,0.0,3.0,View changes,Reports To Be Made To HMRC Automatically,5.0,98.0,5.0
+PTM112720,0.0,3.0,View changes,Information To Be Provided On Request To HMRC,0.0,52.0,0.0
+PTM112800,0.0,3.0,View changes,Reporting By Former QROPS,3.0,68.0,3.0
+PTM113100,3450.0,3559.0,View changes,International: Overview Of When UK Tax Charges Apply To Non-UK Schemes,5.0,23.0,1240.0
+PTM113210,0.0,2.0,View changes,International: UK Tax Charges On Non UK Schemes: The Member Payment Charges And Taxable Property Charges: The Member Payment Charges: Basic Principles,1.0,101.0,1.0
+PTM113250,0.0,2.0,View changes,Payments Made On Or After 6 April 2017 That Reduce A Member’S UK Funds,1.0,63.0,1.0
+PTM113350,0.0,2.0,View changes,Non UK Schemes: The Annual Allowance Charge And Non-UK Schemes: Carrying Forward Unused Annual Allowance From Earlier Years,0.0,48.0,0.0
+PTM113430,0.0,2.0,View changes,International: Early Election For A Deemed BCE By Relieved Members,1.0,10.0,1.0
+PTM125400,2.0,4.0,View changes,Indirect Holdings,1.0,272.0,2.0
+PTM125500,12046.0,12140.0,View changes,Pre A-Day Investments,22.0,82.0,5954.0
+PTM141000,0.0,3.0,View changes,Essential Principles,1.0,40.0,1.0
+PTM142000,0.0,3.0,View changes,Specific Member Payments,1.0,104.0,1.0
+PTM145300,1370.0,1374.0,View changes,Conditions For Authorised Surplus Payments,24.0,39.0,3851.0
+PTM151000,25.0,28.0,View changes,Essential Principles,0.0,75.0,0.0
+PTM157000,0.0,3.0,View changes,Authorising A Practitioner,1.0,45.0,1.0
+PTM158000,0.0,3.0,View changes,Other Scheme Administrator Rights,1.0,60.0,2.0
+PTM160300,0.0,4.0,View changes,Essential Principles: Summary Of Scheme Administrator Information Obligations,0.0,19.0,0.0
+PTM160400,0.0,2.0,View changes,Scheme Member Information Requirements,2.0,63.0,2.0
+PTM160600,0.0,2.0,View changes,Information Requirements For Qualifying Recognised Overseas Pension Schemes (QROPS) And Former QROPS,10.0,83.0,10.0
+PTM160800,0.0,2.0,View changes,Penalties For Failing To Comply With An Information Requirement Or Providing Inaccurate Information,4.0,79.0,4.0
+PTM161100,0.0,2.0,View changes,Essential Principles,1.0,84.0,1.0
+PTM161500,0.0,2.0,View changes,Reportable Events 8 To 9,1.0,41.0,1.0
+PTM162100,25.0,27.0,View changes,Essential Principles,0.0,75.0,0.0
+PTM162200,0.0,2.0,View changes,Information Needed To Submit An AFT,1.0,94.0,1.0
+PTM167200,15671.0,15712.0,View changes,Other Information Requirements For Scheme Administrators: Information That Must Be Included In The Pension Savings Statement,52.0,147.0,9369.0
+PTM169200,0.0,4.0,View changes,Information Notices In Respect Of Overseas Pension Schemes,1.0,27.0,1.0
+RDRM31050,0.0,3.0,View changes,Effects Of Using The Remittance Basis,0.0,10.0,0.0
+RDRM32000,0.0,2.0,View changes,Remittance Basis: Accessing The,0.0,9.0,0.0
+RDRM32100,0.0,2.0,View changes,Remittance Basis: Exceptions To The Claim Requirements: Contents,0.0,10.0,0.0
+RDRM32110,0.0,2.0,View changes,"Un-Remitted Foreign Income And Gains Below £2,000 Threshold",0.0,34.0,0.0
+RDRM32140,0.0,2.0,View changes,Application Of Remittance Basis Without Claim - Other Cases (ITA07/S809e),0.0,25.0,0.0
+RDRM32210,185.0,266.0,View changes,Long-Term Residents And The Remittance Basis Charge - Overview,0.0,12.0,0.0
+RDRM32240,185.0,291.0,View changes,Interaction With Extra Statutory Concession (ESC) A11,0.0,20.0,0.0
+RDRM32300,0.0,2.0,View changes,Remittance Basis: Remittance Basis Charge - Nomination Of Foreign Income And Gains: Contents,0.0,19.0,0.0
+RDRM32310,0.0,2.0,View changes,Nomination Of Foreign Income And Gains - Overview,0.0,7.0,0.0
+RDRM32320,0.0,2.0,View changes,Making A Nomination,0.0,17.0,0.0
+RDRM32360,0.0,2.0,View changes,Insufficient Nomination - Automatic Additional Nomination Of Income Under Ita07s809h(4),0.0,8.0,0.0
+RDRM37010,0.0,2.0,View changes,Appendices: Appendix 1 - Starter For 10: Some Frequently Asked Questions About The Remittance Basis And The Remittance Basis Charge.,0.0,50.0,0.0
+RM3292P,0.0,2.0,View changes,How To Prepare And Issue A Payable Order By Hand: Contents,0.0,10.0,0.0
+RM3312,0.0,2.0,View changes,How To Prepare And Issue Payable Order: Issue At Counter,0.0,27.0,0.0
+RM4000P,0.0,2.0,View changes,Gneral: Contents,0.0,18.0,0.0
+RM4009,0.0,2.0,View changes,RO Instructions: Evidence From Banks And Building Societies,0.0,9.0,0.0
+RM4012,0.0,1.0,View changes,RO Instructions: Have You Got Enough,0.0,10.0,0.0
+RM4130P,0.0,1.0,View changes,Which Vouchers To Confirm And How To Confirm Them: Contents,0.0,21.0,0.0
+RM4182,0.0,3.0,View changes,RO Instructions: R185 Showing Payments To Trade Union/Friendly Society,0.0,9.0,0.0
+RM4190,0.0,4.0,View changes,RO Instructions: When To Use The `AP' Procedure,0.0,10.0,0.0
+SAM125000,0.0,2.0,View changes,Returns Work Lists: Contents,0.0,39.0,0.0
+SAM125201,0.0,2.0,View changes,Returns: W054 Weekly Returns Review: Transfer Of Allowances (Action Guide),0.0,6.0,0.0
+SAM125220,0.0,2.0,View changes,Returns: W056 Partnership Online Amendments,0.0,11.0,0.0
+SDLTM09800,306.0,308.0,View changes,Condition D - General,16.0,39.0,2422.0
+SPE15460,0.0,2.0,View changes,Common Storage: Contents,0.0,17.0,0.0
+SPE15480,0.0,2.0,View changes,Identification Of Customs Duty Status,0.0,7.0,0.0
+SPE15490,0.0,2.0,View changes,Goods Under Inward Processing (IP),0.0,6.0,0.0
+STSM011070,15.0,18.0,View changes,The Stamp Duty (Exempt Instruments) Regulations 1987,0.0,21.0,0.0
+STSM012040,0.0,2.0,View changes,Stamp Duty Reserve Tax - The Relevant Day,1.0,6.0,1.0
+STSM014030,1.0,3.0,View changes,Stamp Duty Reserve Tax - Rounding,0.0,5.0,0.0
+STSM015020,2101.0,2112.0,View changes,Penalties For Late Stamping,9.0,25.0,1604.0
+STSM017020,1.0,3.0,View changes,Wait And See - Consideration Not Yet Ascertained,0.0,11.0,0.0
+STSM021010,2.0,4.0,View changes,Stamp Duty: Overview,0.0,11.0,0.0
+STSM021040,2.0,4.0,View changes,Stamp Duty: What Are Stock And Marketable Securities?,1.0,8.0,1.0
+STSM021110,1.0,5.0,View changes,Stamp Duty: Future Stock Or Marketable Securities: Examples,0.0,15.0,0.0
+STSM021140,1.0,4.0,View changes,Stamp Duty: Exchange Of Shares,0.0,8.0,0.0
+STSM021170,1.0,4.0,View changes,Stamp Duty: Transfer In Contemplation Of A Sale,0.0,8.0,0.0
+STSM021190,1.0,5.0,View changes,Stamp Duty: Block Transfers,0.0,11.0,0.0
+STSM021230,1.0,4.0,View changes,Stamp Duty: Transfer Of Convertible Notes,0.0,6.0,0.0
+STSM021250,1.0,4.0,View changes,Stamp Duty: A To A Transfers,0.0,8.0,0.0
+STSM021270,3.0,6.0,View changes,Stamp Duty: Transfer Of An Interest In A Partnership,0.0,15.0,0.0
+STSM022010,1.0,4.0,View changes,Stamp Duty: The Adjudication Procedure,0.0,7.0,0.0
+STSM022030,1.0,4.0,View changes,Stamp Duty: Finality Of Adjudication,0.0,7.0,0.0
+STSM022040,1.0,3.0,View changes,Stamp Duty: Reasons For Adjudication,0.0,14.0,0.0
+STSM022050,1.0,3.0,View changes,Stamp Duty: A “Particular Stamp”,0.0,8.0,0.0
+STSM022120,2.0,5.0,View changes,Stamp Duty: Company Reconstructions,0.0,14.0,0.0
+STSM022160,3.0,6.0,View changes,Stamp Duty: Transfer Of A Partnership Interest,0.0,11.0,0.0
+STSM022210,1.0,4.0,View changes,Stamp Duty: Sales To Intermediaries,0.0,24.0,0.0
+STSM022220,2.0,5.0,View changes,Stamp Duty: Sales To Options Intermediaries,0.0,27.0,0.0
+STSM022240,2.0,5.0,View changes,Stamp Duty: Repurchases And Stock Lending,0.0,14.0,0.0
+STSM030000,714.0,776.0,View changes,Scope Of Stamp Duty Reserve Tax (SDRT): Contents,19.0,21.0,868.0
+STSM031060,30.0,36.0,View changes,Consideration: Money Or Money's Worth,2.0,9.0,17.0
+STSM031090,130.0,283.0,View changes,Chargeable Securities - General,2.0,20.0,24.0
+STSM031110,25.0,28.0,View changes,"Chargeable Securities - Interests, Dividends And Other Rights",1.0,8.0,10.0
+STSM041020,0.0,3.0,View changes,Exemptions: Securities Exempt From Stamp Duty Are Generally Exempt From Stamp Duty Reserve Tax (SDRT),1.0,6.0,1.0
+STSM041030,0.0,3.0,View changes,Exemptions: Stamp Duty Reserve Tax (SDRT) Repaid/Charge Cancelled Where An Instrument Is Duly Stamped,1.0,8.0,1.0
+STSM041160,0.0,2.0,View changes,Exemptions: Charities - Stamp Duty Reserve Tax (SDRT) Exemption,1.0,10.0,1.0
+STSM041180,2.0,4.0,View changes,Exemptions: Depositary Interests In Foreign Securities,0.0,14.0,0.0
+STSM041190,2.0,4.0,View changes,Exemptions: Other Non-Stamp Duty Acts That Apply To Stamp Duty,0.0,10.0,0.0
+STSM041200,0.0,2.0,View changes,Exemptions: Units In A Unit Trust Scheme Or Shares In An Open-Ended Investment Company,1.0,6.0,2.0
+STSM041250,1.0,3.0,View changes,Exemptions: Treasury Shares,0.0,8.0,0.0
+STSM041270,1.0,3.0,View changes,Exemptions: Growth Market Shares - SDRT Exemption,0.0,15.0,0.0
+STSM041280,2.0,4.0,View changes,Exemptions: Growth Market Shares - SDRT Exemption - Depositary Interests/CREST Depositary Interests,0.0,9.0,0.0
+STSM041290,3.0,5.0,View changes,Exemptions: Growth Market Shares - Recognised Growth Markets - How To Qualify As A Recognised Growth Market,0.0,11.0,0.0
+STSM041300,8.0,10.0,View changes,Exemptions: Growth Market Shares - Recognised Growth Markets - How To Qualify As A Recognised Growth Market - The Market Capitalisation Condition,0.0,13.0,0.0
+STSM042120,1.0,4.0,View changes,Reliefs: Intermediary Relief - Stamp Duty And SDRT Compliance,0.0,6.0,0.0
+STSM042180,0.0,3.0,View changes,Reliefs: Stock Lending And Repurchase Relief - Charge Reinstated,1.0,8.0,1.0
+STSM042340,1.0,4.0,View changes,Reliefs: Central Counterparty Clearing Relief From Stamp Duty And SDRT,0.0,10.0,0.0
+STSM042470,2.0,5.0,View changes,Reliefs: Section 77A – Arrangements That Are Not Disqualifying Arrangements,1.0,13.0,2.0
+STSM042480,2.0,5.0,View changes,Reliefs: Section 77A - “Particular Person” Or “Particular Persons Together”,1.0,13.0,2.0
+STSM042490,2.0,5.0,View changes,Reliefs: Section 77A – Initial Public Offering And Underwriters,1.0,16.0,2.0
+STSM042500,2.0,5.0,View changes,Reliefs: Section 77A - Relevant Mergers,1.0,14.0,2.0
+STSM051020,1.0,5.0,View changes,What Is A Depositary Receipt?,0.0,11.0,0.0
+STSM051040,2.0,5.0,View changes,Cancellation Of A Depositary Receipt,0.0,7.0,0.0
+STSM053010,5.0,9.0,View changes,When A Higher Rate Charge Arises,0.0,24.0,0.0
+STSM053050,1.0,4.0,View changes,Arrangement,0.0,9.0,0.0
+STSM055030,1.0,3.0,View changes,Allotment And Renounceable Letter Of Allotment,0.0,10.0,0.0
+STSM056010,1.0,3.0,View changes,Liable And Accountable Person,0.0,9.0,0.0
+STSM056020,1.0,3.0,View changes,Notification Requirement FA86/S68 And FA86/S71,0.0,10.0,0.0
+STSM056030,1.0,3.0,View changes,Stamp Duty Payment Date And Stamp Duty Reserve Tax (SDRT) Accountable Date,0.0,13.0,0.0
+STSM057010,2.0,4.0,View changes,Exemptions/ Reliefs: Transfers Between Depositary Receipt Issuers And Or Unelected Clearance Services,0.0,8.0,0.0
+STSM057030,1.0,4.0,View changes,Exemptions/ Reliefs: Non-Sterling Currency United Kingdom Bearer Instruments,0.0,14.0,0.0
+STSM057050,1.0,4.0,View changes,Exemptions/ Reliefs: Unsecured Loan Capital,0.0,17.0,0.0
+STSM057070,1.0,5.0,View changes,Exemptions/ Reliefs: Replacement Securities,0.0,14.0,0.0
+STSM057080,2.0,5.0,View changes,Exemptions/ Reliefs: United Kingdom Sterling Denominated Bearer Instruments,0.0,9.0,0.0
+STSM061010,1.0,4.0,View changes,Introduction: Background,0.0,9.0,0.0
+STSM061020,4.0,7.0,View changes,Introduction: What Is A Bearer Instrument?,0.0,14.0,0.0
+STSM061030,1.0,5.0,View changes,Introduction: Meaning Of A Bearer Instrument For Stamp Duty Purposes,0.0,14.0,0.0
+STSM063020,3.0,6.0,View changes,Sd On Bearer Instruments: Payment Of Stamp Duty On Bearer Instruments,0.0,13.0,0.0
+STSM063040,1.0,4.0,View changes,& Calculation Of Sd On Bearer Instruments: Substitute Bearer Instruments,0.0,5.0,0.0
+STSM064040,3.0,6.0,View changes,Renounceable Letter Of Allotment,0.0,12.0,0.0
+STSM064050,2.0,5.0,View changes,Bearer Instruments Denominated In Currency Other Than UK Sterling,0.0,10.0,0.0
+STSM065010,1.0,4.0,View changes,Bearer Instruments: Introduction,0.0,9.0,0.0
+STSM065020,1.0,5.0,View changes,Bearer Instruments: Before Issue Of The Bearer Instrument,0.0,15.0,0.0
+STSM065040,1.0,4.0,View changes,Bearer Instruments: Production Of Substitute Bearer Instruments,0.0,21.0,0.0
+STSM066010,3.0,6.0,View changes,Introduction,0.0,9.0,0.0
+STSM066030,2.0,5.0,View changes,Penalty On Late Notification Of An Issue Of A Bearer Instrument,0.0,7.0,0.0
+STSM067010,1.0,4.0,View changes,Bearer Instruments-SDRT: Interaction Between Stamp Duty & Stamp Duty Reserve Tax (SDRT),1.0,11.0,1.0
+STSM067020,4.0,7.0,View changes,Bearer Instruments-SDRT: Ssue Of A Sterling Denominated Bearer Security By A United Kingdom Company,1.0,11.0,1.0
+STSM067030,2.0,4.0,View changes,Bearer Instruments-SDRT: Issue Of A Bearer Security By A Non-United Kingdom Company,0.0,9.0,0.0
+STSM067040,1.0,4.0,View changes,Bearer Instruments-SDRT: Non-Sterling Currency United Kingdom Bearer Instrument,0.0,11.0,0.0
+STSM067050,1.0,4.0,View changes,Bearer Instruments-SDRT: UK Loan Capital Bearer Instrument Denominated In Currency Other Than Sterling,0.0,12.0,0.0
+STSM067060,1.0,4.0,View changes,Bearer Instruments-SDRT: Depositary Receipt Issuers/Clearance Services- Non-Sterling Currency United Kingdom Bearer Instruments,0.0,14.0,0.0
+STSM067070,3.0,6.0,View changes,Bearer Instruments-SDRT: Renounceable Letter Of Allotment,0.0,8.0,0.0
+STSM071010,4.0,8.0,View changes,Introduction: Types Of Company,0.0,9.0,0.0
+STSM071020,2.0,5.0,View changes,Introduction: Sources Of Capital,0.0,7.0,0.0
+STSM071060,2.0,5.0,View changes,Introduction: Changes Of Share Ownership,0.0,8.0,0.0
+STSM071070,2.0,5.0,View changes,Introduction: Issues Of Shares In Public Companies,0.0,7.0,0.0
+STSM071080,1.0,4.0,View changes,Introduction: Offers For Sale And Placings,0.0,8.0,0.0
+STSM071090,1.0,4.0,View changes,Introduction: Trading Shares In The Secondary Market,0.0,7.0,0.0
+STSM071100,3.0,6.0,View changes,Introduction: Corporate Actions,0.0,11.0,0.0
+STSM072010,1.0,4.0,View changes,Bonus Issues Of Shares,0.0,6.0,0.0
+STSM073000,2.0,5.0,View changes,Depositary Interests: UK Depositary Interests (DI) In Foreign Securities - Background,0.0,7.0,0.0
+STSM078030,2.0,4.0,View changes,Dividend Reinvestment Plans (DRIPS),0.0,6.0,0.0
+STSM081010,1.0,3.0,View changes,Overview,0.0,5.0,0.0
+STSM081040,1.0,3.0,View changes,Settlements,0.0,10.0,0.0
+STSM081060,3.0,5.0,View changes,Declarations Of Trust,0.0,11.0,0.0
+STSM081090,6.0,9.0,View changes,Trust Documents Not Required To Be Presented For Stamping,0.0,19.0,0.0
+STSM082040,2.0,6.0,View changes,Mergers Of Pension Schemes,0.0,7.0,0.0
+STSM082050,1.0,4.0,View changes,Member Leaves Scheme And Commences A Personal Pension Scheme,0.0,6.0,0.0
+STSM082090,4.0,7.0,View changes,Pension Fund Pooling Schemes,0.0,11.0,0.0
+STSM082110,5.0,8.0,View changes,Common Investment Arrangements (CIA),0.0,9.0,0.0
+STSM091030,1.0,4.0,View changes,Different Types Of Partnership,0.0,7.0,0.0
+STSM092020,1.0,4.0,View changes,Partnerships: Introduction Of A New Partner To An Existing Partnership,0.0,7.0,0.0
+STSM092050,1.0,4.0,View changes,Partnerships: Dissolution Of A Partnership,0.0,6.0,0.0
+STSM093020,4.0,7.0,View changes,Partnerships And Stamp Duty Group Relief,0.0,13.0,0.0
+STSM100000,47.0,67.0,View changes,Collectives: Contents,7.0,11.0,238.0
+STSM101000,569.0,573.0,View changes,Introduction To Collective Investment Schemes: Contents,13.0,15.0,620.0
+STSM101010,48.0,168.0,View changes,What Is A Collective Investment Scheme?,1.0,11.0,10.0
+STSM101020,111.0,260.0,View changes,What Is A Unit Trust?,2.0,17.0,24.0
+STSM101030,49.0,167.0,View changes,Authorised Investments Funds - General,2.0,19.0,24.0
+STSM101040,49.0,166.0,View changes,Unauthorised Unit Trust,2.0,12.0,24.0
+STSM101050,111.0,272.0,View changes,What Is An Open-Ended Investment Company?,2.0,13.0,24.0
+STSM102000,0.0,3.0,View changes,Collectives: Transfer Of Units In A Unit Trust Or Units Issued As Consideration,0.0,8.0,0.0
+STSM103010,45.0,189.0,View changes,Overview Of FA99/SCH19,1.0,6.0,7.0
+STSM103020,119.0,343.0,View changes,Collectives: The Schedule 19 Charge: Stamp Duty Reserve Tax Charge,1.0,12.0,1.0
+STSM103030,119.0,200.0,View changes,Collectives: The Schedule 19 Charge: Rate Of Stamp Duty Reserve Tax,1.0,11.0,1.0
+STSM103040,152.0,194.0,View changes,Collectives: The Schedule 19 Charge: Market Value Of Units And OEIC Shares,0.0,12.0,0.0
+STSM103060,180.0,208.0,View changes,Collectives: The Schedule 19 Charge: Accountable Date,2.0,13.0,2.0
+STSM103070,259.0,395.0,View changes,Collectives: The Schedule 19 Charge: Relevant Two-Week Period,0.0,9.0,0.0
+STSM104000,535.0,542.0,View changes,Collectives: Calculation Of The Charge: Contents,13.0,15.0,936.0
+STSM104020,130.0,280.0,View changes,Reduction Of Stamp Duty Reserve Tax (SDRT) Where Surrenders Exceed Issues,2.0,18.0,24.0
+STSM104060,148.0,299.0,View changes,Reduction Of Stamp Duty Reserve Tax Where Exempt Investments Are Held By A Fund,2.0,21.0,24.0
+STSM104070,148.0,298.0,View changes,Meaning Of 'Average Value' For The N(N+E) Calculation,2.0,13.0,24.0
+STSM104090,29.0,34.0,View changes,Example Data For Monthly SDRT FA99/SCH19 Computation - Annex A,2.0,5.0,17.0
+STSM105000,63.0,65.0,View changes,Collectives: Exemptions: Contents,3.0,15.0,95.0
+STSM105010,0.0,2.0,View changes,Exempt Collective Investment Schemes,0.0,10.0,0.0
+STSM105060,0.0,3.0,View changes,Exempt Investments - Interests In Other Collective Investment Schemes - Practicalities,0.0,22.0,0.0
+STSM106000,62.0,65.0,View changes,Collectives: Third Party Matters: Contents,2.0,7.0,67.0
+STSM106010,0.0,3.0,View changes,Third Party Units/OEIC Shares Surrendered To A Fund Manager,0.0,15.0,0.0
+STSM106030,25.0,27.0,View changes,Exemptions - Third Party Transfers,0.0,19.0,0.0
+STSM107000,1073.0,1075.0,View changes,"Collectives: Contributions, Mergers And Other Matters: Contents",14.0,16.0,1060.0
+STSM113020,1.0,4.0,View changes,Secondary Trading Of An Option,0.0,8.0,0.0
+STSM113030,1.0,5.0,View changes,Exercise Of An Option,0.0,7.0,0.0
+STSM115020,1.0,4.0,View changes,Secondary Trading Of A Warrant,0.0,9.0,0.0
+STSM115030,1.0,4.0,View changes,Exercise Of A Warrant,0.0,6.0,0.0
+STSM116040,2.0,6.0,View changes,Secondary Trading Of A Covered Warrant,0.0,14.0,0.0
+STSM116050,1.0,4.0,View changes,Exercise Of A Covered Warrant,0.0,13.0,0.0
+STSM117010,1.0,4.0,View changes,What Is A Futures Contract?,0.0,11.0,0.0
+STSM117030,2.0,5.0,View changes,What Is A Forwards Contract?,0.0,12.0,0.0
+STSM117060,2.0,5.0,View changes,Trading Of A Futures Contract,0.0,8.0,0.0
+STSM117090,1.0,4.0,View changes,Secondary Trading Of A Futures Contract,0.0,18.0,0.0
+STSM117100,0.0,4.0,View changes,Settlement Of A Futures Or Forwards Contract,1.0,13.0,1.0
+STSM118030,0.0,3.0,View changes,Hedging A Contract For Difference,1.0,11.0,1.0
+STSM118040,0.0,3.0,View changes,Contracts For Difference - Stamp Implications,1.0,8.0,1.0
+STSM121010,1.0,5.0,View changes,Background: History,0.0,10.0,0.0
+STSM121020,2.0,5.0,View changes,Background: Big Bang,0.0,10.0,0.0
+STSM123010,1.0,4.0,View changes,What Is An Exchange?,0.0,11.0,0.0
+STSM123030,5.0,8.0,View changes,Recognised Investment Exchange,0.0,22.0,0.0
+STSM123040,3.0,7.0,View changes,Regulated Market,0.0,16.0,0.0
+STSM123070,4.0,7.0,View changes,Derivative And Commodity Exchanges,0.0,13.0,0.0
+STSM124010,4.0,7.0,View changes,Introduction,0.0,12.0,0.0
+STSM124020,5.0,7.0,View changes,Agent Brokers,0.0,15.0,0.0
+STSM124040,3.0,6.0,View changes,Market Makers,0.0,18.0,0.0
+STSM124050,1.0,4.0,View changes,Qualified Dealer,0.0,5.0,0.0
+STSM125020,1.0,4.0,View changes,Clearing And Settlement Agents,0.0,7.0,0.0
+STSM125030,2.0,5.0,View changes,Clearing House,0.0,18.0,0.0
+STSM126010,2.0,5.0,View changes,Agency Crosses,0.0,7.0,0.0
+STSM126040,0.0,4.0,View changes,Settlement Netting - SDRT Implications,1.0,16.0,1.0
+STSM126050,4.0,7.0,View changes,Aggregation Of Gross Trades,1.0,13.0,1.0
+STSM126060,3.0,6.0,View changes,Suppression Of Gross Trades,0.0,13.0,0.0
+STSM131010,1.0,4.0,View changes,CREST: Introduction: Background,0.0,8.0,0.0
+STSM131030,2.0,5.0,View changes,CREST: Introduction: Services Provided By CREST,0.0,13.0,0.0
+STSM131050,2.0,5.0,View changes,CREST: Introduction: Interface Between Shareholdings In CREST And Paper Certificate,0.0,9.0,0.0
+STSM131060,1.0,5.0,View changes,CREST: Introduction: CREST Members/Participants,0.0,10.0,0.0
+STSM131080,3.0,5.0,View changes,CREST: Introduction: Settling Transactions In CREST,0.0,8.0,0.0
+STSM132010,1.0,3.0,View changes,CREST: CREST & SDRT: Introduction,0.0,5.0,0.0
+STSM132030,1.0,3.0,View changes,CREST: CREST & SDRT: Accounting To HMRC For SDRT,0.0,8.0,0.0
+STSM132040,1.0,3.0,View changes,CREST: CREST & SDRT: Centrally Generated Tax Status,0.0,6.0,0.0
+STSM132050,2.0,4.0,View changes,CREST: CREST & SDRT: SDRT Paid Outside CREST,0.0,9.0,0.0
+STSM132060,0.0,2.0,View changes,CREST: CREST Enhanced Stamp Duty Reserve Tax Assessment Service,1.0,12.0,1.0
+STSM133010,2.0,4.0,View changes,CREST: Completion Of Transaction Details In CREST,0.0,14.0,0.0
+STSM133020,1.0,3.0,View changes,CREST: Transaction Type Codes,0.0,10.0,0.0
+STSM142070,0.0,3.0,View changes,Stamp Duty And SDRT Administration: SDRT Administration: Notice Of Charge And Accountable Date,0.0,12.0,0.0
+STSM142120,2.0,6.0,View changes,Stamp Duty And SDRT Administration: SDRT Administration: Post-Payment Checks,0.0,7.0,0.0
+STSM142130,0.0,3.0,View changes,Stamp Duty And SDRT Administration: SDRT Administration: Time Limits (SDRT),0.0,8.0,0.0
+STSM142140,1.0,4.0,View changes,Stamp Duty And SDRT Administration: SDRT Administration: SDRT Determinations,0.0,6.0,0.0
+STSM151010,1.0,4.0,View changes,Compliance: Introduction - Stamp Duty - Stamp Act 1891 S14(4),0.0,7.0,0.0
+STSM151020,2.0,5.0,View changes,Stamp Duty - Background,0.0,6.0,0.0
+STSM152010,3.0,7.0,View changes,Stamp Duty Interest,0.0,14.0,0.0
+STSM152020,1.0,5.0,View changes,Part Payment,0.0,8.0,0.0
+STSM152030,1.0,4.0,View changes,Calculation Of Interest,0.0,6.0,0.0
+STSM152050,1.0,4.0,View changes,Collection Of Interest,0.0,6.0,0.0
+STSM153010,1.0,4.0,View changes,Late Stamping,0.0,10.0,0.0
+STSM153020,1.0,4.0,View changes,Mitigation,0.0,9.0,0.0
+STSM153030,2.0,5.0,View changes,Executed Abroad,0.0,8.0,0.0
+STSM153040,3.0,7.0,View changes,Collection Of Penalties,0.0,9.0,0.0
+STSM153060,1.0,4.0,View changes,Documents Dated In Pencil,0.0,6.0,0.0
+STSM153070,1.0,4.0,View changes,Acceptable Reasons For Delay,0.0,17.0,0.0
+TCM0138000,32.0,38.0,View changes,"Miscellaneous - P To V (Processing A Claim Or Work Item; Special Needs; Subject Access Requests; Verification Failures Aid (Rules 9, 10, 11); View Claim Summary): Contents",11.0,17.0,321.0
+TCM0138280,29.0,37.0,View changes,Miscellaneous (P To V): Subject Access Requests - Registering The SAR,1.0,107.0,7.0
+TCM0174020,348.0,351.0,View changes,Notes - Standardised Messages (T To W): Standardised Messages - T - Stopping Tax Credits,0.0,285.0,0.0
+TCM0292010,0.0,3.0,View changes,Account - Maintain Poca Systems,0.0,61.0,0.0
+TCM0292020,0.0,3.0,View changes,Specialist Areas - Post Office Card Account: Post Office Card Account - Poca Action Guide,0.0,378.0,0.0
+TCM0325010,0.0,2.0,View changes,Index,0.0,7.0,0.0
+TCTM04200,0.0,3.0,View changes,Employment Income Rules - Specific Payments And Benefits In Kind Excluded From Employment Income For Tax Credit Purposes: Contents,0.0,34.0,0.0
+TCTM04226,0.0,4.0,View changes,Income: Provision Of Home Computer Equipment,0.0,12.0,0.0
+TCTM04228,0.0,3.0,View changes,Income: Purposes,0.0,31.0,0.0
+TOBCSC8000,60.0,78.0,View changes,Penalty Notices: Contents,2.0,18.0,64.0
+TOBCSC8700,25.0,27.0,View changes,Restarting The Clock,0.0,8.0,0.0
+TPC60000,0.0,3.0,View changes,Claims: Contents,0.0,10.0,0.0
+TPC60020,0.0,3.0,View changes,Details To Be Provided,0.0,30.0,0.0
+TPC60050,0.0,2.0,View changes,Time Limits,0.0,13.0,0.0
+TSEM1700,7.0,9.0,View changes,Trust Deeds - Contents,1.0,10.0,7.0
+TSEM1705,2174.0,2916.0,View changes,Trust Deeds: HMRC Trusts Policy On Trust Deeds,6.0,7.0,1516.0
+TSEM1710,1407.0,1498.0,View changes,Trust Deeds: Unrequested Trust Deed - New Trust,9.0,11.0,1413.0
+TSEM1711,2364.0,2456.0,View changes,Trust Deeds: Unrequested Trust Deed - Established Trust,13.0,15.0,2235.0
+TSEM1713,630.0,661.0,View changes,Trust Deeds: Requesting Trust Deeds,6.0,8.0,650.0
+TSEM1715,1122.0,1148.0,View changes,Trust Deeds: Trust Deed That You Have Requested,6.0,8.0,1126.0
+TSEM1720,433.0,503.0,View changes,Trust Deeds: Commenting On A Trust Deed,5.0,7.0,432.0
+TSEM9900,0.0,2.0,View changes,Specific Types Of Property - Contents,0.0,49.0,0.0
+TSEM9962,0.0,2.0,View changes,Specific Types Of Property: Shares: Legal And Beneficial Ownership - Joint Ownership,0.0,5.0,0.0
+TSEM9970,0.0,2.0,View changes,Specific Types Of Property: Shares - Examples,0.0,5.0,0.0
+TTM17000,0.0,2.0,View changes,Schedule 22 Finance Act 2000: Contents,0.0,170.0,0.0
+TTM17491,0.0,2.0,View changes,Part X The Ring Fence - Capital Allowances - Ship Leasing - Para 89A Quantitative Restrictions Not To Apply To Ordinary Charters,0.0,19.0,0.0
+TTM17501,0.0,2.0,View changes,Part X The Ring Fence - Capital Allowances - Ship Leasing - Para 91 Defeased Leasing - Excepted Forms Of Security,0.0,26.0,0.0
+VAT-FLAT-RATE-SCHEME,0.0,2.0,View changes,VAT Flat Rate Scheme,0.0,9.0,0.0
+VAT-MANUALS,312.0,318.0,View changes,VAT Manuals,89.0,91.0,13109.0
+VAT-PLACE-OF-SUPPLY-SERVICES,30.0,163.0,View changes,VAT Place Of Supply Of Services,14.0,17.0,441.0
+VAT-SINGLE-ENTITY-AND-DISAGGREGATION-MANUAL,449.0,450.0,View changes,VAT Single Entity And Disaggregation,8.0,10.0,441.0
+VAT-SUPPLY-AND-CONSIDERATION,359.0,361.0,View changes,VAT Supply And Consideration,9.0,11.0,350.0
+VAT-WELFARE,94.0,99.0,View changes,VAT Welfare,2.0,8.0,54.0
+VATAAS1000,85.0,119.0,View changes,Introduction: Contents,6.0,9.0,85.0
+VATAAS1600,23.0,200.0,View changes,Introduction: The Role Of Policy,2.0,7.0,433.0
+VATDREG01150,23.0,200.0,View changes,Introduction: The Role Of Policy,2.0,8.0,433.0
+VATFIN3120,0.0,3.0,View changes,Credit Supplied With Goods Or Services,0.0,21.0,0.0
+VATFIN6200,0.0,2.0,View changes,Futures Contracts,0.0,21.0,0.0
+VATHLT1060,70.0,239.0,View changes,Introduction: The Roles Of The VAT Policy And Advisory Teams,4.0,12.0,467.0
+VATHLT2200,28.0,382.0,View changes,The Supply Of Contact Lenses - Liability,3.0,6.0,22.0
+VATHLT2575,0.0,2.0,View changes,The Services Of The Medical And Paramedical Professions: Pathology Services,0.0,43.0,0.0
+VATHLT6020,3.0,16.0,View changes,The Zero Rate Scope And Coverage,2.0,10.0,24.0
+VATLP01400,47.0,314.0,View changes,Introduction: Policy Responsibility And Advice,1.0,11.0,70.0
+VATMARG01200,2.0,521.0,View changes,Introduction: Roles And Responsibilities,3.0,15.0,160.0
+VATPOSG1300,34.0,586.0,View changes,Introduction: Roles And Responsibilities,1.0,13.0,40.0
+VATPOSS01150,34.0,385.0,View changes,Introduction: Roles And Responsibilities,1.0,13.0,30.0
+VATPOSTR1200,34.0,570.0,View changes,Introduction: Roles And Responsibilities,1.0,11.0,40.0
+VATREG01300,97.0,114.0,View changes,Introduction: The Role Of Policy,1.0,7.0,104.0
+VATREG25350,92.0,164.0,View changes,Change Of EDR To A Later Date,5.0,23.0,1174.0
+VATREG25400,87.0,153.0,View changes,Change Of EDR To An Earlier Date,9.0,29.0,792.0
+VATREG29700,0.0,2.0,View changes,Reallocation Of VAT Registration Number (VAT 68 Action): Contents,0.0,16.0,0.0
+VATREG29800,0.0,1.0,View changes,Legal Provisions,0.0,7.0,0.0
+VATRES1200,24.0,35.0,View changes,Roles And Responsibilities,1.0,30.0,31.0
+VATSC03000,63.0,333.0,View changes,Basic Principles And Underlying Law,2.0,17.0,24.0
+VATSC05000,2.0,307.0,View changes,Further Guidance For Identifying Supply,2.0,8.0,24.0
+VATSC30000,34.0,361.0,View changes,Consideration,2.0,15.0,24.0
+VATSC70000,45.0,435.0,View changes,Whether Supplies Are Goods Or Services,2.0,17.0,24.0
+VATSM1300,33.0,568.0,View changes,Introduction: Roles And Responsibilities,1.0,11.0,40.0
+VATTOS1500,33.0,348.0,View changes,Introduction: Roles And Responsibilities,1.0,12.0,30.0
+VATVAL01250,33.0,537.0,View changes,Background: Roles And Responsibilities,1.0,11.0,40.0
+VBANDG01800,63.0,156.0,View changes,Policy Responsibility And Advice,4.0,12.0,558.0
+VBNB24000,0.0,2.0,View changes,VAT Business And Non-Business Activities: Deemed Business Activities,0.0,28.0,0.0
+VBNB43000,0.0,3.0,View changes,Grant Funded Bodies,0.0,17.0,0.0
+VBNB60440,56.0,66.0,View changes,Shares With The Right To Nominate A Member,3.0,36.0,51.0
+VBNB60470,60.0,180.0,View changes,Clubs In Sections And Multi-Tiered Bodies,32.0,33.0,7078.0
+VBNB60960,120.0,786.0,View changes,Definition And Registration Of Student Unions,37.0,38.0,7385.0
+VBURC1000,21.0,220.0,View changes,Burial And Cremation: Introduction,3.0,18.0,364.0
+VCLOTHING1300,70.0,159.0,View changes,Role Of The VAT Reliefs Policy Team And VAT Advisory Team,4.0,12.0,637.0
+VCM16000,75.0,80.0,View changes,EIS: Supplementary And General: Contents,1.0,8.0,69.0
+VCM16050,25.0,28.0,View changes,EIS: Approved Investment Fund As Nominee,0.0,20.0,0.0
+VCM55360,3559.0,3854.0,View changes,VCT: Requests For Advance Assurances: Overview,24.0,28.0,7093.0
+VCONST01400,114.0,116.0,View changes,Introduction: Role Of The VAT Advisory Team,3.0,14.0,130.0
+VCULTURE1500,35.0,187.0,View changes,VAT On Cultural Services: Role Of The VAT Reliefs Policy Team,4.0,13.0,510.0
+VENSAV1200,81.0,149.0,View changes,The Roles Of The VAT Policy And Advisory Teams,4.0,12.0,510.0
+VEXMOTORS1300,46.0,58.0,View changes,Introduction: Roles And Responsibilities,5.0,32.0,98.0
+VEXP10600,33.0,49.0,View changes,Introduction: Roles And Responsibilities,1.0,19.0,30.0
+VFOOD0280,28.0,176.0,View changes,Role Of VAT Directorate,5.0,13.0,451.0
+VGROUPS02550,93.0,137.0,View changes,Unauthorised VAT Group Treatment,6.0,23.0,795.0
+VGROUPS04850,97.0,142.0,View changes,Applications For Retrospective Exceptional Circumstances,10.0,11.0,1752.0
+VIT25600,0.0,2.0,View changes,Is It Input Tax: Changes In The Use Of Goods,0.0,88.0,0.0
+VPOA1600,265.0,381.0,View changes,The Role Of The VAT Registration And Accounting Policy Team (VRAP),3.0,4.0,160.0
+VPOST2000,31.0,252.0,View changes,Policy Responsibility And Advice,4.0,13.0,521.0
+VPROTEQUIP1050,18.0,220.0,View changes,Role Of The VAT Reliefs Policy And VAT Advisory Teams,3.0,12.0,519.0
+VRDP16000,0.0,2.0,View changes,Computer And Other Electronic Devices,0.0,12.0,0.0
+VRS1200,3.0,56.0,View changes,Introduction: Roles And Responsibilities,4.0,20.0,744.0
+VTOGC1075,33.0,53.0,View changes,Introduction: Roles And Responsibilities,1.0,16.0,40.0
+VWASS1400,18.0,239.0,View changes,Introduction: Responsibilities Of VAT Reliefs And VAT Advisory Teams,4.0,12.0,529.0
+VWRHS1050,50.0,60.0,View changes,Introduction: Roles And Responsibilities,1.0,21.0,46.0
+VYC1500,36.0,323.0,View changes,Introduction: The Roles Of The VAT Advisory And The VAT Reliefs Policy Teams.,3.0,12.0,551.0
