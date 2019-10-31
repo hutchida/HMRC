@@ -6,5 +6,5 @@ handlers:
 - url: /
   upload: www/index.html
 
-- url: /
+- url: / (.*)
   upload: www/(.*)
