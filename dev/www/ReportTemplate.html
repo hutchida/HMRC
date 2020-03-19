@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" media="screen" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <style>
+            @import url("http://fonts.googleapis.com/css?family=Lato:400,700");
+            tr:nth-child(even){
+                background-color: #f2f2f2;
+            }
+            table {
+  border-collapse: collapse;
+}
+            table,
+            th,
+            td{
+                border: 1px solid black;
+                text-align: left;
+                padding: 5px;
+                border-spacing: 5px;
+                vertical-align: top;
+            }
+            td{
+                word-wrap: break-word;
+            }
+            tr:hover{
+                background-color: #e6e6ff;
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6{
+                font-family: "Lato", sans-serif;
+                font-weight: 400;
+            }
+            sup{
+                font-size: 10px;
+            }
+            img{
+                max-width: 100%;
+                display: block;
+                height: auto;
+            } 
+            .wrap{
+                width: 100%;
+                margin: 10px;
+            }
+            h2,
+            img{
+                display: inline;
+                float: none;
+            } /* Go from zero to full opacity */
+            @keyframes fadeEffect {    from {opacity: 0;}    to {opacity: 1;}}
+            #body{
+                padding: 10px;
+                padding-bottom: 60px; /* Height of the footer */
+            }
+            .footer{
+                position: floating;
+                left: 0;
+                bottom: 10%;
+                width: 100%;
+            }</style>
+  </head>
+  <body><div class="container"><h1 id="home">HMRC UPDATES REPORT: <b>__DATE__</b></h1><hr />
+    <p>The webcrawler has detected changes in the following HMRC chapters. A comparison has been made 
+      between yesterday's and today's version. 
+    </p>
+    <p>The 'Signficant' column attempts to show how great 
+      the change is between the two versions of the documents. If the Levenshtein Distance found is over 50 then the doc is 
+      categorised as 'True', i.e. significant. This threshold can be changed. Once the final threshold has been agreed upon,
+      we can show only the significant results and remove the extraneous column.</p>
+    <p>If the links in the View column are not working for you, please log a Service Now request asking for access to: \\atlas\knowhow\</p>
+    <div style="max-width: 800px;"></div>
+    <div style="max-width: 800px;"><h1 id="change">CHANGES</h1><p>__CHANGELEN__
+          chapters have changed and are displayed below:</p>
+              __DFCHANGES__
+      </div></div></body>
+</html>
