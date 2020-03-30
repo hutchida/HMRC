@@ -198,8 +198,8 @@ def stripNavigation(data):
 
 
 #state = 'local'
-state = 'live'
-#state = 'livedev'
+#state = 'live'
+state = 'livedev'
 
 #lastupdated 06032020 1245
 
@@ -233,8 +233,8 @@ if state == 'local':
 
 CrawlReport = FindMostRecentFile(CrawlReportDir, '*xml')
 CrawlReportDate = datetime.datetime.fromtimestamp(os.path.getmtime(CrawlReport)).date()
-#TodaysDate = datetime.date(2020, 2, 27)
-TodaysDate = datetime.date.today()
+TodaysDate = datetime.date(2020, 3, 20)
+#TodaysDate = datetime.date.today()
 reportDate = datetime.datetime.strptime(str(datetime.date.fromtimestamp(os.path.getctime(CrawlReport))), '%Y-%m-%d').strftime('%d-%m-%Y')
 versionDate = datetime.datetime.strptime(str(datetime.date.fromtimestamp(os.path.getctime(CrawlReport))), '%Y-%m-%d').strftime('%Y%m%d')
 
@@ -421,7 +421,7 @@ if TodaysDate == CrawlReportDate:
     dfAdditions.to_csv(OutputDir + "dfAdditions.csv", sep=',',index=False, encoding='UTF-8')
     dfAdditions = pd.read_csv(OutputDir + "dfAdditions.csv")
 
-
+    print(dfAdditions)
     CreateReport(reportDate, str(len(changes)), dfChange, str(len(additions)), dfAdditions, reportDir, reportFilepath)
 
     Email(reportFilepath, 'HMRC Updates Report: ' + reportDate, receiver_email_list)
