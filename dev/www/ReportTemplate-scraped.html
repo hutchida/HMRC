@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" media="screen" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <style>
+            @import url("http://fonts.googleapis.com/css?family=Lato:400,700");
+            tr:nth-child(even){
+                background-color: #f2f2f2;
+            }
+            table {
+  border-collapse: collapse;
+}
+            table,
+            th,
+            td{
+                border: 1px solid black;
+                text-align: left;
+                padding: 5px;
+                border-spacing: 5px;
+                vertical-align: top;
+            }
+            td{
+                word-wrap: break-word;
+            }
+            tr:hover{
+                background-color: #e6e6ff;
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6{
+                font-family: "Lato", sans-serif;
+                font-weight: 400;
+            }
+            sup{
+                font-size: 10px;
+            }
+            img{
+                max-width: 100%;
+                display: block;
+                height: auto;
+            } 
+            .wrap{
+                width: 100%;
+                margin: 10px;
+            }
+            h2,
+            img{
+                display: inline;
+                float: none;
+            } /* Go from zero to full opacity */
+            @keyframes fadeEffect {    from {opacity: 0;}    to {opacity: 1;}}
+            #body{
+                padding: 10px;
+                padding-bottom: 60px; /* Height of the footer */
+            }
+            .footer{
+                position: floating;
+                left: 0;
+                bottom: 10%;
+                width: 100%;
+            }</style>
+  </head>
+  <body><div class="container"><h1 id="home">HMRC UPDATES REPORT - SCRAPED: <b>__DATE__</b></h1><hr />
+      <p>The HMRC <a href="https://www.gov.uk/government/latest?departments%5B%5D=hm-revenue-customs" target="_blank">main updates page</a> has been scraped for chapter updates. See below for details.
+    </p>
+      <div style="max-width: 800px;"><h1 id="change">ADDITIONS</h1>
+          
+          <p>__ADDITIONSLEN__
+              chapters have been added to the HMRC table of contents today:</p>
+          __DFADDITIONS__
+      </div>
+      
+      <div style="max-width: 800px;"><h1 id="change">CHANGES</h1>
+          <p>A comparison has been made between yesterday's version that Lexis has and and today's version taken directly from the HMRC site.</p>
+          <p>__CHANGELEN__
+              chapters have changed:</p>
+          __DFCHANGES__
+      </div>
+      
+      <div style="max-width: 800px;"><h1 id="change">DELETIONS</h1><p>__DELETIONSLEN__
+              chapters have been deleted:</p>
+          __DFDELETIONS__
+      </div>
+    </div></body>
+</html>

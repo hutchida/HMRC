@@ -198,10 +198,11 @@ def stripNavigation(data):
 
 
 #state = 'local'
-#state = 'live'
-state = 'livedev'
+state = 'live'
+#state = 'livedev'
 
-#lastupdated 06032020 1245
+#lastupdated 08042020 1153
+# 010520 0919 - update to remove sols dodgy markup in the source before creating new html pages
 
 if state == 'live':
     CrawlReportDir = "\\\\atlas\\Knowhow\\AutomatedContentReports\\HMRCrawlReports\\"
@@ -210,7 +211,7 @@ if state == 'live':
     OutputDir = "\\\\atlas\\knowhow\\HMRC\\data\\www.gov.uk\\hmrc-internal-manuals\\"
     reportDir = "\\\\atlas\\knowhow\\HMRC\\"
 
-    receiver_email_list = ['daniel.hutchings.1@lexisnexis.co.uk', 'zainabtaher.raja@lexisnexis.com', 'snehal.kulkarnis@lexisnexis.com', 'nagendra.k@lexisnexis.com', 'daniel.meredith@lexisnexis.co.uk', 'sunaina.srai-chohan@lexisnexis.co.uk', 'sean.maxwell@lexisnexis.co.uk', 'edd.thompson@lexisnexis.co.uk', 'georgina.jalbaud@lexisnexis.co.uk', 'robbie.watson@lexisnexis.co.uk', 'susi.dunn@lexisnexis.co.uk', 'lisa.moore@lexisnexis.co.uk']
+    receiver_email_list = ['daniel.hutchings.1@lexisnexis.co.uk', 'zainabtaher.raja@lexisnexis.com', 'snehal.kulkarnis@lexisnexis.com', 'nagendra.k@lexisnexis.com', 'daniel.meredith@lexisnexis.co.uk', 'sunaina.srai-chohan@lexisnexis.co.uk', 'sean.maxwell@lexisnexis.co.uk', 'edd.thompson@lexisnexis.co.uk', 'georgina.jalbaud@lexisnexis.co.uk', 'robbie.watson@lexisnexis.co.uk', 'susi.dunn@lexisnexis.co.uk', 'lisa.moore@lexisnexis.co.uk', 'amanpreet.sunner@lexisnexis.co.uk']
 
 if state == 'livedev':
     CrawlReportDir = "\\\\atlas\\Knowhow\\AutomatedContentReports\\HMRCrawlReports\\"
@@ -233,8 +234,8 @@ if state == 'local':
 
 CrawlReport = FindMostRecentFile(CrawlReportDir, '*xml')
 CrawlReportDate = datetime.datetime.fromtimestamp(os.path.getmtime(CrawlReport)).date()
-TodaysDate = datetime.date(2020, 3, 20)
-#TodaysDate = datetime.date.today()
+#TodaysDate = datetime.date(2020, 4, 30)
+TodaysDate = datetime.date.today()
 reportDate = datetime.datetime.strptime(str(datetime.date.fromtimestamp(os.path.getctime(CrawlReport))), '%Y-%m-%d').strftime('%d-%m-%Y')
 versionDate = datetime.datetime.strptime(str(datetime.date.fromtimestamp(os.path.getctime(CrawlReport))), '%Y-%m-%d').strftime('%Y%m%d')
 
@@ -302,17 +303,20 @@ if TodaysDate == CrawlReportDate:
             log('ManualDir did not exist, but now created...' + ManualDir)
         newDocFilepathXML = ManualDir + Chapter + '-' + versionDate +'.xml'    
         newDocFilepathHTML = ManualDir + Chapter + '-' + versionDate + '.html'
-
+        print(URI)
         response = requests.get(URI)     # get response object     
         byte_data = response.content # get byte string 
         source_code = html.fromstring(byte_data) # get filtered source code 
         newDocTree = source_code.xpath('//div[@class="manual-body"]')[0]
         newDocStr = html.tostring(newDocTree[0])
+        #print(newDocStr)
+        #newDocStr = newDocStr.replace('\\n', '').replace("b'<", '<').replace('  ', ' ').replace('  ', ' ').replace('  ', ' ').replace('> <', '><').replace('<br>', '<br/>').replace('<hr>', '<hr/>').replace('&lt;', '<').replace('&gt;','>').replace('<ul><li></ul>', '')
         newData = etree.Element('data') #create xml shell
         newBody = etree.SubElement(newData, 'div')
         newBody.set('class', 'manual-body')
         newBody.set('id', 'content')
-        newRoot = newBody.insert(0, etree.fromstring(newDocStr))
+        #print(newDocStr)
+        newRoot = newBody.insert(0, html.fromstring(newDocStr))
         newTree = etree.ElementTree(newData)  #define the shell as the tree    
         newTree.write(newDocFilepathXML,encoding='utf-8') #write the tree out  
         print(newDocFilepathXML)  
@@ -377,9 +381,14 @@ if TodaysDate == CrawlReportDate:
         log('Comparing the following two files...\n' + LatestFilepathXML + '\n' + PreviousFilepathXML)
         
         DiffedVersion = htmldiff(PreviousData, LatestData) #Get the diff html from lxml built in method    
-        DiffedVersion = DiffedVersion.replace('<br>', '<br/>').replace('<hr>', '<hr/>').replace('&lt;', '<').replace('&gt;','>')
+        DiffedVersion = DiffedVersion.replace('<br>', '<br/>').replace('<hr>', '<hr/>').replace('&lt;', '<').replace('&gt;','>').replace('<ul><li></ul>', '')
+        DiffedVersion = DiffedVersion.replace('<SOLS', '').replace('(SOLS)>', '')
         
         DiffedVersion = re.sub(r'<img ([^>]*)>', r'<img \1 />', DiffedVersion)
+        DiffedVersion = re.sub(r'<LPUTeam([^>]*)>', r'<p>LPUTeam\1 </p>', DiffedVersion)
+        DiffedVersion = re.sub(r'<5x5x5gateway@DWP.GSI.GOV.UK.', r'5x5x5gateway@DWP.GSI.GOV.UK.', DiffedVersion)
+        
+        print(DiffedVersion)
         diffData = etree.Element('data') #create xml shell
         try:
             diffRoot = diffData.insert(0, etree.fromstring(DiffedVersion)) #insert diff html into shell
