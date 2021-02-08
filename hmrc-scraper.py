@@ -221,7 +221,9 @@ def log(message):
 state = 'live'
 #state = 'livedev'
 
-#lastupdated 06032020 1245
+#last updated 
+#020920 1013 - added divya to the email list
+#150920 1027 - added metrics logging
 
 if state == 'live':
     Crawlreport_dir = "\\\\atlas\\Knowhow\\AutomatedContentReports\\HMRCrawlReports\\"
@@ -230,8 +232,8 @@ if state == 'live':
     output_dir = "\\\\atlas\\knowhow\\HMRC\\data\\www.gov.uk\\hmrc-internal-manuals\\"
     report_dir = "\\\\atlas\\knowhow\\HMRC\\"
 
-    receiver_email_list = ['daniel.hutchings.1@lexisnexis.co.uk', 'zainabtaher.raja@lexisnexis.com', 'snehal.kulkarnis@lexisnexis.com', 'nagendra.k@lexisnexis.com', 'daniel.meredith@lexisnexis.co.uk', 'sunaina.srai-chohan@lexisnexis.co.uk', 'sean.maxwell@lexisnexis.co.uk', 'edd.thompson@lexisnexis.co.uk', 'georgina.jalbaud@lexisnexis.co.uk', 'robbie.watson@lexisnexis.co.uk', 'susi.dunn@lexisnexis.co.uk', 'lisa.moore@lexisnexis.co.uk']
-
+    receiver_email_list = ['daniel.hutchings.1@lexisnexis.co.uk', 'divya.krupat@lexisnexis.com', 'zainabtaher.raja@lexisnexis.com', 'nagendra.k@lexisnexis.com', 'daniel.meredith@lexisnexis.co.uk', 'sunaina.srai-chohan@lexisnexis.co.uk', 'sean.maxwell@lexisnexis.co.uk', 'edd.thompson@lexisnexis.co.uk', 'georgina.jalbaud@lexisnexis.co.uk', 'robbie.watson@lexisnexis.co.uk', 'susi.dunn@lexisnexis.co.uk', 'lisa.moore@lexisnexis.co.uk']
+    #receiver_email_list = ['daniel.hutchings.1@lexisnexis.co.uk']#, 'robbie.watson@lexisnexis.co.uk']
 if state == 'livedev':
     Crawlreport_dir = "\\\\atlas\\Knowhow\\AutomatedContentReports\\HMRCrawlReports\\"
     latest_dir = "\\\\lngoxfdatp16vb\\Fabrication\\build\\02HT\\Data_RX\\data\\www.gov.uk\\hmrc-internal-manuals\\"
@@ -393,6 +395,28 @@ CreateReport(report_date, df_change, df_additions, df_deletions, report_filepath
 if len(dfUpdates) > 0:
     Email(report_filepath, 'HMRC Updates Report: ' + report_date, receiver_email_list)
     log('Email sent to: ' + str(receiver_email_list))  
+
+    
+    def add_to_metrics_log(log_filepath, metric, metric_type, details): 
+        if metric > 0:
+            print('\nAdding metrics to log...')
+            date = str(time.strftime("%Y-%m-%d"))
+            df_metric = pd.read_csv(log_filepath) #Load the log
+            #check metric hasn't been added to the df already for that document on that date
+            df_metric.date = df_metric.date.astype(str)
+            df_metric.details = df_metric.details.astype(str)
+            new_row = {'metric_type':metric_type, 'details':details,'metric': metric, 'date': date}
+            if any((df_metric.date == date) & (df_metric.details == details)) == False: 
+                df_metric.loc[len(df_metric)] = new_row #add new row to the end of the dataframe
+                #df_metric.loc[1] = new_row #add new row to the start of the dataframe
+                df_metric = df_metric.sort_values('date', ascending = False)
+                df_metric.to_csv(log_filepath,index=False)
+            else:
+                print('NO METRICS ADDED: date and details already exist in a row')
+
+    add_to_metrics_log(log_dir+'hmrc-metrics.csv', 1, 'HMRC scraped report generated', 'Updates: ' + str(len(dfUpdates)))
+
+
 else:    
     Email(errorHTMLFilepath, 'HMRC Updates Report: not generated', ['daniel.hutchings.1@lexisnexis.co.uk'])
     log('Email sent to: ' + str(['daniel.hutchings.1@lexisnexis.co.uk']))    
